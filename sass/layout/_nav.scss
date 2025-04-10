@@ -31,12 +31,18 @@
             padding: 0.125rem 0.5rem;
             color: abstracts.$text-light;
             border: 1px solid;
-            border: 2px solid abstracts.$brand;
+            // border: 2px solid abstracts.$brand;
             border-radius: abstracts.$border-radius-sm;
+            cursor: default;
 
             img {
                 width: 100%;
             }
+
+            @include abstracts.sm {
+                cursor: pointer;
+            }
+
         }
     }
 
@@ -177,10 +183,10 @@
         position: absolute;
         right: 1rem;
         padding: 1em;
-        cursor: pointer;
         display: grid;
         place-items: center;
         transition: .3s ease;
+        cursor: default;
 
         .bar {
             position: absolute;
