@@ -2,12 +2,6 @@
 @use '../variables';
 
 form {
-    // @media (min-width: 768px) {
-    //     width: 90%;
-    //     margin: 5vh auto;
-    // }
-    // border: 3px solid #000;
-    // margin: 5vh auto;
     padding: 5vh 5vw;
     background-color: #fff;
     
@@ -17,7 +11,6 @@ form {
             border-radius: 5px;
             min-height: auto;
         }
-        // min-height: 100vh;
         margin: 5vh auto;
         background-color: variables.$invalid;
         padding: 1.3em .5em;
@@ -29,6 +22,7 @@ form {
         overflow-x: hidden;
         scale: (.975);
         transition: 500ms;
+        border-radius: abstracts.$border-radius-md;
         
         // active class
         &.open {
@@ -72,17 +66,6 @@ form {
         }
         // end of button
         
-        legend {
-            margin: 0 1em;
-            font-size: 1.1em;
-            text-transform: capitalize;
-            background: variables.$overlay-blue-darker;
-            color: variables.$text-brand;
-            border-radius: 5px;
-            padding: .2em;
-            border: 1px solid #333a;
-            cursor: help;
-        }
 
         .input-div {
             width: 100%;
@@ -91,14 +74,14 @@ form {
             }
             input {
                 text-overflow: ellipsis;
-                margin: .1em 0;
             }
         }
 
+        // FIELDSET HOVER CLASS
         &:hover {
-            background-color: variables.$background-active;
             scale: 1;
         }
+
         // FEATURES
         &.features {
             h2 {
@@ -125,22 +108,36 @@ form {
                 }
             }
         }
+
+    }
+    
+    legend {
+        margin: 0 1em;
+        font-size: 1.1em;
+        text-transform: capitalize;
+        background: variables.$overlay-blue-darker;
+        color: variables.$text-brand;
+        border-radius: 5px;
+        padding: .2em;
+        border: 1px solid #333a;
+        cursor: help;
     }
 
     .input-div {
         display: flex;
         flex-direction: column;
-        // border: 2px solid red;
-        // margin: .5em 0 1em;
+
         margin: 0 0 1rem 0;
         padding: .5em .1em;
         transition: .3s ease;
         position: relative;
+        color: abstracts.$text-dark;
 
         // INFO SECTION
         .info-section {
             background-color: #fff;
-            color: variables.$text-light;
+            background-color: transparent;
+            color: abstracts.$text-light;
             height: 0;
             width: 80%;
             padding: 1em 1em 2em;
@@ -220,8 +217,8 @@ form {
         }
 
         input, textarea {
-            outline: 2px solid variables.$text-brand;
-            outline: 2px solid lightgreen;
+            outline: 1px solid abstracts.$span-crimson;
+            outline: 1px solid #000;
             outline-offset: -3px;
             padding: 0.75rem;
             transition: .3s ease;
@@ -229,24 +226,23 @@ form {
             // color: variables.$text-brand;
             border-radius: 5px;
             border: none;
-            font-size: 1.1em;
+            font-size: abstracts.$font-clamp-sm;
 
 
             &:focus {
-                color: abstracts.$text-light;
-                background-color: #333;
-                border: none;
-                outline: 2px dashed variables.$text-brand;
+                outline-color: lime;
                 &::placeholder {
-                    color: variables.$text-brand;
+                    // color: variables.$text-brand;
+                    // opacity: 1;
                 }
             }
 
             &:invalid {
-                background-color: #161616;
-                color: abstracts.$text-light;
-                border: none;
-                outline: 2px dashed #dc143c;
+                
+                // background-color: #161616;
+                // color: abstracts.$text-light;
+                // border: none;
+                outline: 1px dashed abstracts.$span-crimson;
             } 
         }
 
@@ -254,12 +250,14 @@ form {
             padding: .5em;
             font-size: 1.2em;
             &:invalid {
-                background-color: variables.$invalid;
+                // background-color: variables.$invalid;
             }
         }
 
         ::placeholder {
             color: hsl(0, 0%, 64%);
+            color: abstracts.$text-light-trans;
+            text-transform: capitalize;
             opacity: .5;
         }
         // services div

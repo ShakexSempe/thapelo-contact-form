@@ -236,6 +236,7 @@ form fieldset {
   overflow-x: hidden;
   scale: 0.975;
   transition: 500ms;
+  border-radius: 0.5rem;
 }
 
 @media (min-width: 768px) {
@@ -287,18 +288,6 @@ form fieldset .field-btn.active::after {
   opacity: 1;
 }
 
-form fieldset legend {
-  margin: 0 1em;
-  font-size: 1.1em;
-  text-transform: capitalize;
-  background: #20262e;
-  color: #ead2a1;
-  border-radius: 5px;
-  padding: 0.2em;
-  border: 1px solid #333a;
-  cursor: help;
-}
-
 form fieldset .input-div {
   width: 100%;
 }
@@ -309,11 +298,9 @@ form fieldset .input-div label {
 
 form fieldset .input-div input {
   text-overflow: ellipsis;
-  margin: 0.1em 0;
 }
 
 form fieldset:hover {
-  background-color: #fff;
   scale: 1;
 }
 
@@ -342,6 +329,18 @@ form fieldset.features .feature-items .item textarea {
   width: 100%;
 }
 
+form legend {
+  margin: 0 1em;
+  font-size: 1.1em;
+  text-transform: capitalize;
+  background: #20262e;
+  color: #ead2a1;
+  border-radius: 5px;
+  padding: 0.2em;
+  border: 1px solid #333a;
+  cursor: help;
+}
+
 form .input-div {
   display: flex;
   flex-direction: column;
@@ -349,10 +348,12 @@ form .input-div {
   padding: 0.5em 0.1em;
   transition: 0.3s ease;
   position: relative;
+  color: #000;
 }
 
 form .input-div .info-section {
   background-color: #fff;
+  background-color: transparent;
   color: #f4f4f4;
   height: 0;
   width: 80%;
@@ -433,32 +434,22 @@ form .input-div label span {
 }
 
 form .input-div input, form .input-div textarea {
-  outline: 2px solid #ead2a1;
-  outline: 2px solid lightgreen;
+  outline: 1px solid #dc143c;
+  outline: 1px solid #000;
   outline-offset: -3px;
   padding: 0.75rem;
   transition: 0.3s ease;
   border-radius: 5px;
   border: none;
-  font-size: 1.1em;
+  font-size: clamp(1rem, 2vw, 1.025rem);
 }
 
 form .input-div input:focus, form .input-div textarea:focus {
-  color: #f4f4f4;
-  background-color: #333;
-  border: none;
-  outline: 2px dashed #ead2a1;
-}
-
-form .input-div input:focus::placeholder, form .input-div textarea:focus::placeholder {
-  color: #ead2a1;
+  outline-color: lime;
 }
 
 form .input-div input:invalid, form .input-div textarea:invalid {
-  background-color: #161616;
-  color: #f4f4f4;
-  border: none;
-  outline: 2px dashed #dc143c;
+  outline: 1px dashed #dc143c;
 }
 
 form .input-div textarea {
@@ -466,12 +457,10 @@ form .input-div textarea {
   font-size: 1.2em;
 }
 
-form .input-div textarea:invalid {
-  background-color: #f4f4f4;
-}
-
 form .input-div ::placeholder {
   color: #a3a3a3;
+  color: #000a;
+  text-transform: capitalize;
   opacity: 0.5;
 }
 
