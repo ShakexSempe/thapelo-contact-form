@@ -1,0 +1,238 @@
+@use '../abstracts';
+
+
+#nav {
+    // border: 2px solid yellow;
+    position: fixed;
+    top: 0;
+    height: abstracts.$nav-height;
+    width: 100%;
+    padding: 1.25rem 5vw;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: abstracts.$overlay-blue-darkest;
+    z-index: 10;
+
+    @include abstracts.md {
+        padding: 1.5em 10vw;
+    }
+
+    .brand {
+        width: 10rem;
+        overflow: none;
+        position: relative;
+
+        a {
+            font-size: abstracts.$font-clamp-xsm;
+            width: 100%;
+            padding: 0.125rem 0.5rem;
+            color: abstracts.$text-light;
+            border: 1px solid;
+            border: 2px solid abstracts.$brand;
+            border-radius: abstracts.$border-radius-sm;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    // nav-list mobile first**
+    .nav-list {
+        border: none;
+        background-color: abstracts.$overlay-blue-darker;
+        color: #f4f4f4;
+        width: 100%;
+        min-height: 100vh;
+        position: absolute;
+        right: -110%;
+        top: abstracts.$nav-height;
+        transition: .5s;
+        padding: 15vh .5em 0;
+        z-index: -2;
+        ul {
+            list-style: none;
+            
+            li {
+                margin-bottom: 2em;
+                // border: 1px solid red;
+                display: flex;
+                padding: .5em 0;
+
+                a {
+                    display: block;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    color: #fff000;
+                    color: #f4f4f4;
+                    width: 100%;
+                    // border: 1px solid green;
+                    // margin-right: auto;
+                }
+                i {
+                    // border: 1px solid yellow;
+                    // margin-right: .5em;
+                    flex-basis: 5%;
+                    display: grid;
+                    place-items: center;
+                    // color: abstracts.$text-brand;
+                    margin-right: .2em;
+                }
+            }
+        }
+        
+        // active menu
+        @media (max-width: 768px){
+        &.active {
+            right: -5vw;
+
+            ul {
+                border: 1px solid abstracts.$brand;
+                width: 95%;
+                padding: 1em .5em;
+                display: flex;
+                flex-direction: column;
+                align-items: right;
+                justify-content: center;
+
+                li {
+                    background: abstracts.$overlay-blue-dark;
+                    padding: auto;
+
+                    i {
+                        margin: 0 ;
+                        flex-basis: 15%;
+                        // border: 1px solid red;
+                    }
+                }
+            }
+        }
+    }
+
+        // desktop nav-list
+        @include abstracts.md {
+            // display: flex;
+            position: relative;
+            background-color: #000;
+            right: 0;
+            top: 0;
+            padding: .3em 0;
+            padding: 0.5rem;
+            border-radius: 5px;
+            min-height: auto;
+            height: 5vh;
+            z-index: 5;
+            // border: 1px solid blue;
+            // width: 50vw;
+        ul {
+            // border: 1px solid yellow;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            height: 100%;
+            li {
+                margin: 0;
+                // margin: 0 0.5em 0 2em;
+                padding: .5em 1em;
+                a {
+                    font-size: 0.95rem;
+                    color: abstracts.$text-light;
+                    cursor: pointer;
+                    display: block;
+                }
+                
+                i {
+                    // color: abstracts.$text-brand;
+                    padding-right: .3em;
+
+                }
+                &:hover {
+                    a {
+                        // color: abstracts.$text-brand-hover;
+                    }
+
+                    i {
+                        color: abstracts.$text-light;
+                    }
+                }
+            }
+        }
+        }
+
+        // end of desktop nav-list
+    }
+
+    // end of nav-list mobile first**
+}
+
+
+ // hamburger display
+    .nav-toggle {
+        // border: 1px solid abstracts.$text-brand;
+        border: 1px solid abstracts.$brand;
+        border-radius: 50%;
+        position: absolute;
+        right: 1rem;
+        padding: 1em;
+        cursor: pointer;
+        display: grid;
+        place-items: center;
+        transition: .3s ease;
+
+        .bar {
+            position: absolute;
+            width: 60%;
+            height: 2px;
+            background-color: abstracts.$brand;
+            transition: .3s;
+
+            &::before,
+            &::after {
+                position: absolute;
+                content: '';
+                width: 100%;
+                height: 2px;
+                background-color: abstracts.$brand;
+                transition: .3s ease;
+            }
+
+            &::before {
+                transform: translateY(.3em);
+            }
+
+            &:after {
+                transform: translateY(-.3em);
+            }
+        }
+
+        &:hover {
+            transform: scale(.95);
+        }
+
+        &:active {
+            transform: scale(.9)
+        }
+
+        &.active {
+            transform: scale(.95);
+            transition: .5s ease;
+
+            .bar {
+                &::before {
+                    transform: translateY(0);
+                }
+
+                &::after {
+                    transform: translateY(0);
+                }
+            }
+        }
+
+        // desktop: hide hamburger
+        @media (min-width: 768px) {
+            display: none;
+        }
+    }

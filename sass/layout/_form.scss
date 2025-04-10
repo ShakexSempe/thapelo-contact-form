@@ -1,0 +1,342 @@
+@use '../abstracts';
+@use '../variables';
+
+form {
+    // @media (min-width: 768px) {
+    //     width: 90%;
+    //     margin: 5vh auto;
+    // }
+    // border: 3px solid #000;
+    // margin: 5vh auto;
+    padding: 5vh 5vw;
+    background-color: #fff;
+    
+    fieldset {
+        @media (min-width: 768px) {
+            padding: 1.5em .5em;
+            border-radius: 5px;
+            min-height: auto;
+        }
+        // min-height: 100vh;
+        margin: 5vh auto;
+        background-color: variables.$invalid;
+        padding: 1.3em .5em;
+        overflow-y: auto;
+        height: auto;
+        transition: 1s ease;
+        position: relative;
+        border-color: #000a;
+        overflow-x: hidden;
+        scale: (.975);
+        transition: 500ms;
+        
+        // active class
+        &.open {
+            background: #fff000;
+        }
+
+        // end of active class
+        // button
+        .field-btn {
+            position: absolute;
+            right: .5em;
+            top:0;
+            display: block;
+            width: 3em;
+            padding: .8em 2em;
+            border-radius: 15px;
+            // border: 1px solid green;
+            &::after, &::before {
+                position: absolute;
+                display: grid;
+                place-items: center;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                border-radius: 5px;
+            }
+            &::before {
+                content: 'open';
+            }
+            &::after {
+                content: 'close';
+                opacity: 0;
+            }
+
+            // button active
+            &.active {
+                &::before {opacity: 0;}
+                &::after {opacity: 1;}
+            }
+        }
+        // end of button
+        
+        legend {
+            margin: 0 1em;
+            font-size: 1.1em;
+            text-transform: capitalize;
+            background: variables.$overlay-blue-darker;
+            color: variables.$text-brand;
+            border-radius: 5px;
+            padding: .2em;
+            border: 1px solid #333a;
+            cursor: help;
+        }
+
+        .input-div {
+            width: 100%;
+            label {
+                margin-top: .5em;
+            }
+            input {
+                text-overflow: ellipsis;
+                margin: .1em 0;
+            }
+        }
+
+        &:hover {
+            background-color: variables.$background-active;
+            scale: 1;
+        }
+        // FEATURES
+        &.features {
+            h2 {
+                text-transform: uppercase;
+                font-family: variables.$font-sans;
+                text-align: center;
+            }
+            .feature-items {
+                padding: 1em 0;
+                
+                .item {
+                    background-color: #eee;
+                    display: flex;
+                    flex-direction: column;
+                    // padding: 5px;
+                    margin: 1em 0;
+
+                    input {
+                        width: 100%;
+                    }
+                    textarea {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .input-div {
+        display: flex;
+        flex-direction: column;
+        // border: 2px solid red;
+        // margin: .5em 0 1em;
+        margin: 0 0 1rem 0;
+        padding: .5em .1em;
+        transition: .3s ease;
+        position: relative;
+
+        // INFO SECTION
+        .info-section {
+            background-color: #fff;
+            color: variables.$text-light;
+            height: 0;
+            width: 80%;
+            padding: 1em 1em 2em;
+            margin: 0 .5em 1em;
+            overflow: hidden;
+            transition: .5s;
+            position: relative;
+            border-radius: 5px;
+            outline: 1px solid variables.$text-brand;
+            outline-offset: -2px;
+            cursor: help;
+            @media (max-width: 768px) {
+                width: 90%;
+            }
+
+            i {
+                color: #000;
+                background-color: variables.$text-brand;
+                border-radius: 50%;
+                position: absolute;
+                top: .5em;
+                font-size: 1.5em;;
+                cursor: pointer;
+                transition: .2s;
+                animation: pulse 2s infinite;
+
+                @keyframes pulse {
+                    50% {
+                        transform: scale(1.2);
+                    }
+                }
+            }
+
+            p {
+                margin: 2em 0;
+                padding: 1em 0;
+                line-height: 1.6;
+            }
+
+            &:hover {
+                height: 50vh;
+                overflow: auto;
+                background-color: variables.$background;
+                i {
+                    color: variables.$text-brand;
+                    background-color: variables.$background;
+                }
+            }
+
+            //  ACTIVE CLASS
+            &.active {
+                height: 50vh;
+                overflow: auto;
+                outline: 1px dashed variables.$text-brand;
+                background-color: variables.$background;
+
+                i {
+                    color: variables.$text-brand;
+                    background-color: variables.$background;
+                    animation: none;
+                    opacity: .8;
+                }
+            }
+        }
+
+        label {
+            // border: 1px solid green;
+            transform: translateY(-.5em);
+            text-transform: capitalize;
+            transition: .2s;
+            font-weight: 600;
+
+            span {
+                color: #000a;
+                text-transform: lowercase;
+            }
+        }
+
+        input, textarea {
+            outline: 2px solid variables.$text-brand;
+            outline: 2px solid lightgreen;
+            outline-offset: -3px;
+            padding: 0.75rem;
+            transition: .3s ease;
+            // background-color: variables.$overlay-blue-darker;
+            // color: variables.$text-brand;
+            border-radius: 5px;
+            border: none;
+            font-size: 1.1em;
+
+
+            &:focus {
+                color: abstracts.$text-light;
+                background-color: #333;
+                border: none;
+                outline: 2px dashed variables.$text-brand;
+                &::placeholder {
+                    color: variables.$text-brand;
+                }
+            }
+
+            &:invalid {
+                background-color: #161616;
+                color: abstracts.$text-light;
+                border: none;
+                outline: 2px dashed #dc143c;
+            } 
+        }
+
+        textarea {
+            padding: .5em;
+            font-size: 1.2em;
+            &:invalid {
+                background-color: variables.$invalid;
+            }
+        }
+
+        ::placeholder {
+            color: hsl(0, 0%, 64%);
+            opacity: .5;
+        }
+        // services div
+        &.services {
+            input {
+                margin: .5em 0;
+            }
+        }
+
+        // input hover state
+        &:hover {
+            label {
+                transform: translateY(0) translateX(.5em);
+            }
+        }
+    }
+
+    // submit button       
+    #submit-btn {
+        display: block;
+        width: 80%;
+        margin: 5vh auto;
+        padding: 1em;
+        cursor: pointer;
+        border-radius: 10px;
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 600;
+        letter-spacing: .05em;
+        border: none;
+        outline: none;
+        position: relative;
+        isolation: isolate;
+        color: variables.$text-brand;
+        transition: .3s ease;
+
+        // button box shadow
+        &::before, &::after {
+            position: absolute;
+            content: '';
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            transition: .3s ease;
+        }
+
+        &::before {
+            background-image: linear-gradient(0deg,  #5f0315, #dc143c);
+            box-shadow: inset 2px 2px 3px #fffa,
+                        inset -2px -2px 3px #000a,
+                        5px 5px 3px rgba(0, 0, 0, 0.130);
+        }
+        &::after {
+            background-image: linear-gradient(0deg, #dc143c, #5f0315);
+            opacity: 0;
+            box-shadow: inset 2px 2px 3px #000a,
+                        inset -2px -2px 3px #fffa,
+                        1px 3px 3px rgba(0, 0, 0, 0.220);
+        }
+
+        // button hover state
+        &:hover {
+            transform: scale(.98);
+            letter-spacing: 0;
+            &::before {opacity: 0;}
+            &::after {opacity: 1;}
+        }
+        // button focus state
+        &:focus {
+            transform: scale(.95);
+            &::before {opacity: 0;}
+            &::after {opacity: 1;}
+        }
+    }
+}
