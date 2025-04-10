@@ -635,7 +635,6 @@ form #submit-btn:focus::after {
   padding: 0;
 }
 #features p {
-  text-align: center;
   margin: 5vh auto 1em;
 }
 #features .feature-items {
@@ -684,12 +683,12 @@ form #submit-btn:focus::after {
   margin: 0 auto 1em;
   width: 50%;
   text-transform: capitalize;
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 3px 3px #000a;
+  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px rgba(0, 0, 0, 0.667), 0px 3px 3px rgba(0, 0, 0, 0.35);
 }
 #features .feature-container .item-description {
   color: #ddd;
   width: 100%;
-  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 3px 3px 3px #000a;
+  box-shadow: inset 2px 2px 2px #fffa, inset -2px -2px 2px #000a, 0px 3px 3px rgba(0, 0, 0, 0.35);
   outline: none;
   border: none;
 }
@@ -719,6 +718,15 @@ form #submit-btn:focus::after {
   box-sizing: border-box;
   scroll-behavior: smooth;
   scroll-padding-top: 10vh;
+}
+
+h1, h2, h3, h4, h5 h6 {
+  text-wrap: balance;
+}
+
+p {
+  text-wrap: pretty;
+  font-size: clamp(1rem, 2vw, 1.025rem);
 }
 
 body {

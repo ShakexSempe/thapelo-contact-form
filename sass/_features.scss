@@ -6,7 +6,7 @@
     // margin: 0 auto;
     padding: 0;
     p {
-        text-align: center;
+        // text-align: center;
         margin: 5vh auto 1em;
     }
     // border: 1px solid red;
@@ -78,8 +78,8 @@
             text-transform: capitalize;
             // background: $overlay;
             box-shadow: inset 2px 2px 2px #fffa,
-                        inset -2px -2px 2px #000a,
-                        3px 3px 3px #000a;
+                        inset -2px -2px 2px hsla(0, 0%, 0%, 0.667),
+                        0px 3px 3px hsla(0, 0%, 0%, 0.350);
         }
         .item-description {
             // background-color: $overlay-blue-light;
@@ -90,7 +90,7 @@
             // outline-offset: -3px;
             box-shadow: inset 2px 2px 2px #fffa,
             inset -2px -2px 2px #000a,
-            3px 3px 3px #000a;
+            0px 3px 3px hsla(0, 0%, 0%, 0.350);
             outline: none;
             border: none;
         }
