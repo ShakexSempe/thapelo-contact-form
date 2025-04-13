@@ -802,13 +802,33 @@ img {
 
 footer {
   width: 100%;
-  padding: 5vh 5vw;
   background-color: #15191e;
   color: #f4f4f4;
   text-align: center;
-  text-transform: capitalize;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+footer .footer-div {
+  padding: 1rem;
+}
+footer .footer-div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+footer .copyright {
+  background-color: #20262e;
 }
 footer p {
+  text-transform: capitalize;
   line-height: 1.8;
 }
 footer a {
