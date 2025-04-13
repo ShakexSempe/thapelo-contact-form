@@ -803,35 +803,18 @@ img {
 footer {
   width: 100%;
   padding: 5vh 5vw;
-  background-color: #20262e;
-  color: #ead2a1;
+  background-color: #15191e;
+  color: #f4f4f4;
   text-align: center;
   text-transform: capitalize;
 }
 footer p {
-  color: #f4f4f4;
-  margin-top: 0.5em;
+  line-height: 1.8;
 }
 footer a {
   color: #ead2a1;
   text-decoration: none;
   position: relative;
-}
-footer a::after {
-  position: absolute;
-  content: "";
-  left: 50%;
-  bottom: 0;
-  transform: translateX(-50%) translateY(200%);
-  width: 80%;
-  height: 2px;
-  opacity: 0;
-  background-color: #ead2a1;
-  transition: 0.2s;
-}
-footer a:hover::after {
-  opacity: 1;
-  transform: translateX(-50%) translateY(0%);
 }
 
 /*# sourceMappingURL=style.css.map */
