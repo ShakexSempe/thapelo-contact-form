@@ -38,8 +38,9 @@
 
 #nav .brand a {
   display: block;
+  text-transform: uppercase;
   text-decoration: none;
-  font-size: clamp(.985rem, 1.5vw, 1rem);
+  font-size: clamp(.95rem, 1.5vw, 1rem);
   width: max-content;
   padding: 0.125rem 0.5rem;
   color: #f4f4f4;
@@ -638,6 +639,7 @@ form #submit-btn:focus::after {
 
 .hero-cta-btns a.btn-secondary {
   background-color: #333;
+  background-color: #475462;
 }
 
 @font-face {
