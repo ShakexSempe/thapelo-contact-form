@@ -20,7 +20,7 @@ form {
         position: relative;
         border-color: #000a;
         overflow-x: hidden;
-        scale: (.975);
+        // scale: (.975);
         transition: 500ms;
         border-radius: abstracts.$border-radius-md;
         
@@ -78,9 +78,9 @@ form {
         }
 
         // FIELDSET HOVER CLASS
-        &:hover {
-            scale: 1;
-        }
+        // &:hover {
+        //     scale: 1;
+        // }
 
         // FEATURES
         &.features {

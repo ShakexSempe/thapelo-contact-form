@@ -239,7 +239,6 @@ form fieldset {
   position: relative;
   border-color: #000a;
   overflow-x: hidden;
-  scale: 0.975;
   transition: 500ms;
   border-radius: 0.5rem;
 }
@@ -303,10 +302,6 @@ form fieldset .input-div label {
 
 form fieldset .input-div input {
   text-overflow: ellipsis;
-}
-
-form fieldset:hover {
-  scale: 1;
 }
 
 form fieldset.features h2 {
