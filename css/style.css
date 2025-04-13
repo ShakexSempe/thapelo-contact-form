@@ -822,7 +822,7 @@ footer .footer-div ul {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.5rem;
 }
 footer .copyright {
   background-color: #20262e;
