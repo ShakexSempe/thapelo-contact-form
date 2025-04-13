@@ -4,25 +4,26 @@
 form {
     padding: 5vh 5vw;
     background-color: #fff;
+    max-width: 800px;
+    margin-inline: auto;
     
     fieldset {
-        @media (min-width: 768px) {
-            padding: 1.5em .5em;
-            border-radius: 5px;
-            min-height: auto;
-        }
-        margin: 5vh auto;
+        margin: 5vh auto 10vh;
         background-color: variables.$invalid;
         padding: 1.3em .5em;
         overflow-y: auto;
         height: auto;
         transition: 1s ease;
         position: relative;
-        border-color: #000a;
-        overflow-x: hidden;
-        // scale: (.975);
+        border-color: abstracts.$overlay-blue-light;
         transition: 500ms;
         border-radius: abstracts.$border-radius-md;
+        
+
+        @include abstracts.md {
+            min-height: auto;
+            padding: 1.5em .5em;
+        }
         
         // active class
         &.open {
@@ -113,12 +114,13 @@ form {
     
     legend {
         margin: 0 1em;
+        margin: 0 auto;
         font-size: 1.1em;
         text-transform: capitalize;
         background: variables.$overlay-blue-darker;
         color: variables.$text-brand;
-        border-radius: 5px;
-        padding: .2em;
+        border-radius: abstracts.$border-radius-sm;
+        padding: 0.25rem;
         border: 1px solid #333a;
         cursor: help;
     }
@@ -281,19 +283,24 @@ form {
         display: block;
         width: 80%;
         margin: 5vh auto;
-        padding: 1em;
-        cursor: pointer;
-        border-radius: 10px;
+        padding: 1rem;
+
+        color: variables.$text-brand;
         text-transform: uppercase;
         font-size: 1em;
         font-weight: 600;
         letter-spacing: .05em;
+        
         border: none;
-        outline: none;
+        border-radius: abstracts.$border-radius-md;
         position: relative;
+        transition: 300ms ease;
         isolation: isolate;
-        color: variables.$text-brand;
-        transition: .3s ease;
+        cursor: default;
+
+        @include abstracts.sm {
+            cursor: pointer;
+        }
 
         // button box shadow
         &::before, &::after {

@@ -227,27 +227,27 @@
 form {
   padding: 5vh 5vw;
   background-color: #fff;
+  max-width: 800px;
+  margin-inline: auto;
 }
 
 form fieldset {
-  margin: 5vh auto;
+  margin: 5vh auto 10vh;
   background-color: #f4f4f4;
   padding: 1.3em 0.5em;
   overflow-y: auto;
   height: auto;
   transition: 1s ease;
   position: relative;
-  border-color: #000a;
-  overflow-x: hidden;
+  border-color: #475462;
   transition: 500ms;
   border-radius: 0.5rem;
 }
 
 @media (min-width: 768px) {
   form fieldset {
-    padding: 1.5em 0.5em;
-    border-radius: 5px;
     min-height: auto;
+    padding: 1.5em 0.5em;
   }
 }
 form fieldset.open {
@@ -331,12 +331,13 @@ form fieldset.features .feature-items .item textarea {
 
 form legend {
   margin: 0 1em;
+  margin: 0 auto;
   font-size: 1.1em;
   text-transform: capitalize;
   background: #20262e;
   color: #ead2a1;
-  border-radius: 5px;
-  padding: 0.2em;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
   border: 1px solid #333a;
   cursor: help;
 }
@@ -476,21 +477,25 @@ form #submit-btn {
   display: block;
   width: 80%;
   margin: 5vh auto;
-  padding: 1em;
-  cursor: pointer;
-  border-radius: 10px;
+  padding: 1rem;
+  color: #ead2a1;
   text-transform: uppercase;
   font-size: 1em;
   font-weight: 600;
   letter-spacing: 0.05em;
   border: none;
-  outline: none;
+  border-radius: 0.5rem;
   position: relative;
+  transition: 300ms ease;
   isolation: isolate;
-  color: #ead2a1;
-  transition: 0.3s ease;
+  cursor: default;
 }
 
+@media (min-width: 576px) {
+  form #submit-btn {
+    cursor: pointer;
+  }
+}
 form #submit-btn::before, form #submit-btn::after {
   position: absolute;
   content: "";
@@ -542,6 +547,7 @@ form #submit-btn:focus::after {
 }
 
 .hero {
+  position: relative;
   height: 95vh;
   height: 95dvh;
   position: relative;
@@ -571,6 +577,7 @@ form #submit-btn:focus::after {
 
 .hero p {
   margin: 1.5rem 0;
+  position: relative;
 }
 
 .hero p a {

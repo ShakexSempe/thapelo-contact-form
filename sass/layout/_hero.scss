@@ -1,7 +1,7 @@
 @use '../abstracts';
 
 .hero {
-    // border: 2px solid red;
+    position: relative;
     // padding: 5vh 5vw 0;
     height: 95vh;
     height: 95dvh;
@@ -35,7 +35,7 @@
 
     p {
         margin: 1.5rem 0;
-
+        position: relative;
         a {
             color: abstracts.$text-dark;
             transition: .2s;
