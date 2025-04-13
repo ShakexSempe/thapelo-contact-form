@@ -34,8 +34,10 @@
             padding: 0.125rem 0.5rem;
             color: abstracts.$text-light;
             border: 1px solid;
+            border-right-color: transparent;
+            border-left-color: transparent;
             // border: 2px solid abstracts.$brand;
-            border-radius: abstracts.$border-radius-sm;
+            border-radius: abstracts.$border-radius-md;
             cursor: default;
             transition: 200ms;
             img {
@@ -103,21 +105,26 @@
         
         // active menu
         @media (max-width: 768px){
-        &.active {
-            right: -5vw;
-
             ul {
                 border: 1px solid abstracts.$brand;
                 width: 95%;
-                padding: 1em .5em;
+                padding: 1em;
+                
                 display: flex;
                 flex-direction: column;
                 align-items: right;
                 justify-content: center;
+                gap: 1rem;
+
+                border-right-color: transparent;
+                border-left-color: transparent;
+                border-radius: abstracts.$border-radius-md;
 
                 li {
-                    background: abstracts.$overlay-blue-dark;
+                    background: abstracts.$overlay-blue-light;
+                    border-radius: abstracts.$border-radius-sm;
                     padding: auto;
+                    margin: 0;
 
                     i {
                         margin: 0 ;
@@ -126,7 +133,11 @@
                     }
                 }
             }
-        }
+
+            &.active {
+                right: -5vw;
+                
+            }
     }
 
         // desktop nav-list
@@ -188,8 +199,8 @@
 
  // hamburger display
     .nav-toggle {
-        // border: 1px solid abstracts.$text-brand;
         border: 1px solid abstracts.$brand;
+        border: 1px solid transparent;
         border-radius: 50%;
         position: absolute;
         right: 1rem;
