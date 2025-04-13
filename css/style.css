@@ -547,6 +547,7 @@ form #submit-btn:focus::after {
   position: relative;
   display: grid;
   background-color: #f4f4f4;
+  text-align: center;
 }
 
 .hero .hero-content {
@@ -556,20 +557,20 @@ form #submit-btn:focus::after {
 .hero h1 {
   text-transform: capitalize;
   font-size: clamp(2rem, 5vw, 2rem);
-  margin: 1rem 0;
+  margin: 1rem 0 0.5rem;
 }
 
 .hero h2 {
-  color: #333;
+  color: #475462;
   font-size: clamp(1.25rem, 2.5vw, 1.85rem);
-  text-wrap: balance;
+}
+
+.hero h2::first-letter {
+  text-transform: capitalize;
 }
 
 .hero p {
-  text-wrap: pretty;
-  font-size: 1em;
-  font-weight: 500;
-  margin: 5vh auto 1em;
+  margin: 1.5rem 0;
 }
 
 .hero p a {
@@ -596,8 +597,9 @@ form #submit-btn:focus::after {
 
 .hero-cta-btns {
   display: flex;
+  justify-content: center;
   column-gap: 1rem;
-  margin: 1.5rem 0 1rem;
+  margin: 1rem 0;
 }
 
 @media (min-width: 576px) {
@@ -613,6 +615,7 @@ form #submit-btn:focus::after {
   text-transform: capitalize;
   background-color: #15191e;
   color: #f4f4f4;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15);
 }
 
 .hero-cta-btns a.btn-secondary {
@@ -726,11 +729,11 @@ p {
 
 body {
   min-height: 100vh;
-  font-size: 16px;
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   position: relative;
   background-color: #f4f4f4;
+  color: #15191e;
 }
 
 img {

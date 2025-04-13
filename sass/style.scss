@@ -1,8 +1,8 @@
 @import './abstracts/';
 @import './layout/';
 @import 'features';
-// @import 'form';
 @import 'variables';
+
 
 * {
     margin: 0;
@@ -22,14 +22,12 @@ p {
 }
 
 body {
-    // width: 100vw;
-    // border: 1px solid red;
     min-height: 100vh;
-    font-size: 16px;
     overflow-x: hidden;
     font-family: $font-sans;
     position: relative;
     background-color: $background-light;
+    color: $overlay-blue-darkest;
 }
 
 img {
