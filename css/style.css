@@ -585,13 +585,13 @@ form #submit-btn:focus::after {
 
 .hero .hero-content h1 {
   text-transform: capitalize;
-  font-size: clamp(2rem, 5vw, 2rem);
+  font-size: clamp(2rem, 5vw, 2.5rem);
   margin: 1rem 0 0.5rem;
 }
 
 .hero .hero-content h2 {
   color: #475462;
-  font-size: clamp(1.25rem, 2.5vw, 1.85rem);
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
 }
 
 .hero .hero-content h2::first-letter {
