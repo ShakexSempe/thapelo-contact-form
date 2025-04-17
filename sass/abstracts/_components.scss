@@ -1,0 +1,52 @@
+@use '../abstracts/mixin';
+
+.btn-bg {
+    // border: 3px solid red;
+
+    position: relative;
+    isolation: isolate;
+    transition: all 250ms;
+
+    cursor: default;
+
+    @include mixin.sm {
+        cursor: pointer;
+    }
+
+    &::before, &::after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        // background: red;
+        z-index: -1;
+        transition: inherit;
+        background: inherit;
+        border-radius: inherit;
+    }
+
+    &::before {
+        box-shadow: 0 0.5rem 0.5rem hsla(0, 0%, 0%, 0.25),
+                    inset 0.15rem 0.15rem 0.15rem #fff4,
+                    inset -0.15rem -0.15rem 0.25rem #0008;
+    }
+    
+    &::after {
+        opacity: 0;
+        box-shadow: 0 0.25rem 0.25rem hsla(0, 0%, 0%, 0.45),
+        inset 0.15rem 0.15rem 0.15rem #0008;
+    } 
+
+    &:hover, &:focus {
+        scale: .975;
+        &::after {
+            opacity: 1;
+        }
+        &::before {
+            opacity: 0;
+        }
+    }
+
+    &:active {
+        scale: .965;
+    }
+}
