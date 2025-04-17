@@ -660,9 +660,9 @@ form #submit-btn:focus::after {
 
 .hero {
   position: relative;
-  height: 95vh;
   height: 95dvh;
   height: 100dvh;
+  height: 95vh;
   position: relative;
   display: grid;
   background-color: #f4f4f4;
