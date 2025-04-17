@@ -662,6 +662,7 @@ form #submit-btn:focus::after {
   position: relative;
   height: 95vh;
   height: 95dvh;
+  height: 100dvh;
   position: relative;
   display: grid;
   background-color: #f4f4f4;
@@ -674,7 +675,7 @@ form #submit-btn:focus::after {
   }
 }
 .hero .hero-content {
-  padding: 0 5vw;
+  padding: 0 5vw 0.5rem;
 }
 
 .hero .hero-content h1 {
