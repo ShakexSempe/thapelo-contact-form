@@ -87,12 +87,16 @@
         border-radius: 0.5rem;
         text-decoration: none;
         text-transform: capitalize;
-        background-color: abstracts.$overlay-blue-darkest;
+        // background-color: abstracts.$overlay-blue-darkest;
+        background: linear-gradient(0deg, abstracts.$overlay-blue-darkest,
+                                            abstracts.$overlay-blue-dark, 
+                                            abstracts.$overlay-blue-darkest);
         color: abstracts.$text-light;
 
         &.btn-secondary {
-            background-color: abstracts.$btn-secondary;
-            background-color: abstracts.$overlay-blue-light;
+            // background-color: abstracts.$overlay-blue-light;
+            background: abstracts.$btn-secondary;
+            color: abstracts.$text-dark;
         }
     }
 
