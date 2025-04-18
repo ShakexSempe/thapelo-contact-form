@@ -2,26 +2,24 @@
 
 .hero {
     position: relative;
-    // padding: 5vh 5vw 0;
-    height: 95dvh;
     height: 100dvh;
     height: 95vh;
-    position: relative;
     display: grid;
-    background-color: abstracts.$background-gray;
     text-align: center;
+    background-color: abstracts.$background-gray;
+    padding-bottom: 5vh;
 
     @include abstracts.md {
         padding: 0 5vw;
     }
 
     .hero-content {
-        padding: 0 5vw .5rem;
+        padding: 0.5rem 5vw 0.5rem;
         
         h1 {
             text-transform: capitalize;
             font-size: abstracts.$font-clamp-lg;
-            margin: 1rem 0 0.5rem;
+            margin-bottom: 0.5rem;
         }
     
         h2 {
@@ -56,8 +54,8 @@
 .hero-img {
     margin: 0 auto;
 
-    height: 45vh;
     width: 100%;
+    height: 45vh;
     max-height: 400px;
 
     border-radius: abstracts.$border-radius-md;

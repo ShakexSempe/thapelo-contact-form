@@ -23,7 +23,7 @@
 }
 
 .btn-bg::before {
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25), inset 0.15rem 0.15rem 0.15rem #fff4, inset -0.15rem -0.15rem 0.25rem #0008;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2), inset 0.15rem 0.15rem 0.15rem #fff4, inset -0.15rem -0.15rem 0.25rem #0008;
 }
 
 .btn-bg::after {
@@ -31,20 +31,29 @@
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.45), inset 0.15rem 0.15rem 0.15rem #0008;
 }
 
-.btn-bg:hover, .btn-bg:focus {
-  scale: 0.975;
+@media (min-width: 576px) {
+  .btn-bg:hover, .btn-bg:focus {
+    scale: 0.975;
+  }
+
+  .btn-bg:hover::after, .btn-bg:focus::after {
+    opacity: 1;
+  }
+
+  .btn-bg:hover::before, .btn-bg:focus::before {
+    opacity: 0;
+  }
+}
+.btn-bg:active {
+  scale: 0.965;
 }
 
-.btn-bg:hover::after, .btn-bg:focus::after {
+.btn-bg:active::after {
   opacity: 1;
 }
 
-.btn-bg:hover::before, .btn-bg:focus::before {
+.btn-bg:active::before {
   opacity: 0;
-}
-
-.btn-bg:active {
-  scale: 0.965;
 }
 
 @font-face {
@@ -76,7 +85,7 @@
 }
 
 .btn-bg::before {
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25), inset 0.15rem 0.15rem 0.15rem #fff4, inset -0.15rem -0.15rem 0.25rem #0008;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2), inset 0.15rem 0.15rem 0.15rem #fff4, inset -0.15rem -0.15rem 0.25rem #0008;
 }
 
 .btn-bg::after {
@@ -84,20 +93,29 @@
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.45), inset 0.15rem 0.15rem 0.15rem #0008;
 }
 
-.btn-bg:hover, .btn-bg:focus {
-  scale: 0.975;
+@media (min-width: 576px) {
+  .btn-bg:hover, .btn-bg:focus {
+    scale: 0.975;
+  }
+
+  .btn-bg:hover::after, .btn-bg:focus::after {
+    opacity: 1;
+  }
+
+  .btn-bg:hover::before, .btn-bg:focus::before {
+    opacity: 0;
+  }
+}
+.btn-bg:active {
+  scale: 0.965;
 }
 
-.btn-bg:hover::after, .btn-bg:focus::after {
+.btn-bg:active::after {
   opacity: 1;
 }
 
-.btn-bg:hover::before, .btn-bg:focus::before {
+.btn-bg:active::before {
   opacity: 0;
-}
-
-.btn-bg:active {
-  scale: 0.965;
 }
 
 @font-face {
@@ -660,13 +678,12 @@ form #submit-btn:focus::after {
 
 .hero {
   position: relative;
-  height: 95dvh;
   height: 100dvh;
   height: 95vh;
-  position: relative;
   display: grid;
-  background-color: #f4f4f4;
   text-align: center;
+  background-color: #f4f4f4;
+  padding-bottom: 5vh;
 }
 
 @media (min-width: 768px) {
@@ -675,18 +692,18 @@ form #submit-btn:focus::after {
   }
 }
 .hero .hero-content {
-  padding: 0 5vw 0.5rem;
+  padding: 0.5rem 5vw 0.5rem;
 }
 
 .hero .hero-content h1 {
   text-transform: capitalize;
-  font-size: clamp(2rem, 5vw, 2.5rem);
-  margin: 1rem 0 0.5rem;
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 0.5rem;
 }
 
 .hero .hero-content h2 {
   color: #475462;
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
 }
 
 .hero .hero-content h2::first-letter {
@@ -709,8 +726,8 @@ form #submit-btn:focus::after {
 
 .hero-img {
   margin: 0 auto;
-  height: 45vh;
   width: 100%;
+  height: 45vh;
   max-height: 400px;
   border-radius: 0.5rem;
   overflow: hidden;
@@ -772,7 +789,7 @@ form #submit-btn:focus::after {
 }
 
 .btn-bg::before {
-  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.25), inset 0.15rem 0.15rem 0.15rem #fff4, inset -0.15rem -0.15rem 0.25rem #0008;
+  box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.2), inset 0.15rem 0.15rem 0.15rem #fff4, inset -0.15rem -0.15rem 0.25rem #0008;
 }
 
 .btn-bg::after {
@@ -780,20 +797,29 @@ form #submit-btn:focus::after {
   box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.45), inset 0.15rem 0.15rem 0.15rem #0008;
 }
 
-.btn-bg:hover, .btn-bg:focus {
-  scale: 0.975;
+@media (min-width: 576px) {
+  .btn-bg:hover, .btn-bg:focus {
+    scale: 0.975;
+  }
+
+  .btn-bg:hover::after, .btn-bg:focus::after {
+    opacity: 1;
+  }
+
+  .btn-bg:hover::before, .btn-bg:focus::before {
+    opacity: 0;
+  }
+}
+.btn-bg:active {
+  scale: 0.965;
 }
 
-.btn-bg:hover::after, .btn-bg:focus::after {
+.btn-bg:active::after {
   opacity: 1;
 }
 
-.btn-bg:hover::before, .btn-bg:focus::before {
+.btn-bg:active::before {
   opacity: 0;
-}
-
-.btn-bg:active {
-  scale: 0.965;
 }
 
 @font-face {

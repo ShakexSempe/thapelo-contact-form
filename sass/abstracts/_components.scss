@@ -25,7 +25,7 @@
     }
 
     &::before {
-        box-shadow: 0 0.5rem 0.5rem hsla(0, 0%, 0%, 0.25),
+        box-shadow: 0 0.5rem 0.5rem hsla(0, 0%, 0%, 0.2),
                     inset 0.15rem 0.15rem 0.15rem #fff4,
                     inset -0.15rem -0.15rem 0.25rem #0008;
     }
@@ -36,17 +36,28 @@
         inset 0.15rem 0.15rem 0.15rem #0008;
     } 
 
-    &:hover, &:focus {
-        scale: .975;
+    @include mixin.sm {
+        
+        &:hover, &:focus {
+            scale: .975;
+            &::after {
+                opacity: 1;
+            }
+            &::before {
+                opacity: 0;
+            }
+        }
+        
+    }
+
+
+    &:active {
+        scale: .965;
         &::after {
             opacity: 1;
         }
         &::before {
             opacity: 0;
         }
-    }
-
-    &:active {
-        scale: .965;
     }
 }
