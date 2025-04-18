@@ -340,16 +340,8 @@
 }
 
 .nav-toggle.active {
-  transform: scale(0.95);
-  transition: 0.5s ease;
-}
-
-.nav-toggle.active .bar::before {
-  transform: translateY(0);
-}
-
-.nav-toggle.active .bar::after {
-  transform: translateY(0);
+  rotate: 30deg;
+  transition: 500ms ease;
 }
 
 @media (min-width: 768px) {
