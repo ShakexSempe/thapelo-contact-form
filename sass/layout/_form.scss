@@ -115,10 +115,10 @@ form {
     legend {
         margin: 0 1em;
         margin: 0 auto;
-        font-size: 1.1em;
+        font-size: abstracts.$font-clamp-md;
         text-transform: capitalize;
         background: variables.$overlay-blue-darker;
-        color: variables.$text-brand;
+        color: variables.$text-light;
         border-radius: abstracts.$border-radius-sm;
         padding: 0.25rem;
         border: 1px solid #333a;
@@ -281,67 +281,79 @@ form {
     #submit-btn {
         display: block;
         width: 80%;
-        margin: 5vh auto;
+        margin: 1.5rem auto;
         padding: 1rem;
 
-        color: variables.$text-brand;
+        color: variables.$text-light;
         text-transform: uppercase;
-        font-size: 1em;
+        font-size: abstracts.$font-clamp-sm;
         font-weight: 600;
-        letter-spacing: .05em;
+        // letter-spacing: .05em;
         
         border: none;
         border-radius: abstracts.$border-radius-md;
         position: relative;
-        transition: 300ms ease;
         isolation: isolate;
         cursor: default;
+        transition: 250ms ease;
 
         @include abstracts.sm {
             cursor: pointer;
         }
 
-        // button box shadow
-        &::before, &::after {
-            position: absolute;
-            content: '';
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            z-index: -1;
-            border-radius: 10px;
-            border: none;
-            outline: none;
-            transition: .3s ease;
+        &.btn-bg {
+            // background-color: red;
+            &::before {
+                background-image: linear-gradient(0deg,  #5f0315, #dc143c);
+            }
+            &::after {
+                background:#5f0315;
+            }
+
+
         }
 
-        &::before {
-            background-image: linear-gradient(0deg,  #5f0315, #dc143c);
-            box-shadow: inset 2px 2px 3px #fffa,
-                        inset -2px -2px 3px #000a,
-                        5px 5px 3px rgba(0, 0, 0, 0.130);
-        }
-        &::after {
-            background-image: linear-gradient(0deg, #dc143c, #5f0315);
-            opacity: 0;
-            box-shadow: inset 2px 2px 3px #000a,
-                        inset -2px -2px 3px #fffa,
-                        1px 3px 3px rgba(0, 0, 0, 0.220);
-        }
+        // button box shadow
+        // &::before, &::after {
+        //     position: absolute;
+        //     content: '';
+        //     top: 0;
+        //     left: 0;
+        //     width: 100%;
+        //     height: 100%;
+        //     z-index: -1;
+        //     border-radius: 10px;
+        //     border: none;
+        //     outline: none;
+        //     transition: .3s ease;
+        // }
+
+        // &::before {
+        //     background-image: linear-gradient(0deg,  #5f0315, #dc143c);
+        //     box-shadow: inset 2px 2px 3px #fff8,
+        //                 inset -2px -2px 3px #000a,
+        //                 5px 5px 3px rgba(0, 0, 0, 0.130);
+        // }
+        // &::after {
+        //     background-image: linear-gradient(0deg, #dc143c, #5f0315);
+        //     opacity: 0;
+        //     box-shadow: inset 2px 2px 3px #000a,
+        //                 inset -2px -2px 3px #fffa,
+        //                 1px 3px 3px rgba(0, 0, 0, 0.220);
+        // }
 
         // button hover state
-        &:hover {
-            transform: scale(.98);
-            letter-spacing: 0;
-            &::before {opacity: 0;}
-            &::after {opacity: 1;}
-        }
-        // button focus state
-        &:focus {
-            transform: scale(.95);
-            &::before {opacity: 0;}
-            &::after {opacity: 1;}
-        }
+        // &:hover {
+        //     transform: scale(.98);
+        //     letter-spacing: 0;
+        //     &::before {opacity: 0;}
+        //     &::after {opacity: 1;}
+        // }
+        // // button focus state
+        // &:focus {
+        //     transform: scale(.95);
+        //     &::before {opacity: 0;}
+        //     &::after {opacity: 1;}
+        // }
     }
 }

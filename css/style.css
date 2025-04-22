@@ -475,10 +475,10 @@ form fieldset.features .feature-items .item textarea {
 form legend {
   margin: 0 1em;
   margin: 0 auto;
-  font-size: 1.1em;
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
   text-transform: capitalize;
   background: #20262e;
-  color: #ead2a1;
+  color: #f4f4f4;
   border-radius: 0.25rem;
   padding: 0.25rem;
   border: 1px solid #333a;
@@ -618,19 +618,18 @@ form .input-div:hover label {
 form #submit-btn {
   display: block;
   width: 80%;
-  margin: 5vh auto;
+  margin: 1.5rem auto;
   padding: 1rem;
-  color: #ead2a1;
+  color: #f4f4f4;
   text-transform: uppercase;
-  font-size: 1em;
+  font-size: clamp(1rem, 2vw, 1.025rem);
   font-weight: 600;
-  letter-spacing: 0.05em;
   border: none;
   border-radius: 0.5rem;
   position: relative;
-  transition: 300ms ease;
   isolation: isolate;
   cursor: default;
+  transition: 250ms ease;
 }
 
 @media (min-width: 576px) {
@@ -638,54 +637,12 @@ form #submit-btn {
     cursor: pointer;
   }
 }
-form #submit-btn::before, form #submit-btn::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  border-radius: 10px;
-  border: none;
-  outline: none;
-  transition: 0.3s ease;
-}
-
-form #submit-btn::before {
+form #submit-btn.btn-bg::before {
   background-image: linear-gradient(0deg, #5f0315, #dc143c);
-  box-shadow: inset 2px 2px 3px #fffa, inset -2px -2px 3px #000a, 5px 5px 3px rgba(0, 0, 0, 0.13);
 }
 
-form #submit-btn::after {
-  background-image: linear-gradient(0deg, #dc143c, #5f0315);
-  opacity: 0;
-  box-shadow: inset 2px 2px 3px #000a, inset -2px -2px 3px #fffa, 1px 3px 3px rgba(0, 0, 0, 0.22);
-}
-
-form #submit-btn:hover {
-  transform: scale(0.98);
-  letter-spacing: 0;
-}
-
-form #submit-btn:hover::before {
-  opacity: 0;
-}
-
-form #submit-btn:hover::after {
-  opacity: 1;
-}
-
-form #submit-btn:focus {
-  transform: scale(0.95);
-}
-
-form #submit-btn:focus::before {
-  opacity: 0;
-}
-
-form #submit-btn:focus::after {
-  opacity: 1;
+form #submit-btn.btn-bg::after {
+  background: #5f0315;
 }
 
 .hero {
