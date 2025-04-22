@@ -61,17 +61,17 @@
 
     // nav-list mobile first**
     .nav-list {
-        border: none;
         background-color: abstracts.$overlay-blue-darker;
-        color: #f4f4f4;
+        color: abstracts.$text-light;
         width: 100%;
         min-height: 100vh;
         position: absolute;
         right: -110%;
         top: abstracts.$nav-height;
-        transition: .5s;
-        padding: 15vh .5em 0;
+        transition: 500ms;
+        padding: 15vh 5vw 0;
         z-index: -2;
+
         ul {
             list-style: none;
             
@@ -85,12 +85,16 @@
                     display: block;
                     text-decoration: none;
                     text-transform: capitalize;
-                    color: #fff000;
-                    color: #f4f4f4;
+                    color: abstracts.$text-light;
                     width: 100%;
-                    // border: 1px solid green;
-                    // margin-right: auto;
+                    cursor: default;
+
+                    &:hover {
+                        color: abstracts.$text-brand;
+                    }
+
                 }
+
                 i {
                     // border: 1px solid yellow;
                     // margin-right: .5em;
@@ -107,6 +111,7 @@
         @media (max-width: 768px){
             ul {
                 border: 1px solid abstracts.$brand;
+                border: 1px solid #fff7;
                 width: 95%;
                 padding: 1em;
                 
@@ -122,16 +127,35 @@
 
                 li {
                     background: abstracts.$overlay-blue-light;
-                    border-radius: abstracts.$border-radius-sm;
-                    padding: auto;
+                    border-radius: abstracts.$border-radius-md;
+                    padding: 0;
                     margin: 0;
+                    border: 1px solid transparent;
+                    transition: 150ms;
+
+                    a {
+                        padding: 0.5rem 0.25rem;
+                    }
+
 
                     i {
                         margin: 0 ;
                         flex-basis: 15%;
+                        transition: 250ms;
                         // border: 1px solid red;
                     }
+
+                    &:hover {
+                        background: transparent;
+                        border-top-color: abstracts.$border-light;
+                        border-bottom-color: abstracts.$border-light;
+
+                        i {
+                            translate: 0.25rem;
+                        }
+                    }
                 }
+
             }
 
             &.active {
@@ -236,13 +260,13 @@
             }
         }
 
-        &:hover {
-            transform: scale(.95);
-        }
+        // &:hover {
+        //     transform: scale(.95);
+        // }
 
-        &:active {
-            transform: scale(.9)
-        }
+        // &:active {
+        //     // transform: scale(.95);
+        // }
 
         &.active {
             // transform: scale(.95) rotate(30deg);

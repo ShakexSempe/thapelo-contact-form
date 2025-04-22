@@ -182,7 +182,6 @@
   }
 }
 #nav .nav-list {
-  border: none;
   background-color: #1f252d;
   color: #f4f4f4;
   width: 100%;
@@ -190,8 +189,8 @@
   position: absolute;
   right: -110%;
   top: 7vh;
-  transition: 0.5s;
-  padding: 15vh 0.5em 0;
+  transition: 500ms;
+  padding: 15vh 5vw 0;
   z-index: -2;
 }
 
@@ -209,9 +208,13 @@
   display: block;
   text-decoration: none;
   text-transform: capitalize;
-  color: #fff000;
   color: #f4f4f4;
   width: 100%;
+  cursor: default;
+}
+
+#nav .nav-list ul li a:hover {
+  color: skyblue;
 }
 
 #nav .nav-list ul li i {
@@ -224,6 +227,7 @@
 @media (max-width: 768px) {
   #nav .nav-list ul {
     border: 1px solid #f0f2f5;
+    border: 1px solid #fff7;
     width: 95%;
     padding: 1em;
     display: flex;
@@ -238,14 +242,31 @@
 
   #nav .nav-list ul li {
     background: #475462;
-    border-radius: 0.25rem;
-    padding: auto;
+    border-radius: 0.5rem;
+    padding: 0;
     margin: 0;
+    border: 1px solid transparent;
+    transition: 150ms;
+  }
+
+  #nav .nav-list ul li a {
+    padding: 0.5rem 0.25rem;
   }
 
   #nav .nav-list ul li i {
     margin: 0;
     flex-basis: 15%;
+    transition: 250ms;
+  }
+
+  #nav .nav-list ul li:hover {
+    background: transparent;
+    border-top-color: #fff8;
+    border-bottom-color: #fff8;
+  }
+
+  #nav .nav-list ul li:hover i {
+    translate: 0.25rem;
   }
 
   #nav .nav-list.active {
@@ -329,14 +350,6 @@
 
 .nav-toggle .bar:after {
   transform: translateY(-0.3em);
-}
-
-.nav-toggle:hover {
-  transform: scale(0.95);
-}
-
-.nav-toggle:active {
-  transform: scale(0.9);
 }
 
 .nav-toggle.active {
