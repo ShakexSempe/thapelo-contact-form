@@ -113,15 +113,18 @@ form {
     }
     
     legend {
-        margin: 0 1em;
         margin: 0 auto;
-        font-size: abstracts.$font-clamp-md;
+        padding: 0.25rem;
+
+        font-size: abstracts.$font-clamp-sm;
         text-transform: capitalize;
+        
         background: variables.$overlay-blue-darker;
         color: variables.$text-light;
+        
         border-radius: abstracts.$border-radius-sm;
-        padding: 0.25rem;
         border: 1px solid #333a;
+        
         cursor: help;
     }
 
