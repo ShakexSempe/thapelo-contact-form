@@ -246,18 +246,20 @@
 
         &.active {
             // transform: scale(.95) rotate(30deg);
-            rotate: 30deg;
+            // rotate: 30deg;
             transition: 500ms ease;
 
-            // .bar {
-            //     &::before {
-            //         transform: translateY(0);
-            //     }
+            .bar {
+                &::before {
+                    // transform: translateY(0);
+                    transform: translateX(-0.25rem) translateY(.3em);
+                }
 
-            //     &::after {
-            //         transform: translateY(0);
-            //     }
-            // }
+                &::after {
+                    // transform: translateY(0);
+                    transform: translateX(0.25rem) translateY(-.3em);
+                }
+            }
 
         }
 
