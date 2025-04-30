@@ -727,7 +727,7 @@ form #submit-btn.btn-bg::after {
 
 .hero-content .hero-title h2 {
   color: #475462;
-  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
 }
 
 .hero-content .hero-title h2::first-letter {
@@ -774,7 +774,7 @@ form #submit-btn.btn-bg::after {
 }
 
 .hero-cta-btns a.btn-secondary {
-  background: #e6e6e6;
+  background: white;
   color: #000;
 }
 
