@@ -13,12 +13,11 @@ form {
         background-color: variables.$invalid;
         background-color: #fff;
         padding: 1.3em .5em;
+        padding: 0.5rem;
         overflow-y: auto;
         height: auto;
-        transition: 1s ease;
         position: relative;
         // border: none;
-        // border-top: 1px solid abstracts.$overlay-blue-light;
         border: 1px solid abstracts.$overlay-blue-dark;
         transition: 500ms;
         border-radius: abstracts.$border-radius-md;
@@ -26,8 +25,7 @@ form {
         // box-shadow: abstracts.$box-shadow-item-md;
         
         @include abstracts.md {
-            min-height: auto;
-            padding: 1.5em .5em;
+            padding: 1rem;
         }
     
 
@@ -120,8 +118,8 @@ form {
         font-size: abstracts.$font-clamp-sm;
         text-transform: capitalize;
         
-        background: variables.$overlay-blue-darker;
-        color: variables.$text-light;
+        background: abstracts.$overlay-blue-darker;
+        color: abstracts.$text-light;
         
         border-radius: abstracts.$border-radius-sm;
         border: 1px solid #333a;

@@ -419,9 +419,9 @@ form fieldset {
   background-color: #f4f4f4;
   background-color: #fff;
   padding: 1.3em 0.5em;
+  padding: 0.5rem;
   overflow-y: auto;
   height: auto;
-  transition: 1s ease;
   position: relative;
   border: 1px solid #29323d;
   transition: 500ms;
@@ -431,8 +431,7 @@ form fieldset {
 
 @media (min-width: 768px) {
   form fieldset {
-    min-height: auto;
-    padding: 1.5em 0.5em;
+    padding: 1rem;
   }
 }
 form fieldset .field-btn {
@@ -515,7 +514,7 @@ form legend {
   padding: 0.25rem;
   font-size: clamp(1rem, 2vw, 1.15rem);
   text-transform: capitalize;
-  background: #20262e;
+  background: #1f252d;
   color: #f4f4f4;
   border-radius: 0.25rem;
   border: 1px solid #333a;
