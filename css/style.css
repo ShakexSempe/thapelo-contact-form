@@ -513,7 +513,7 @@ form fieldset.features .feature-items .item textarea {
 form legend {
   margin: 0 auto;
   padding: 0.25rem;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.15rem);
   text-transform: capitalize;
   background: #20262e;
   color: #f4f4f4;
@@ -621,7 +621,7 @@ form .input-div input, form .input-div textarea {
   transition: 0.3s ease;
   border-radius: 5px;
   border: none;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.15rem);
 }
 
 form .input-div input:focus, form .input-div textarea:focus {
@@ -659,7 +659,7 @@ form #submit-btn {
   padding: 1rem;
   color: #f4f4f4;
   text-transform: uppercase;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.15rem);
   font-weight: 600;
   border: none;
   border-radius: 0.5rem;
@@ -716,6 +716,8 @@ form #submit-btn.btn-bg::after {
 
 .hero-content .hero-title {
   margin-bottom: 1rem;
+  max-width: 800px;
+  margin-inline: auto;
 }
 
 .hero-content .hero-title h1 {
@@ -726,7 +728,7 @@ form #submit-btn.btn-bg::after {
 
 .hero-content .hero-title h2 {
   color: #475462;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(1.25rem, 2.5vw, 1.5rem);
 }
 
 .hero-content .hero-title h2::first-letter {
@@ -765,7 +767,7 @@ form #submit-btn.btn-bg::after {
   width: max-content;
   padding: 0.5rem;
   border-radius: 0.5rem;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.15rem);
   text-decoration: none;
   text-transform: capitalize;
   background: linear-gradient(0deg, #15191e, #29323d, #15191e);
@@ -954,7 +956,7 @@ h1, h2, h3, h4, h5 h6 {
 
 p {
   text-wrap: pretty;
-  font-size: clamp(1rem, 2.5vw, 1.25rem);
+  font-size: clamp(1rem, 2vw, 1.15rem);
 }
 
 body {
@@ -980,7 +982,6 @@ img {
 @media (min-width: 768px) {
   #container {
     padding: 0 5vw;
-    background-color: red;
   }
 }
 @media (max-width: 768px) {
