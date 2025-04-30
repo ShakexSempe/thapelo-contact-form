@@ -26,6 +26,7 @@ body {
     overflow-x: hidden;
     font-family: $font-sans;
     position: relative;
+
     background-color: $background-light;
     color: $overlay-blue-darkest;
 }
@@ -37,15 +38,17 @@ img {
 
 
 #container {
-    @media (min-width: 768px){
+
+    @include md {
         padding: 0 5vw;
+        background-color: red;
     }
-    // margin: 5vh 0;
+
     width: 100%;
     overflow-x: hidden;
-    // padding: .5em;
     position: relative;
-    transition: .5s;
+    transition: 250ms;
+
     // background dim when nav open
     @media (max-width: 768px) {
         &::after {
@@ -57,26 +60,21 @@ img {
             height: 100%;
             background: $overlay-blue-dark;
             opacity: 0;
-            transition: .5s;
+            transition: 500ms;
             z-index: -5;
         }
+
         &.dim {
+
             &::after {
                 opacity: .5;
                 z-index: 5;
             }
-        }
-    }
-    
-    
 
-    #about {
-        textarea {
-            &:focus {
-                background: $overlay-blue-light;
-            }
         }
+
     }
+    
 }
 
 footer {

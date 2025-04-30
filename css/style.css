@@ -4,12 +4,12 @@
   position: relative;
   isolation: isolate;
   transition: all 250ms;
-  cursor: default;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 450px) {
   .btn-bg {
     cursor: pointer;
+    cursor: default;
   }
 }
 .btn-bg::before, .btn-bg::after {
@@ -70,7 +70,7 @@
   cursor: default;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 450px) {
   .top-btn {
     cursor: pointer;
   }
@@ -85,12 +85,12 @@
   position: relative;
   isolation: isolate;
   transition: all 250ms;
-  cursor: default;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 450px) {
   .btn-bg {
     cursor: pointer;
+    cursor: default;
   }
 }
 .btn-bg::before, .btn-bg::after {
@@ -151,7 +151,7 @@
   cursor: default;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 450px) {
   .top-btn {
     cursor: pointer;
   }
@@ -513,7 +513,7 @@ form fieldset.features .feature-items .item textarea {
 form legend {
   margin: 0 auto;
   padding: 0.25rem;
-  font-size: clamp(1rem, 2vw, 1.025rem);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   text-transform: capitalize;
   background: #20262e;
   color: #f4f4f4;
@@ -621,7 +621,7 @@ form .input-div input, form .input-div textarea {
   transition: 0.3s ease;
   border-radius: 5px;
   border: none;
-  font-size: clamp(1rem, 2vw, 1.025rem);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
 }
 
 form .input-div input:focus, form .input-div textarea:focus {
@@ -659,7 +659,7 @@ form #submit-btn {
   padding: 1rem;
   color: #f4f4f4;
   text-transform: uppercase;
-  font-size: clamp(1rem, 2vw, 1.025rem);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   font-weight: 600;
   border: none;
   border-radius: 0.5rem;
@@ -720,13 +720,13 @@ form #submit-btn.btn-bg::after {
 
 .hero-content .hero-title h1 {
   text-transform: capitalize;
-  font-size: clamp(1.75rem, 4vw, 2rem);
+  font-size: clamp(1.5rem, 5vw, 2rem);
   margin-bottom: 0.5rem;
 }
 
 .hero-content .hero-title h2 {
   color: #475462;
-  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
 }
 
 .hero-content .hero-title h2::first-letter {
@@ -748,10 +748,12 @@ form #submit-btn.btn-bg::after {
 }
 
 .hero-cta-btns {
+  width: 100%;
+  margin: 1.5rem auto;
   display: flex;
   justify-content: center;
-  column-gap: 1rem;
-  margin: 1.5rem auto;
+  flex-wrap: wrap;
+  gap: 1rem;
 }
 
 @media (min-width: 576px) {
@@ -763,6 +765,7 @@ form #submit-btn.btn-bg::after {
   width: max-content;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
   text-decoration: none;
   text-transform: capitalize;
   background: linear-gradient(0deg, #15191e, #29323d, #15191e);
@@ -778,12 +781,12 @@ form #submit-btn.btn-bg::after {
   position: relative;
   isolation: isolate;
   transition: all 250ms;
-  cursor: default;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 450px) {
   .btn-bg {
     cursor: pointer;
+    cursor: default;
   }
 }
 .btn-bg::before, .btn-bg::after {
@@ -844,7 +847,7 @@ form #submit-btn.btn-bg::after {
   cursor: default;
 }
 
-@media (min-width: 576px) {
+@media (max-width: 450px) {
   .top-btn {
     cursor: pointer;
   }
@@ -951,7 +954,7 @@ h1, h2, h3, h4, h5 h6 {
 
 p {
   text-wrap: pretty;
-  font-size: clamp(1rem, 2vw, 1.025rem);
+  font-size: clamp(1rem, 2.5vw, 1.25rem);
 }
 
 body {
@@ -972,11 +975,12 @@ img {
   width: 100%;
   overflow-x: hidden;
   position: relative;
-  transition: 0.5s;
+  transition: 250ms;
 }
 @media (min-width: 768px) {
   #container {
     padding: 0 5vw;
+    background-color: red;
   }
 }
 @media (max-width: 768px) {
@@ -989,16 +993,13 @@ img {
     height: 100%;
     background: #29323c;
     opacity: 0;
-    transition: 0.5s;
+    transition: 500ms;
     z-index: -5;
   }
   #container.dim::after {
     opacity: 0.5;
     z-index: 5;
   }
-}
-#container #about textarea:focus {
-  background: #485563;
 }
 
 footer {

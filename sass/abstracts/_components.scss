@@ -8,10 +8,10 @@
     isolation: isolate;
     transition: all 250ms;
 
-    cursor: default;
-
-    @include mixin.sm {
+    
+    @include mixin.xsm {
         cursor: pointer;
+        cursor: default;
     }
 
     &::before, &::after {
@@ -78,7 +78,7 @@
 
     cursor: default;
 
-    @include mixin.sm {
+    @include mixin.xsm {
         cursor: pointer;
     }
 } 

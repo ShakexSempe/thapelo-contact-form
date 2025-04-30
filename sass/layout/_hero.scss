@@ -1,6 +1,7 @@
 @use '../abstracts';
 
 .hero {
+    // border: 2px solid green;
     position: relative;
     height: 100dvh;
     height: 95vh;
@@ -47,7 +48,7 @@
     
         h2 {
             color: abstracts.$overlay-blue-light;
-            font-size: abstracts.$font-clamp-md;
+            font-size: abstracts.$font-clamp-sm;
             &::first-letter {
                 text-transform: capitalize;
             }
@@ -74,24 +75,25 @@
 }
 
 .hero-cta-btns {
+    width: 100%;
+    margin: 1.5rem auto;
+
     display: flex;
     justify-content: center;
-    column-gap: 1rem;
-    margin: 1.5rem auto;
-    // margin: 1.5rem auto 1rem;
-
+    flex-wrap: wrap;
+    gap: 1rem;
+    
     @include abstracts.sm {
         flex-direction: row;
     }
 
     a {
-        // border: 1px solid blue;
         width: max-content;
         padding: 0.5rem;
         border-radius: 0.5rem;
+        font-size: abstracts.$font-clamp-sm;
         text-decoration: none;
         text-transform: capitalize;
-        // background-color: abstracts.$overlay-blue-darkest;
         background: linear-gradient(0deg, abstracts.$overlay-blue-darkest,
                                             abstracts.$overlay-blue-dark, 
                                             abstracts.$overlay-blue-darkest);
