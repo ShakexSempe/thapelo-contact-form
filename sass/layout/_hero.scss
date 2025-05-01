@@ -5,10 +5,10 @@
     position: relative;
     height: 100dvh;
     height: 95vh;
-    display: grid;
+    // display: grid;
     text-align: center;
     background-color: abstracts.$background-gray;
-    
+
     @include abstracts.md {
         padding: 0 5vw;
     }
@@ -16,7 +16,7 @@
 }
 
 .hero-img {
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.5rem;
     width: 100%;
     height: 45vh;
     // max-height: 350px;
