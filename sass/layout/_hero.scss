@@ -8,7 +8,7 @@
     display: grid;
     text-align: center;
     background-color: abstracts.$background-gray;
-
+    
     @include abstracts.md {
         padding: 0 5vw;
     }
@@ -17,13 +17,26 @@
 
 .hero-img {
     margin: 0 auto 1rem;
-
     width: 100%;
     height: 45vh;
     // max-height: 350px;
-
+    
     border-radius: abstracts.$border-radius-md;
     overflow: hidden;
+    position: relative; 
+
+    // OVERLAY 
+    &::after {
+        position: absolute;
+        content: '';
+        inset: 0;
+        background: abstracts.$overlay;
+        background: linear-gradient(90deg,
+                                abstracts.$overlay-blue-dark 30%, 
+                                        transparent, 
+                                        abstracts.$overlay-blue-dark 70%);
+        opacity: .25;
+    }
 
     img {
         object-fit: cover;

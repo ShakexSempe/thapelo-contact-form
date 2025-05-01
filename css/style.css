@@ -701,6 +701,16 @@ form #submit-btn.btn-bg::after {
   height: 45vh;
   border-radius: 0.5rem;
   overflow: hidden;
+  position: relative;
+}
+
+.hero-img::after {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background: linear-gradient(0deg, #29323c 0%, #485563 100%);
+  background: linear-gradient(90deg, #29323d 30%, transparent, #29323d 70%);
+  opacity: 0.25;
 }
 
 .hero-img img {
