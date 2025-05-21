@@ -546,6 +546,7 @@ form .input-div .info-section {
   outline: 1px solid #ead2a1;
   outline-offset: -2px;
   cursor: help;
+  overscroll-behavior: contain;
 }
 
 @media (max-width: 768px) {
@@ -606,11 +607,15 @@ form .input-div label {
   text-transform: capitalize;
   transition: 0.2s;
   font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
 }
 
 form .input-div label span {
   color: #000a;
   text-transform: lowercase;
+  font-size: clamp(.95rem, 1.5vw, 1rem);
 }
 
 form .input-div input, form .input-div textarea {
