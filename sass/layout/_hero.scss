@@ -16,7 +16,7 @@
 }
 
 .hero-img {
-    margin: 0 auto 1.5rem;
+    margin: 0 auto 5vh;
     width: 100%;
     height: 40vh;
     max-height: 350px;
@@ -53,6 +53,7 @@
         margin-bottom: 1rem;
         max-width: 800px;
         margin-inline: auto;
+        
 
         h1 {
             text-transform: capitalize;
@@ -62,15 +63,19 @@
             span {
                 color: abstracts.$span-crimson;
             }
+
+            
         }
     
         h2 {
-            color: abstracts.$overlay-blue-light;
-            font-size: abstracts.$font-clamp-md;
-            font-weight: 500;
+            
             &::first-letter {
                 text-transform: capitalize;
             }
+
+            color: abstracts.$overlay-blue-light;
+            font-size: abstracts.$font-clamp-md;
+            font-weight: 500;
         }
 
     }
