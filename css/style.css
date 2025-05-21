@@ -628,7 +628,7 @@ form .input-div input:focus, form .input-div textarea:focus {
 }
 
 form .input-div input:invalid, form .input-div textarea:invalid {
-  outline: 1px dashed #dc143c;
+  outline: 1px dashed #bb1133;
 }
 
 form .input-div textarea {

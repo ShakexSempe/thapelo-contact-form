@@ -30,7 +30,6 @@ $brand: lime;
 $brand: hsl(209, 20%, 75%);
 $brand: hsl(209, 20%, 95%);
 $brand-border: hsla(210, 19%, 75%, .5);
-$span-crimson: #dc143c;
 $crimson-border: #dc143c8c;
 $span-gold: #ead2a1;
 $span-light: hsl(210, 19%, 75%);
@@ -43,6 +42,7 @@ $span-orange: tomato;
 $border: #ead2a15e;
 $trans-border: rgba(255, 255, 255, 0.155);
 $dark-crimson:#b60f30;
+$span-crimson: hsl(348, 83%, 40%);
 
 $brand-shadow: hsla(211, 16%, 33%, 0.35);
 // $brand-shadow: #dc143c8c;
@@ -57,7 +57,7 @@ $overlay-dark: linear-gradient(0deg, hsl(214, 18%, 15%) 30% , hsl(212, 19%, 25%)
 $overlay-btn: linear-gradient(0deg, #20262e, #485563 );
 $overlay-btn-hover: linear-gradient(0deg , #485563, #20262e );
 $overlay-blue-dark:hsl(213, 20%, 20%);
-$overlay-blue-darker:#1f252d;
+$overlay-blue-darker:hsl(214, 18%, 15%);
 $overlay-blue-darkest:hsl(213, 18%, 10%);
 $overlay-blue-black:hsl(213, 18%, 5%);
 $overlay-black:hsl(213, 18%, 1%);
