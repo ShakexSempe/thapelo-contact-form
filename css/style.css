@@ -715,7 +715,7 @@ form #submit-btn.btn-bg::after {
   inset: 0;
   background: linear-gradient(0deg, #29323c 0%, #485563 100%);
   background: linear-gradient(90deg, #29323d 30%, transparent, #29323d 70%);
-  opacity: 0.25;
+  opacity: 0.35;
 }
 
 .hero-img img {
@@ -740,9 +740,14 @@ form #submit-btn.btn-bg::after {
   margin-bottom: 0.5rem;
 }
 
+.hero-content .hero-title h1 span {
+  color: #bb1133;
+}
+
 .hero-content .hero-title h2 {
   color: #475462;
   font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  font-weight: 500;
 }
 
 .hero-content .hero-title h2::first-letter {

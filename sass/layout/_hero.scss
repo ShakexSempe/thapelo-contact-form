@@ -35,7 +35,7 @@
                                 abstracts.$overlay-blue-dark 30%, 
                                         transparent, 
                                         abstracts.$overlay-blue-dark 70%);
-        opacity: .25;
+        opacity: .35;
     }
 
     img {
@@ -58,11 +58,16 @@
             text-transform: capitalize;
             font-size: abstracts.$font-clamp-lg;
             margin-bottom: 0.5rem;
+
+            span {
+                color: abstracts.$span-crimson;
+            }
         }
     
         h2 {
             color: abstracts.$overlay-blue-light;
             font-size: abstracts.$font-clamp-md;
+            font-weight: 500;
             &::first-letter {
                 text-transform: capitalize;
             }
