@@ -532,19 +532,15 @@ form .input-div {
 }
 
 form .input-div .info-section {
-  background-color: #fff;
-  background-color: transparent;
+  background-color: #29323d;
   color: #f4f4f4;
   height: 0;
-  width: 80%;
   padding: 1em 1em 2em;
-  margin: 0 0.5em 1em;
+  padding: 0.125rem;
+  margin: 0.5rem auto 1rem;
   overflow: hidden;
   transition: 0.5s;
-  position: relative;
   border-radius: 5px;
-  outline: 1px solid #ead2a1;
-  outline-offset: -2px;
   cursor: help;
   overscroll-behavior: contain;
 }
@@ -554,32 +550,15 @@ form .input-div .info-section {
     width: 90%;
   }
 }
-form .input-div .info-section i {
-  color: #000;
-  background-color: #ead2a1;
-  border-radius: 50%;
-  position: absolute;
-  top: 0.5em;
-  font-size: 1.5em;
-  cursor: pointer;
-  transition: 0.2s;
-  animation: pulse 2s infinite;
-}
-
-@keyframes pulse {
-  50% {
-    transform: scale(1.2);
-  }
-}
 form .input-div .info-section p {
-  margin: 2em 0;
-  padding: 1em 0;
+  padding: 0.5rem;
   line-height: 1.6;
 }
 
 form .input-div .info-section:hover {
   height: 50vh;
   overflow: auto;
+  background-color: #161616;
   background-color: #161616;
 }
 
@@ -591,8 +570,6 @@ form .input-div .info-section:hover i {
 form .input-div .info-section.active {
   height: 50vh;
   overflow: auto;
-  outline: 1px dashed #ead2a1;
-  background-color: #161616;
 }
 
 form .input-div .info-section.active i {
@@ -602,6 +579,23 @@ form .input-div .info-section.active i {
   opacity: 0.8;
 }
 
+form .input-div i {
+  color: #000;
+  background-color: #ead2a1;
+  border-radius: 50%;
+  position: absolute;
+  right: 0;
+  font-size: 1.5em;
+  cursor: pointer;
+  transition: 0.2s;
+  animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+  50% {
+    transform: scale(1.2);
+  }
+}
 form .input-div label {
   transform: translateY(-0.5em);
   text-transform: capitalize;

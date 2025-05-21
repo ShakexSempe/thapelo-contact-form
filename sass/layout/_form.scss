@@ -140,52 +140,38 @@ form {
 
         // INFO SECTION
         .info-section {
-            background-color: #fff;
-            background-color: transparent;
+            // background-color: #fff;
+            // background-color: transparent;
+            background-color: abstracts.$overlay-blue-dark;
             color: abstracts.$text-light;
             height: 0;
-            width: 80%;
+            // width: 80%;
             padding: 1em 1em 2em;
-            margin: 0 .5em 1em;
+            padding: 0.125rem;
+            margin: 0.5rem auto 1rem;
             overflow: hidden;
             transition: .5s;
-            position: relative;
+            // position: relative;
             border-radius: 5px;
-            outline: 1px solid variables.$text-brand;
-            outline-offset: -2px;
+            // outline: 1px solid variables.$text-brand;
+            // outline-offset: -2px;
             cursor: help;
             overscroll-behavior: contain;
             @media (max-width: 768px) {
                 width: 90%;
             }
 
-            i {
-                color: #000;
-                background-color: variables.$text-brand;
-                border-radius: 50%;
-                position: absolute;
-                top: .5em;
-                font-size: 1.5em;;
-                cursor: pointer;
-                transition: .2s;
-                animation: pulse 2s infinite;
-
-                @keyframes pulse {
-                    50% {
-                        transform: scale(1.2);
-                    }
-                }
-            }
+            
 
             p {
-                margin: 2em 0;
-                padding: 1em 0;
+                padding: 0.5rem;
                 line-height: 1.6;
             }
 
             &:hover {
                 height: 50vh;
                 overflow: auto;
+                background-color: variables.$background;
                 background-color: variables.$background;
                 i {
                     color: variables.$text-brand;
@@ -197,14 +183,31 @@ form {
             &.active {
                 height: 50vh;
                 overflow: auto;
-                outline: 1px dashed variables.$text-brand;
-                background-color: variables.$background;
 
                 i {
                     color: variables.$text-brand;
                     background-color: variables.$background;
                     animation: none;
                     opacity: .8;
+                }
+            }
+        }
+
+        i {
+            color: #000;
+            background-color: variables.$text-brand;
+            border-radius: 50%;
+            position: absolute;
+            // top: .5em;
+            right: 0;
+            font-size: 1.5em;
+            cursor: pointer;
+            transition: .2s;
+            animation: pulse 2s infinite;
+
+            @keyframes pulse {
+                50% {
+                    transform: scale(1.2);
                 }
             }
         }
@@ -224,6 +227,7 @@ form {
                 text-transform: lowercase;
                 font-size: abstracts.$font-clamp-xsm;
             }
+
         }
 
         input, textarea {
