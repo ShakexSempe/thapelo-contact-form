@@ -13,6 +13,10 @@
         padding: 0 5vw;
     }
 
+    @include abstracts.lg {
+        padding: 10vh 5vw;
+    }
+
 }
 
 .hero-img {
@@ -20,7 +24,7 @@
     margin: 0 auto 5vh;
     width: 100%;
     height: 40vh;
-    max-height: 350px;
+    max-height: 450px;
     
     border-radius: abstracts.$border-radius-md;
     overflow: hidden;
@@ -45,10 +49,21 @@
         height: 100%;
     }
 
+    // @include abstracts.md {
+    //     position: absolute;
+    //     inset: 0;
+    //     height: 95vh;
+    //     width: 100%;
+    // }
+
 }
 
 .hero-content {
     padding: 0 5vw 1rem;
+
+    @include abstracts.lg {
+        padding: 0;
+    }
     
     .hero-title {
         margin-bottom: 1rem;
@@ -108,9 +123,6 @@
     flex-wrap: wrap;
     gap: 1rem;
     
-    @include abstracts.sm {
-        flex-direction: row;
-    }
 
     a {
         width: max-content;

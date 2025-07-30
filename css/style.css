@@ -414,6 +414,12 @@ form {
   margin-inline: auto;
 }
 
+@media (min-width: 820px) {
+  form {
+    margin-block: 5vh;
+    border-radius: 0.5rem;
+  }
+}
 form fieldset {
   margin: 5vh auto 10vh;
   background-color: #f4f4f4;
@@ -719,12 +725,17 @@ form #submit-btn:active .icon {
     padding: 0 5vw;
   }
 }
+@media (min-width: 820px) {
+  .hero {
+    padding: 10vh 5vw;
+  }
+}
 .hero-img {
   display: block;
   margin: 0 auto 5vh;
   width: 100%;
   height: 40vh;
-  max-height: 350px;
+  max-height: 450px;
   border-radius: 0.5rem;
   overflow: hidden;
   position: relative;
@@ -749,6 +760,11 @@ form #submit-btn:active .icon {
   padding: 0 5vw 1rem;
 }
 
+@media (min-width: 820px) {
+  .hero-content {
+    padding: 0;
+  }
+}
 .hero-content .hero-title {
   margin-bottom: 1rem;
   max-width: 800px;
@@ -798,11 +814,6 @@ form #submit-btn:active .icon {
   gap: 1rem;
 }
 
-@media (min-width: 576px) {
-  .hero-cta-btns {
-    flex-direction: row;
-  }
-}
 .hero-cta-btns a {
   width: max-content;
   padding: 0.5rem;

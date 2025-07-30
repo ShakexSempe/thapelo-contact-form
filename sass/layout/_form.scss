@@ -6,7 +6,11 @@ form {
     background-color: #fff;
     max-width: 800px;
     margin-inline: auto;
-    // width: 100%;
+
+    @include abstracts.lg {
+        margin-block: 5vh;
+        border-radius: abstracts.$border-radius-md;
+    }
 
     fieldset {
         margin: 5vh auto 10vh;
