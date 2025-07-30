@@ -694,6 +694,7 @@ form #submit-btn.btn-bg::after {
   }
 }
 .hero-img {
+  display: block;
   margin: 0 auto 5vh;
   width: 100%;
   height: 40vh;
