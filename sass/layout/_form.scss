@@ -7,7 +7,7 @@ form {
     max-width: 800px;
     margin-inline: auto;
     // width: 100%;
-    
+
     fieldset {
         margin: 5vh auto 10vh;
         background-color: variables.$invalid;
@@ -23,24 +23,26 @@ form {
         border-radius: abstracts.$border-radius-md;
         isolation: isolate;
         // box-shadow: abstracts.$box-shadow-item-md;
-        
+
         @include abstracts.md {
             padding: 1rem;
         }
-    
+
 
         // end of active class
         // button
         .field-btn {
             position: absolute;
             right: .5em;
-            top:0;
+            top: 0;
             display: block;
             width: 3em;
             padding: .8em 2em;
             border-radius: 15px;
+
             // border: 1px solid green;
-            &::after, &::before {
+            &::after,
+            &::before {
                 position: absolute;
                 display: grid;
                 place-items: center;
@@ -50,9 +52,11 @@ form {
                 height: 100%;
                 border-radius: 5px;
             }
+
             &::before {
                 content: 'open';
             }
+
             &::after {
                 content: 'close';
                 opacity: 0;
@@ -60,18 +64,26 @@ form {
 
             // button active
             &.active {
-                &::before {opacity: 0;}
-                &::after {opacity: 1;}
+                &::before {
+                    opacity: 0;
+                }
+
+                &::after {
+                    opacity: 1;
+                }
             }
         }
+
         // end of button
-        
+
 
         .input-div {
             width: 100%;
+
             label {
                 margin-top: .5em;
             }
+
             input {
                 text-overflow: ellipsis;
             }
@@ -89,9 +101,10 @@ form {
                 font-family: variables.$font-sans;
                 text-align: center;
             }
+
             .feature-items {
                 padding: 1em 0;
-                
+
                 .item {
                     background-color: #eee;
                     display: flex;
@@ -102,6 +115,7 @@ form {
                     input {
                         width: 100%;
                     }
+
                     textarea {
                         width: 100%;
                     }
@@ -110,20 +124,20 @@ form {
         }
 
     }
-    
+
     legend {
         margin: 0 auto;
         padding: 0.25rem;
 
         font-size: abstracts.$font-clamp-sm;
         text-transform: capitalize;
-        
+
         background: abstracts.$overlay-blue-darker;
         color: abstracts.$text-light;
-        
+
         border-radius: abstracts.$border-radius-sm;
         border: 1px solid #333a;
-        
+
         cursor: help;
     }
 
@@ -157,11 +171,12 @@ form {
             // outline-offset: -2px;
             cursor: help;
             overscroll-behavior: contain;
+
             @media (max-width: 768px) {
                 width: 90%;
             }
 
-            
+
 
             p {
                 padding: 0.5rem;
@@ -173,6 +188,7 @@ form {
                 overflow: auto;
                 background-color: variables.$background;
                 background-color: variables.$background;
+
                 i {
                     color: variables.$text-brand;
                     background-color: variables.$background;
@@ -230,7 +246,8 @@ form {
 
         }
 
-        input, textarea {
+        input,
+        textarea {
             outline: 1px solid #000;
             outline-offset: -3px;
             padding: 0.75rem;
@@ -244,6 +261,7 @@ form {
 
             &:focus {
                 outline: 1px dashed lime;
+
                 &::placeholder {
                     // color: variables.$text-brand;
                     // opacity: 1;
@@ -251,17 +269,18 @@ form {
             }
 
             &:invalid {
-                
+
                 // background-color: #161616;
                 // color: abstracts.$text-light;
                 // border: none;
                 outline: 1px dashed abstracts.$span-crimson;
-            } 
+            }
         }
 
         textarea {
             padding: .5em;
             font-size: 1.2em;
+
             &:invalid {
                 // background-color: variables.$invalid;
             }
@@ -273,6 +292,7 @@ form {
             text-transform: capitalize;
             opacity: .5;
         }
+
         // services div
         &.services {
             input {
@@ -289,82 +309,67 @@ form {
     }
 
     // submit button       
-    #submit-btn {
-        display: block;
-        width: 80%;
-        margin: 1.5rem auto;
-        padding: 1rem;
-
-        color: variables.$text-light;
-        text-transform: uppercase;
-        font-size: abstracts.$font-clamp-sm;
-        font-weight: 600;
-        // letter-spacing: .05em;
-        
-        border: none;
-        border-radius: abstracts.$border-radius-md;
-        position: relative;
-        isolation: isolate;
-        cursor: default;
-        transition: 250ms ease;
-
-        @include abstracts.sm {
-            cursor: pointer;
-        }
-
-        &.btn-bg {
-            // background-color: red;
-            &::before {
-                background-image: linear-gradient(0deg,  #5f0315, #dc143c);
+        #submit-btn {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+    
+            width: max-content;
+            margin: 0 auto 5vh;
+            padding: 1rem;
+    
+    
+            color: variables.$text-light;
+            text-transform: uppercase;
+            font-size: abstracts.$font-clamp-sm;
+            font-weight: 600;
+            text-align: left;
+            // letter-spacing: .05em;
+    
+            border: none;
+            border-radius: abstracts.$border-radius-md;
+    
+            position: relative;
+            isolation: isolate;
+            cursor: default;
+            transition: 250ms ease;
+    
+            @include abstracts.sm {
+                cursor: pointer;
             }
-            &::after {
-                background:#5f0315;
+            @include abstracts.md {
+                width: 50%;
+                justify-content: center;
+                cursor: pointer;
             }
-
-
+    
+            &.btn-bg {
+    
+                background: #5f0315;
+                &::before {
+                    background-image: linear-gradient(0deg, #5f0315, #dc143c);
+                }
+    
+                &::after {
+                    background: #5f0315;
+                }
+    
+            }
+    
+            @include abstracts.sm {
+                &:hover {
+                    .icon {
+                        rotate: 30deg;
+                    }
+                }
+            }
+    
+            &:active {
+                .icon {
+                    rotate: 30deg;
+                }
+            }
+    
+    
         }
-
-        // button box shadow
-        // &::before, &::after {
-        //     position: absolute;
-        //     content: '';
-        //     top: 0;
-        //     left: 0;
-        //     width: 100%;
-        //     height: 100%;
-        //     z-index: -1;
-        //     border-radius: 10px;
-        //     border: none;
-        //     outline: none;
-        //     transition: .3s ease;
-        // }
-
-        // &::before {
-        //     background-image: linear-gradient(0deg,  #5f0315, #dc143c);
-        //     box-shadow: inset 2px 2px 3px #fff8,
-        //                 inset -2px -2px 3px #000a,
-        //                 5px 5px 3px rgba(0, 0, 0, 0.130);
-        // }
-        // &::after {
-        //     background-image: linear-gradient(0deg, #dc143c, #5f0315);
-        //     opacity: 0;
-        //     box-shadow: inset 2px 2px 3px #000a,
-        //                 inset -2px -2px 3px #fffa,
-        //                 1px 3px 3px rgba(0, 0, 0, 0.220);
-        // }
-
-        // button hover state
-        // &:hover {
-        //     transform: scale(.98);
-        //     letter-spacing: 0;
-        //     &::before {opacity: 0;}
-        //     &::after {opacity: 1;}
-        // }
-        // // button focus state
-        // &:focus {
-        //     transform: scale(.95);
-        //     &::before {opacity: 0;}
-        //     &::after {opacity: 1;}
-        // }
-    }
 }
