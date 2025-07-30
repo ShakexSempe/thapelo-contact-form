@@ -4,11 +4,12 @@
 form {
     padding: 5vh 5vw;
     background-color: #fff;
-    max-width: 800px;
+    // max-width: 800px;
     margin-inline: auto;
 
     @include abstracts.lg {
         margin-block: 5vh;
+        width: 80vw;
         border-radius: abstracts.$border-radius-md;
     }
 
@@ -27,9 +28,13 @@ form {
         border-radius: abstracts.$border-radius-md;
         isolation: isolate;
         // box-shadow: abstracts.$box-shadow-item-md;
-
+        
         @include abstracts.md {
             padding: 1rem;
+            max-width: 600px;
+        }
+        @include abstracts.md {
+            // padding: 0 20vw;
         }
 
 
