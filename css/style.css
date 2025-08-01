@@ -390,6 +390,10 @@
   transform: translateY(-0.3em);
 }
 
+.nav-toggle:active {
+  background-color: #29323d;
+}
+
 .nav-toggle.active {
   transition: 500ms ease;
 }
@@ -402,13 +406,18 @@
   transform: translateX(0.25rem) translateY(-0.3em);
 }
 
+@media (min-width: 576px) {
+  .nav-toggle:hover {
+    background-color: #29323d;
+  }
+}
 @media (min-width: 768px) {
   .nav-toggle {
     display: none;
   }
 }
 form {
-  padding: 10vh 5vw;
+  padding: 5vh 5vw 10vh;
   background-color: #fff;
   margin-inline: auto;
 }

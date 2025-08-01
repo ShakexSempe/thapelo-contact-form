@@ -260,13 +260,9 @@
             }
         }
 
-        // &:hover {
-        //     transform: scale(.95);
-        // }
-
-        // &:active {
-        //     // transform: scale(.95);
-        // }
+        &:active {
+            background-color: abstracts.$overlay-blue-dark;
+        }
 
         &.active {
             // transform: scale(.95) rotate(30deg);
@@ -287,8 +283,15 @@
 
         }
 
-        // desktop: hide hamburger
-        @media (min-width: 768px) {
+        @include abstracts.sm {
+            &:hover {
+                background-color: abstracts.$overlay-blue-dark;
+        
+            }
+        }
+
+        // HIDE TOGGLE ON DESKTOPS
+        @include abstracts.md {
             display: none;
         }
     }
