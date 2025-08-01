@@ -127,16 +127,19 @@
                     <legend>Appointment info</legend>
                     
                     <div class="input-div">
+                        <label for="business-name">Business name <span>(optional)</span> </label>
+                        <input type="text" name="business-name" id="business-name" title="business-name"
+                            placeholder="business name" minlength="2">
+                    </div>
+
+                    <div class="input-div">
                         <label for="date">date <span>(pick a date)</span> </label>
                         <input type="date" name="date" value="2025-05-21" title="appointment date" id="date"
                             required>
                     </div>
 
-                    <div class="input-div">
-                        <label for="business-name">Business name <span>(optional)</span> </label>
-                        <input type="text" name="business-name" id="business-name" title="business-name"
-                            placeholder="business name" minlength="2">
-                    </div>
+                    
+
                     <div title="what is value proposition?" class="input-div">
                         <label for="value-propose">value proposition</label>
                         <i class="fas fa-info-circle info-btn"></i>
@@ -154,30 +157,21 @@
                         <input type="text" name="value-propose" id="value-propose" title="Value Proposition"
                             placeholder="value proposition" minlength="2">
                     </div>
-                    <div class="input-div services">
-                        <label for="services">services: </label>
-                        <input type="text" title="service-1" name="service-1" id="service-1" placeholder="service 1">
-                        <input type="text" title="service-2" name="service-2" id="service-2" placeholder="service 2">
-                        <input type="text" title="service-3" name="service-3" id="service-3" placeholder="service 3">
-                    </div>
+
                 </fieldset>
-                
                 
                 <button id="submit-btn" class="btn-bg" type="submit">submit form 
                     <img src="icons/solid/icons8-email-send-48-light.png" height="48" width="48" alt="email sent icon"
                 class="icon">
                 </button>
+
                 <input type="hidden" name="_autoresponse" value="Your form has been sent to Shakex Sempe">
                 <input type="hidden" name="_template" value="table">
-    
-    
     
                 <!-- FORM SUBMIT  -->
                 <input type="hidden" name="_subject" value="New submission!">
     
-    
                 <!-- END OF FORM SUBMIT  -->
-    
             </form>
     
         </main>

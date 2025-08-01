@@ -2,7 +2,7 @@
 @use '../variables';
 
 form {
-    padding: 5vh 5vw;
+    padding: 10vh 5vw;
     background-color: #fff;
     // max-width: 800px;
     margin-inline: auto;
@@ -14,21 +14,25 @@ form {
     }
 
     fieldset {
+        width: 100%;
         margin: 5vh auto 10vh;
-        background-color: variables.$invalid;
-        background-color: #fff;
-        padding: 1.3em .5em;
         padding: 0.5rem;
-        overflow-y: auto;
         height: auto;
-        position: relative;
-        // border: none;
+        overflow-y: auto;
+
+        background-color: #fff;
         border: 1px solid abstracts.$overlay-blue-dark;
-        transition: 500ms;
         border-radius: abstracts.$border-radius-md;
-        isolation: isolate;
-        // box-shadow: abstracts.$box-shadow-item-md;
         
+        transition: 500ms;
+        position: relative;
+        isolation: isolate;
+        
+        // LAST FIELDSET MARGIN-BOTTOM TO SEND BUTTON
+        &:last-of-type {
+            margin-bottom: 5vh;
+        }
+
         @include abstracts.md {
             padding: 1rem;
             max-width: 600px;
@@ -37,9 +41,6 @@ form {
             // padding: 0 20vw;
         }
 
-
-        // end of active class
-        // button
         .field-btn {
             position: absolute;
             right: .5em;
@@ -83,8 +84,6 @@ form {
             }
         }
 
-        // end of button
-
 
         .input-div {
             width: 100%;
@@ -102,35 +101,6 @@ form {
         // &:hover {
         //     scale: 1;
         // }
-
-        // FEATURES
-        &.features {
-            h2 {
-                text-transform: uppercase;
-                font-family: variables.$font-sans;
-                text-align: center;
-            }
-
-            .feature-items {
-                padding: 1em 0;
-
-                .item {
-                    background-color: #eee;
-                    display: flex;
-                    flex-direction: column;
-                    // padding: 5px;
-                    margin: 1em 0;
-
-                    input {
-                        width: 100%;
-                    }
-
-                    textarea {
-                        width: 100%;
-                    }
-                }
-            }
-        }
 
     }
 
@@ -323,17 +293,16 @@ form {
             align-items: center;
             gap: 1rem;
     
-            width: max-content;
+            // width: max-content;
             margin: 0 auto 5vh;
-            padding: 1rem;
+            padding: 0.75rem;
     
     
             color: variables.$text-light;
             text-transform: uppercase;
             font-size: abstracts.$font-clamp-sm;
-            font-weight: 600;
-            text-align: left;
-            // letter-spacing: .05em;
+            font-weight: 500;
+            letter-spacing: .0125em;
     
             border: none;
             border-radius: abstracts.$border-radius-md;
@@ -347,7 +316,6 @@ form {
                 cursor: pointer;
             }
             @include abstracts.md {
-                width: 50%;
                 justify-content: center;
                 cursor: pointer;
             }
@@ -365,20 +333,18 @@ form {
     
             }
     
-            @include abstracts.sm {
-                &:hover {
-                    .icon {
+            &:hover {
+                color: abstracts.$text-brand;
+                .icon {
                         rotate: 30deg;
                     }
-                }
             }
-    
+
             &:active {
                 .icon {
-                    rotate: 30deg;
+                    rotate: 45deg;
                 }
             }
-    
-    
+
         }
 }
