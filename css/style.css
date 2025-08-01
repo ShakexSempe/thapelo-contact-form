@@ -803,6 +803,7 @@ form #submit-btn:active .icon {
 }
 
 .hero-content p a:hover {
+  color: skyblue;
   text-decoration: none;
 }
 
@@ -822,13 +823,21 @@ form #submit-btn:active .icon {
   font-size: clamp(1rem, 2vw, 1.025rem);
   text-decoration: none;
   text-transform: capitalize;
-  background: linear-gradient(0deg, #15191e, #29323d, #15191e);
   color: #f4f4f4;
+  background: #1f252d;
 }
 
 .hero-cta-btns a.btn-secondary {
   background: white;
   color: #000;
+}
+
+.hero-cta-btns a::before {
+  background: linear-gradient(0deg, #15191e, #29323d, #15191e);
+}
+
+.hero-cta-btns a:hover, .hero-cta-btns a:focus {
+  color: skyblue;
 }
 
 .btn-bg {

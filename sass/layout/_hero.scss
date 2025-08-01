@@ -103,7 +103,7 @@
             color: abstracts.$text-dark;
             transition: .2s;
             &:hover {
-                // color: abstracts.$text-hover-dark;
+                color: abstracts.$text-brand;
                 text-decoration: none;
             }
         }
@@ -131,16 +131,28 @@
         font-size: abstracts.$font-clamp-sm;
         text-decoration: none;
         text-transform: capitalize;
-        background: linear-gradient(0deg, abstracts.$overlay-blue-darkest,
-                                            abstracts.$overlay-blue-dark, 
-                                            abstracts.$overlay-blue-darkest);
         color: abstracts.$text-light;
+        background: abstracts.$overlay-blue-darker;
 
         &.btn-secondary {
             // background-color: abstracts.$overlay-blue-light;
             background: abstracts.$btn-secondary;
             color: abstracts.$text-dark;
         }
+        
+        &::before {
+            background: linear-gradient(0deg, abstracts.$overlay-blue-darkest,
+                                            abstracts.$overlay-blue-dark, 
+                                            abstracts.$overlay-blue-darkest);
+        
+        }
+
+        &:hover, &:focus {
+        color: abstracts.$text-brand;
+
+    }
+
     }
 
 }
+
