@@ -125,17 +125,17 @@ form {
         cursor: help;
     }
 
-    #rider {
+
+    .radio-field {
+        margin-bottom: 1rem;
+        
         label {
             text-transform: capitalize;
             padding-inline: 0.25rem;
         }
 
-        input {
-            margin-bottom: 1rem;
-        }
-
     }
+
     .input-div {
         display: flex;
         flex-direction: column;

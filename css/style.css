@@ -520,13 +520,13 @@ form legend {
   cursor: help;
 }
 
-form #rider label {
-  text-transform: capitalize;
-  padding-inline: 0.25rem;
+form .radio-field {
+  margin-bottom: 1rem;
 }
 
-form #rider input {
-  margin-bottom: 1rem;
+form .radio-field label {
+  text-transform: capitalize;
+  padding-inline: 0.25rem;
 }
 
 form .input-div {
