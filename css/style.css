@@ -529,6 +529,10 @@ form .radio-field label {
   padding-inline: 0.25rem;
 }
 
+form .radio-field input {
+  margin-bottom: 1rem;
+}
+
 form .input-div {
   display: flex;
   flex-direction: column;
