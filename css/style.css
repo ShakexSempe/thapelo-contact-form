@@ -453,6 +453,11 @@ form fieldset:last-of-type {
     max-width: 600px;
   }
 }
+form fieldset .field-text {
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
 form fieldset .field-btn {
   position: absolute;
   right: 0.5em;
@@ -513,6 +518,15 @@ form legend {
   border-radius: 0.25rem;
   border: 1px solid #333a;
   cursor: help;
+}
+
+form #rider label {
+  text-transform: capitalize;
+  padding-inline: 0.25rem;
+}
+
+form #rider input {
+  margin-bottom: 1rem;
 }
 
 form .input-div {

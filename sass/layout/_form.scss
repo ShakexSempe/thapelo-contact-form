@@ -41,6 +41,11 @@ form {
             // padding: 0 20vw;
         }
 
+        .field-text {
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
         .field-btn {
             position: absolute;
             right: .5em;
@@ -120,6 +125,17 @@ form {
         cursor: help;
     }
 
+    #rider {
+        label {
+            text-transform: capitalize;
+            padding-inline: 0.25rem;
+        }
+
+        input {
+            margin-bottom: 1rem;
+        }
+
+    }
     .input-div {
         display: flex;
         flex-direction: column;

@@ -33,6 +33,7 @@
 </head>
 
 <body>
+
     <nav id="nav">
         <div class="brand">
             <a title="Syntex: Web Development" href="#">FanCa
@@ -43,20 +44,23 @@
         <div class="nav-toggle" id="toggle">
             <div class="bar"></div>
         </div>
-        <nav>
+
+        <div class="desktop-nav">
+
             <div class="nav-list">
                 <ul class="nav-item">
                     <li><i class="fas fa-user"></i><a class="nav-link" title="Personal info section"
                             href="#personal">personal</a></li>
                     <li><i class="fas fa-chalkboard-teacher"></i><a class="nav-link" title="webpage info section"
-                            href="#webpage">webpage</a></li>
+                            href="#appointemtn">appointment</a></li>
                     <li><i class="fas fa-user-cog"></i><a class="nav-link" title="features info section"
-                            href="#features">features</a></li>
+                            href="#rider">rider info</a></li>
                     <li><i class="fas fa-address-card"></i><a class="nav-link" title="features info section"
                             href="#about">about</a></li>
                 </ul>
             </div>
-        </nav>
+
+        </div>
     </nav>
     
     <div id="container">
@@ -159,6 +163,24 @@
                     </div>
 
                 </fieldset>
+
+                <!-- FORM INFO -->
+                <fieldset title="Rider info" id="rider" class="field radio-field">
+                    <legend>Rider info</legend>
+                    <p class="field-text">Rider level</p>
+                    <!-- <label for="level">rider level</label> -->
+                    <input type="radio" id="learner" name="level" value="learner">
+                    <label for="learner">learner's</label> <br>
+                    
+                    <input type="radio" id="a-" name="level" value="a-">
+                    <label for="a-">code A</label> <br>
+
+                    <input type="radio" id="a1" name="level" value="a1">
+                    <label for="a1">code a1</label>
+
+
+                </fieldset>
+
                 
                 <button id="submit-btn" class="btn-bg" type="submit">submit form 
                     <img src="icons/solid/icons8-email-send-48-light.png" height="48" width="48" alt="email sent icon"
