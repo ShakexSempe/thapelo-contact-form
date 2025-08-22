@@ -242,6 +242,7 @@ footer a {
   border-radius: 0.5rem;
   cursor: default;
   transition: 200ms;
+  position: relative;
 }
 
 #nav .brand a img {
@@ -250,6 +251,7 @@ footer a {
 
 #nav .brand a:active {
   transform: scale(0.95);
+  color: skyblue;
 }
 
 @media (min-width: 576px) {

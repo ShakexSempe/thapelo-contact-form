@@ -27,25 +27,31 @@
 
         a {
             display: block;
+
             text-transform: uppercase;
             text-decoration: none;
             font-size: abstracts.$font-clamp-xsm;
+            
             width: max-content;
             padding: 0.125rem 0.5rem;
             color: abstracts.$text-light;
+            
             border: 1px solid;
             border-right-color: transparent;
             border-left-color: transparent;
-            // border: 2px solid abstracts.$brand;
             border-radius: abstracts.$border-radius-md;
+
             cursor: default;
             transition: 200ms;
+            position: relative;
+
             img {
                 width: 100%;
             }
             
             &:active {
                 transform: scale(.95);
+                color: abstracts.$text-brand;
             }
 
             @include abstracts.sm {
