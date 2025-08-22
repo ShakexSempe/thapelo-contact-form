@@ -169,20 +169,19 @@ form {
             }
 
             p {
-                padding: 0.5rem;
+                padding: 0.75rem;
                 line-height: 1.6;
             }
 
             &:hover {
                 height: 50vh;
                 overflow: auto;
-                background-color: variables.$background;
-                background-color: variables.$background;
+                background-color: abstracts.$overlay-blue-darker;
 
-                i {
-                    color: variables.$text-brand;
-                    background-color: variables.$background;
-                }
+                // i {
+                //     color: abstracts.$text-brand;
+                //     background-color: abstracts.$background;
+                // }
             }
 
             //  ACTIVE CLASS
@@ -191,8 +190,8 @@ form {
                 overflow: auto;
 
                 i {
-                    color: variables.$text-brand;
-                    background-color: variables.$background;
+                    // color: abstracts.$text-brand;
+                    // background-color: abstracts.$background;
                     animation: none;
                     opacity: .8;
                 }
@@ -201,7 +200,7 @@ form {
 
         i {
             color: #000;
-            background-color: variables.$text-brand;
+            background-color: abstracts.$text-brand;
             border-radius: 50%;
             position: absolute;
             top: .5em;
@@ -242,8 +241,8 @@ form {
             outline-offset: -3px;
             padding: 0.75rem;
             transition: .3s ease;
-            // background-color: variables.$overlay-blue-darker;
-            // color: variables.$text-brand;
+            // background-color: abstracts.$overlay-blue-darker;
+            // color: abstracts.$text-brand;
             border-radius: 5px;
             border: none;
             font-size: abstracts.$font-clamp-sm;
@@ -253,7 +252,7 @@ form {
                 outline: 1px dashed lime;
 
                 &::placeholder {
-                    // color: variables.$text-brand;
+                    // color: abstracts.$text-brand;
                     // opacity: 1;
                 }
             }
@@ -272,7 +271,7 @@ form {
             font-size: 1.2em;
 
             &:invalid {
-                // background-color: variables.$invalid;
+                // background-color: abstracts.$invalid;
             }
         }
 
@@ -309,7 +308,7 @@ form {
             padding: 0.75rem;
     
     
-            color: variables.$text-light;
+            color: abstracts.$text-light;
             text-transform: uppercase;
             font-size: abstracts.$font-clamp-sm;
             font-weight: 500;

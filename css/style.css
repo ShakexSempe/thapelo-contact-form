@@ -162,6 +162,48 @@
   font-weight: 100 1000;
   font-display: swap;
 }
+footer {
+  width: 100%;
+  background-color: #15191e;
+  color: #f4f4f4;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  footer {
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
+footer .footer-div {
+  padding: 1.5rem;
+}
+
+footer .footer-div ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+footer .copyright {
+  background-color: #1f252d;
+}
+
+footer p {
+  text-transform: capitalize;
+  line-height: 1.8;
+}
+
+footer a {
+  color: skyblue;
+  text-decoration: none;
+  position: relative;
+}
+
 #nav {
   position: fixed;
   top: 0;
@@ -555,20 +597,14 @@ form .input-div .info-section {
   }
 }
 form .input-div .info-section p {
-  padding: 0.5rem;
+  padding: 0.75rem;
   line-height: 1.6;
 }
 
 form .input-div .info-section:hover {
   height: 50vh;
   overflow: auto;
-  background-color: #161616;
-  background-color: #161616;
-}
-
-form .input-div .info-section:hover i {
-  color: #ead2a1;
-  background-color: #161616;
+  background-color: #1f252d;
 }
 
 form .input-div .info-section.active {
@@ -577,15 +613,13 @@ form .input-div .info-section.active {
 }
 
 form .input-div .info-section.active i {
-  color: #ead2a1;
-  background-color: #161616;
   animation: none;
   opacity: 0.8;
 }
 
 form .input-div i {
   color: #000;
-  background-color: #ead2a1;
+  background-color: skyblue;
   border-radius: 50%;
   position: absolute;
   top: 0.5em;
@@ -1067,43 +1101,6 @@ img {
     opacity: 0.5;
     z-index: 5;
   }
-}
-
-footer {
-  width: 100%;
-  background-color: #15191e;
-  color: #f4f4f4;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-}
-@media (min-width: 768px) {
-  footer {
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-  }
-}
-footer .footer-div {
-  padding: 1.5rem;
-}
-footer .footer-div ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-footer .copyright {
-  background-color: #20262e;
-}
-footer p {
-  text-transform: capitalize;
-  line-height: 1.8;
-}
-footer a {
-  color: #ead2a1;
-  text-decoration: none;
-  position: relative;
 }
 
 /*# sourceMappingURL=style.css.map */

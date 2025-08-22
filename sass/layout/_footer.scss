@@ -1,0 +1,42 @@
+@use '../abstracts';
+
+
+footer {
+    width: 100%;
+    background-color: abstracts.$overlay-blue-darkest;
+    color: abstracts.$text-light;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+    @include abstracts.md {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .footer-div {
+        padding: 1.5rem;
+
+        ul {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+        }
+    }
+    .copyright {
+        background-color: abstracts.$overlay-blue-darker;
+    }
+    
+    p {
+        text-transform: capitalize;
+        line-height: 1.8;
+    }
+
+    a {
+        color: abstracts.$text-brand;
+        text-decoration: none;
+        position: relative;
+    }
+}
