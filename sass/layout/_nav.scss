@@ -79,7 +79,7 @@
                 margin-bottom: 2em;
                 // border: 1px solid red;
                 display: flex;
-                padding: .5em 0;
+                gap: 0.5rem;
 
                 a {
                     display: block;
@@ -95,22 +95,12 @@
 
                 }
 
-                i {
-                    // border: 1px solid yellow;
-                    // margin-right: .5em;
-                    flex-basis: 5%;
-                    display: grid;
-                    place-items: center;
-                    // color: abstracts.$text-brand;
-                    margin-right: .2em;
-                }
             }
         }
         
         // active menu
         @media (max-width: 768px){
             ul {
-                border: 1px solid abstracts.$brand;
                 border: 1px solid #fff7;
                 width: 95%;
                 padding: 1em;
@@ -126,9 +116,11 @@
                 border-radius: abstracts.$border-radius-md;
 
                 li {
+                    align-items: center;
+
                     background: abstracts.$overlay-blue-light;
                     border-radius: abstracts.$border-radius-md;
-                    padding: 0;
+                    padding-inline: 0.25rem;
                     margin: 0;
                     border: 1px solid transparent;
                     transition: 150ms;
@@ -150,7 +142,7 @@
                         border-top-color: abstracts.$border-light;
                         border-bottom-color: abstracts.$border-light;
 
-                        i {
+                        .icon {
                             translate: 0.25rem;
                         }
                     }
