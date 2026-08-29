@@ -215,7 +215,9 @@ footer a {
   align-items: center;
   background-color: #15191e;
   background-color: navy;
+  background-color: #fafafa;
   z-index: 10;
+  box-shadow: 0 0.25rem 0.5rem rgba(38, 38, 217, 0.125);
 }
 
 @media (min-width: 768px) {
@@ -232,10 +234,12 @@ footer a {
 #nav .brand a {
   display: block;
   text-transform: uppercase;
+  font-style: italic;
   text-decoration: none;
   font-size: clamp(.95rem, 1.5vw, 1rem);
   width: max-content;
   padding: 0.125rem 0.5rem;
+  background-color: #2626d9;
   color: #f4f4f4;
   border: 1px solid;
   border-radius: 0.5rem;
@@ -265,6 +269,7 @@ footer a {
 }
 #nav .nav-list {
   background-color: navy;
+  background-color: #e6e6e6;
   color: #f4f4f4;
   width: 100%;
   min-height: 100vh;
@@ -302,6 +307,7 @@ footer a {
 @media (max-width: 768px) {
   #nav .nav-list ul {
     border: 1px solid #fff7;
+    border: 1px solid navy;
     width: 95%;
     padding: 1em;
     display: flex;
@@ -316,7 +322,7 @@ footer a {
 
   #nav .nav-list ul li {
     align-items: center;
-    background: #475462;
+    background: #0f0f57;
     border-radius: 0.5rem;
     padding-inline: 0.25rem;
     margin: 0;
@@ -335,7 +341,7 @@ footer a {
   }
 
   #nav .nav-list ul li:hover {
-    background: transparent;
+    background: navy;
     border-top-color: #fff8;
     border-bottom-color: #fff8;
   }
@@ -406,7 +412,8 @@ footer a {
   position: absolute;
   width: 60%;
   height: 2px;
-  background-color: #fff;
+  background-color: #0b0b41;
+  background-color: #2626d9;
   transition: 0.3s;
 }
 
@@ -415,7 +422,8 @@ footer a {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #fff;
+  background-color: #2626d9;
+  background-color: inherit;
   transition: 0.3s ease;
 }
 
@@ -551,7 +559,7 @@ form legend {
   padding: 0.25rem;
   font-size: clamp(1rem, 2vw, 1.025rem);
   text-transform: capitalize;
-  background: #1f252d;
+  background: #0f0f57;
   color: #f4f4f4;
   border-radius: 0.25rem;
   border: 1px solid #333a;
@@ -672,7 +680,7 @@ form .input-div textarea:focus {
 
 form .input-div input:invalid,
 form .input-div textarea:invalid {
-  outline: 1px dashed #bb1133;
+  outline: 1px dashed;
 }
 
 form .input-div textarea {
@@ -820,6 +828,7 @@ form #submit-btn:active .icon {
 
 .hero-content .hero-title p {
   color: #475462;
+  color: #4d4d4d;
   font-size: clamp(1.15rem, 2.5vw, 1.5rem);
   font-weight: 500;
 }
@@ -865,8 +874,7 @@ form #submit-btn:active .icon {
 }
 
 .hero-cta-btns a::before {
-  background: linear-gradient(0deg, #15191e, #29323d, #15191e);
-  background: #2626d9;
+  background: linear-gradient(0deg, #2626d9, #2626d9=light, #2626d9);
 }
 
 .hero-cta-btns a::after {
@@ -879,10 +887,12 @@ form #submit-btn:active .icon {
   justify-content: space-evenly;
   justify-content: center;
   flex-wrap: wrap;
+  margin-top: 2rem;
   color: #f4f4f4;
   color: #000;
   text-transform: capitalize;
-  border-radius: 0.25rem;
+  overflow: hidden;
+  border-radius: 0.5rem;
 }
 
 .hero-meta li {
@@ -1083,7 +1093,7 @@ body {
   font-family: "Open Sans", sans-serif;
   position: relative;
   background-color: #f4f4f4;
-  color: navy;
+  color: #000;
 }
 
 img {

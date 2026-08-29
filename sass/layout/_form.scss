@@ -7,6 +7,7 @@ form {
     // max-width: 800px;
     margin-inline: auto;
     color: abstracts.$text-dark;
+
     @include abstracts.lg {
         margin-block: 5vh;
         width: 80vw;
@@ -116,7 +117,7 @@ form {
         font-size: abstracts.$font-clamp-sm;
         text-transform: capitalize;
 
-        background: abstracts.$overlay-blue-darker;
+        background: abstracts.$brand-darkest;
         color: abstracts.$text-light;
 
         border-radius: abstracts.$border-radius-sm;
@@ -262,7 +263,7 @@ form {
                 // background-color: #161616;
                 // color: abstracts.$text-light;
                 // border: none;
-                outline: 1px dashed abstracts.$span-crimson;
+                outline: 1px dashed;
             }
         }
 

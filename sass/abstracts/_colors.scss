@@ -5,9 +5,13 @@ $background-dark: #333;
 $background-light: #fff000;
 $background-light: #f4f4f4;
 $brand-overlay: #a6b2bf;
+$nav: #fafafa;
 
 // TEXT COLORS
-$text-main: hsl(240, 100%, 25%);
+$text-main: hsl(240, 70%, 10%);
+$text-main: #000;
+$text-main-light: hsl(240, 30%, 40%);
+$text-main-light: hsl(0, 0%, 30%);
 $text-brand: skyblue;
 $text-black: #000;
 $text-dark: #000;
@@ -16,6 +20,8 @@ $text-light: #f4f4f4;
 $nav-links: hsl(0, 0%, 95%);
 $text-light-trans: #000a;
 $text-dark-trans: #333;
+
+$toggle-bar: hsl(240, 70%, 15%);
 
 // BORDER COLORS
 $border-light: #fff8;
@@ -30,7 +36,7 @@ $btn-secondary: hsl(0, 0%, 100%);
 $brand: hsl(240, 70%, 50%);
 $brand-light: skyblue;
 $brand-dark: navy;
-$bar: #fff;
+$brand-darkest: hsl(240, 70%, 20%);
 // $brand: hsl(209, 20%, 75%);
 // $brand: hsl(209, 20%, 95%);
 $brand-border: hsla(210, 19%, 75%, .5);

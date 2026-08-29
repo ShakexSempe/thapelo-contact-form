@@ -90,6 +90,7 @@
             }
 
             color: abstracts.$overlay-blue-light;
+            color: abstracts.$text-main-light;
             font-size: abstracts.$font-clamp-md;
             font-weight: 500;
         }
@@ -140,11 +141,11 @@
 
         
         &::before {
-            background: linear-gradient(0deg, abstracts.$overlay-blue-darkest,
-                                            abstracts.$overlay-blue-dark, 
-                                            abstracts.$overlay-blue-darkest);
+            background: linear-gradient(0deg, abstracts.$brand,
+                                            abstracts.$brand=light, 
+                                            abstracts.$brand);
 
-            background: abstracts.$brand;
+            // background: abstracts.$brand;
         
         }
 
@@ -171,12 +172,14 @@
     // justify-content: start;
     // align-items: center;
     flex-wrap: wrap;
+    margin-top: 2rem;
     // gap: .25rem;
     color: #f4f4f4;
     color: #000;
     text-transform: capitalize;
     // border: 1px solid red;
-    border-radius: abstracts.$border-radius-sm;
+    overflow: hidden;
+    border-radius: abstracts.$border-radius-md;
     
     li {
         padding: 0.25rem;

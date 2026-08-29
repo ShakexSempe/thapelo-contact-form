@@ -15,7 +15,9 @@
 
     background-color: abstracts.$overlay-blue-darkest;
     background-color: abstracts.$brand-dark;
+    background-color: abstracts.$nav;
     z-index: 10;
+    box-shadow: 0 0.25rem 0.5rem hsla(240, 70%, 50%, 0.125);
 
     @include abstracts.md {
         padding: 1.5em 10vw;
@@ -30,11 +32,13 @@
             display: block;
 
             text-transform: uppercase;
+            font-style: italic;
             text-decoration: none;
             font-size: abstracts.$font-clamp-xsm;
             
             width: max-content;
             padding: 0.125rem 0.5rem;
+            background-color: abstracts.$brand;
             color: abstracts.$text-light;
             
             border: 1px solid;
@@ -70,6 +74,7 @@
     // nav-list mobile first**
     .nav-list {
         background-color: abstracts.$brand-dark;
+        background-color: hsl(0, 0%, 90%);
         color: abstracts.$text-light;
         width: 100%;
         min-height: 100vh;
@@ -110,6 +115,7 @@
         @media (max-width: 768px){
             ul {
                 border: 1px solid #fff7;
+                border: 1px solid abstracts.$brand-dark;
                 width: 95%;
                 padding: 1em;
                 
@@ -126,7 +132,7 @@
                 li {
                     align-items: center;
 
-                    background: abstracts.$overlay-blue-light;
+                    background: abstracts.$brand-darkest;
                     border-radius: abstracts.$border-radius-md;
                     padding-inline: 0.25rem;
                     margin: 0;
@@ -146,7 +152,7 @@
                     }
 
                     &:hover {
-                        background: transparent;
+                        background: abstracts.$brand-dark;
                         border-top-color: abstracts.$border-light;
                         border-bottom-color: abstracts.$border-light;
 
@@ -238,7 +244,8 @@
             position: absolute;
             width: 60%;
             height: 2px;
-            background-color: abstracts.$bar;
+            background-color: abstracts.$toggle-bar;
+            background-color: abstracts.$brand;
             transition: .3s;
 
             &::before,
@@ -247,7 +254,8 @@
                 content: '';
                 width: 100%;
                 height: 2px;
-                background-color: abstracts.$bar;
+                background-color: abstracts.$brand;
+                background-color: inherit;
                 transition: .3s ease;
             }
 
