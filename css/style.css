@@ -559,7 +559,7 @@ form legend {
   padding: 0.25rem;
   font-size: clamp(1rem, 2vw, 1.025rem);
   text-transform: capitalize;
-  background: #0f0f57;
+  background: #000;
   color: #f4f4f4;
   border-radius: 0.25rem;
   border: 1px solid #333a;
