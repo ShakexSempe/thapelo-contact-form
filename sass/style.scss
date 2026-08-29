@@ -19,6 +19,7 @@ h1, h2, h3, h4, h5 h6 {
 p, li {
     text-wrap: pretty;
     font-size: $font-clamp-sm;
+    // color: $text-dark;
 }
 
 body {
@@ -28,7 +29,7 @@ body {
     position: relative;
 
     background-color: $background-light;
-    color: $overlay-blue-darkest;
+    color: $text-main;
 }
 
 img {

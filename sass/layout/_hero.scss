@@ -83,7 +83,7 @@
             
         }
     
-        h2 {
+        p {
             
             &::first-letter {
                 text-transform: capitalize;
@@ -97,15 +97,19 @@
     }
 
     p {
-        margin: 1.5rem 0;
+        margin: 1rem 0;
         position: relative;
+        color: abstracts.$text-dark;
+        
         a {
             color: abstracts.$text-dark;
             transition: .2s;
+            
             &:hover {
                 color: abstracts.$text-brand;
                 text-decoration: none;
             }
+
         }
 
         
@@ -132,27 +136,59 @@
         text-decoration: none;
         text-transform: capitalize;
         color: abstracts.$text-light;
-        background: abstracts.$overlay-blue-darker;
+        background: abstracts.$brand;
 
-        &.btn-secondary {
-            // background-color: abstracts.$overlay-blue-light;
-            background: abstracts.$btn-secondary;
-            color: abstracts.$text-dark;
-        }
         
         &::before {
             background: linear-gradient(0deg, abstracts.$overlay-blue-darkest,
                                             abstracts.$overlay-blue-dark, 
                                             abstracts.$overlay-blue-darkest);
+
+            background: abstracts.$brand;
+        
+        }
+
+        &::after {
+            background: abstracts.$brand-dark;
         
         }
 
         &:hover, &:focus {
-        color: abstracts.$text-brand;
-
+        // color: abstracts.$text-brand;
+        
     }
 
     }
 
+}
+
+.hero-meta {
+    // border: 2px solid red;
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+    justify-content: center;
+    // justify-content: start;
+    // align-items: center;
+    flex-wrap: wrap;
+    // gap: .25rem;
+    color: #f4f4f4;
+    color: #000;
+    text-transform: capitalize;
+    // border: 1px solid red;
+    border-radius: abstracts.$border-radius-sm;
+    
+    li {
+        padding: 0.25rem;
+        font-size: abstracts.$font-clamp-xsm;
+        flex-grow: 1;
+        background-color:#ccc;
+        border-bottom: 1px solid #fff;
+        
+        &:nth-child(even){
+            background-color:#bbb;
+        }
+
+    }
 }
 

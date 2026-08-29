@@ -214,6 +214,7 @@ footer a {
   justify-content: space-between;
   align-items: center;
   background-color: #15191e;
+  background-color: navy;
   z-index: 10;
 }
 
@@ -237,9 +238,8 @@ footer a {
   padding: 0.125rem 0.5rem;
   color: #f4f4f4;
   border: 1px solid;
-  border-right-color: transparent;
-  border-left-color: transparent;
   border-radius: 0.5rem;
+  border-radius: 50%;
   cursor: default;
   transition: 200ms;
   position: relative;
@@ -264,7 +264,7 @@ footer a {
   }
 }
 #nav .nav-list {
-  background-color: #1f252d;
+  background-color: navy;
   color: #f4f4f4;
   width: 100%;
   min-height: 100vh;
@@ -390,7 +390,7 @@ footer a {
   }
 }
 .nav-toggle {
-  border: 1px solid #f0f2f5;
+  border: 1px solid #2626d9;
   border: 1px solid transparent;
   border-radius: 50%;
   position: absolute;
@@ -406,7 +406,7 @@ footer a {
   position: absolute;
   width: 60%;
   height: 2px;
-  background-color: #f0f2f5;
+  background-color: #fff;
   transition: 0.3s;
 }
 
@@ -415,7 +415,7 @@ footer a {
   content: "";
   width: 100%;
   height: 2px;
-  background-color: #f0f2f5;
+  background-color: #fff;
   transition: 0.3s ease;
 }
 
@@ -457,6 +457,7 @@ form {
   padding: 5vh 5vw 10vh;
   background-color: #fff;
   margin-inline: auto;
+  color: #000;
 }
 
 @media (min-width: 820px) {
@@ -725,11 +726,11 @@ form #submit-btn {
   }
 }
 form #submit-btn.btn-bg {
-  background: #5f0315;
+  background: blue;
 }
 
 form #submit-btn.btn-bg::before {
-  background-image: linear-gradient(0deg, #5f0315, #dc143c);
+  background-image: linear-gradient(0deg, navy, #2626d9);
 }
 
 form #submit-btn.btn-bg::after {
@@ -817,19 +818,20 @@ form #submit-btn:active .icon {
   color: #bb1133;
 }
 
-.hero-content .hero-title h2 {
+.hero-content .hero-title p {
   color: #475462;
   font-size: clamp(1.15rem, 2.5vw, 1.5rem);
   font-weight: 500;
 }
 
-.hero-content .hero-title h2::first-letter {
+.hero-content .hero-title p::first-letter {
   text-transform: capitalize;
 }
 
 .hero-content p {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   position: relative;
+  color: #000;
 }
 
 .hero-content p a {
@@ -859,20 +861,40 @@ form #submit-btn:active .icon {
   text-decoration: none;
   text-transform: capitalize;
   color: #f4f4f4;
-  background: #1f252d;
-}
-
-.hero-cta-btns a.btn-secondary {
-  background: white;
-  color: #000;
+  background: #2626d9;
 }
 
 .hero-cta-btns a::before {
   background: linear-gradient(0deg, #15191e, #29323d, #15191e);
+  background: #2626d9;
 }
 
-.hero-cta-btns a:hover, .hero-cta-btns a:focus {
-  color: skyblue;
+.hero-cta-btns a::after {
+  background: navy;
+}
+
+.hero-meta {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: #f4f4f4;
+  color: #000;
+  text-transform: capitalize;
+  border-radius: 0.25rem;
+}
+
+.hero-meta li {
+  padding: 0.25rem;
+  font-size: clamp(.95rem, 1.5vw, 1rem);
+  flex-grow: 1;
+  background-color: #ccc;
+  border-bottom: 1px solid #fff;
+}
+
+.hero-meta li:nth-child(even) {
+  background-color: #bbb;
 }
 
 .btn-bg {
@@ -1061,7 +1083,7 @@ body {
   font-family: "Open Sans", sans-serif;
   position: relative;
   background-color: #f4f4f4;
-  color: #15191e;
+  color: navy;
 }
 
 img {
