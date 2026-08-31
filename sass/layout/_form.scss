@@ -23,7 +23,7 @@ form {
 
         background-color: #fff;
         border: 1px solid abstracts.$overlay-blue-dark;
-        border-radius: abstracts.$border-radius-md;
+        border-radius: abstracts.$border-radius-sm;
         
         transition: 500ms;
         position: relative;
@@ -120,7 +120,7 @@ form {
         background: #000;
         color: abstracts.$text-light;
 
-        border-radius: abstracts.$border-radius-sm;
+        border-radius: abstracts.$border-radius-xsm;
         border: 1px solid #333a;
 
         cursor: help;
@@ -316,7 +316,7 @@ form {
             letter-spacing: .0125em;
     
             border: none;
-            border-radius: abstracts.$border-radius-md;
+            border-radius: abstracts.$border-radius-sm;
     
             position: relative;
             isolation: isolate;
@@ -339,7 +339,7 @@ form {
                 }
     
                 &::after {
-                    background: #5f0315;
+                    background: abstracts.$brand-dark;
                 }
     
             }

@@ -483,7 +483,7 @@ form fieldset {
   overflow-y: auto;
   background-color: #fff;
   border: 1px solid #29323d;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   transition: 500ms;
   position: relative;
   isolation: isolate;
@@ -561,7 +561,7 @@ form legend {
   text-transform: capitalize;
   background: #000;
   color: #f4f4f4;
-  border-radius: 0.25rem;
+  border-radius: 0.15rem;
   border: 1px solid #333a;
   cursor: help;
 }
@@ -715,7 +715,7 @@ form #submit-btn {
   font-weight: 500;
   letter-spacing: 0.0125em;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
   position: relative;
   isolation: isolate;
   cursor: default;
@@ -742,7 +742,7 @@ form #submit-btn.btn-bg::before {
 }
 
 form #submit-btn.btn-bg::after {
-  background: #5f0315;
+  background: navy;
 }
 
 form #submit-btn:hover {
