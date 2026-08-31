@@ -1,0 +1,40 @@
+@use '../abstracts';
+
+
+section {
+    // border: 2px solid red;
+    padding: 5vh 5vw;
+    p, li {
+        line-height: 1.8;
+    }
+
+    h3 {
+        color: abstracts.$brand-dark;
+        margin-bottom: 1rem;
+    }
+
+    text-align: center;
+}
+
+.services {
+
+    .service {
+        margin-bottom: 5vh;
+    }
+    ul {
+        // border: 1px solid red;
+        list-style: none;
+        overflow: hidden;
+        border-radius: abstracts.$border-radius-sm;
+        
+        li {
+                background-color: hsl(0, 0%, 87%);
+                padding: 0.25rem;
+        
+                &:nth-child(even) {
+                    background-color: hsl(0, 0%, 80%);
+                }
+
+        }
+    }
+}

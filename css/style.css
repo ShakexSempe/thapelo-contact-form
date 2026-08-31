@@ -162,6 +162,39 @@
   font-weight: 100 1000;
   font-display: swap;
 }
+section {
+  padding: 5vh 5vw;
+  text-align: center;
+}
+
+section p, section li {
+  line-height: 1.8;
+}
+
+section h3 {
+  color: navy;
+  margin-bottom: 1rem;
+}
+
+.services .service {
+  margin-bottom: 5vh;
+}
+
+.services ul {
+  list-style: none;
+  overflow: hidden;
+  border-radius: 0.25rem;
+}
+
+.services ul li {
+  background-color: #dedede;
+  padding: 0.25rem;
+}
+
+.services ul li:nth-child(even) {
+  background-color: #cccccc;
+}
+
 footer {
   width: 100%;
   background-color: #15191e;
@@ -1085,6 +1118,7 @@ h1, h2, h3, h4, h5 h6 {
 
 p, li {
   text-wrap: pretty;
+  line-height: 1.6;
   font-size: clamp(1rem, 2vw, 1.025rem);
 }
 
