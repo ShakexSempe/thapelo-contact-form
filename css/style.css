@@ -454,6 +454,7 @@ footer a {
 @media (min-width: 576px) {
   .nav-toggle:hover {
     background-color: #29323d;
+    background-color: skyblue;
   }
 }
 @media (min-width: 768px) {

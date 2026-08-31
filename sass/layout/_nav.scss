@@ -294,6 +294,7 @@
         @include abstracts.sm {
             &:hover {
                 background-color: abstracts.$overlay-blue-dark;
+                background-color: abstracts.$brand-light;
         
             }
         }
