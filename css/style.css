@@ -217,7 +217,7 @@ footer a {
   background-color: navy;
   background-color: #fafafa;
   z-index: 10;
-  box-shadow: 0 0.25rem 0.5rem rgba(38, 38, 217, 0.125);
+  box-shadow: 0 0.25rem 0.5rem rgba(125, 125, 232, 0.125);
 }
 
 @media (min-width: 768px) {
@@ -412,8 +412,8 @@ footer a {
   position: absolute;
   width: 60%;
   height: 2px;
-  background-color: #0b0b41;
   background-color: #2626d9;
+  background-color: #040416;
   transition: 0.3s;
 }
 
@@ -864,8 +864,8 @@ form #submit-btn:active .icon {
 
 .hero-cta-btns a {
   width: max-content;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
   font-size: clamp(1rem, 2vw, 1.025rem);
   text-decoration: none;
   text-transform: capitalize;
@@ -892,19 +892,19 @@ form #submit-btn:active .icon {
   color: #000;
   text-transform: capitalize;
   overflow: hidden;
-  border-radius: 0.5rem;
+  border-radius: 0.25rem;
 }
 
 .hero-meta li {
   padding: 0.25rem;
   font-size: clamp(.95rem, 1.5vw, 1rem);
   flex-grow: 1;
-  background-color: #ccc;
+  background-color: #dedede;
   border-bottom: 1px solid #fff;
 }
 
 .hero-meta li:nth-child(even) {
-  background-color: #bbb;
+  background-color: #cccccc;
 }
 
 .btn-bg {

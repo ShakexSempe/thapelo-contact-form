@@ -131,8 +131,8 @@
 
     a {
         width: max-content;
-        padding: 0.5rem;
-        border-radius: 0.5rem;
+        padding: 0.5rem 0.75rem;
+        border-radius: abstracts.$border-radius-sm;
         font-size: abstracts.$font-clamp-sm;
         text-decoration: none;
         text-transform: capitalize;
@@ -145,7 +145,6 @@
                                             abstracts.$brand=light, 
                                             abstracts.$brand);
 
-            // background: abstracts.$brand;
         
         }
 
@@ -179,17 +178,18 @@
     text-transform: capitalize;
     // border: 1px solid red;
     overflow: hidden;
-    border-radius: abstracts.$border-radius-md;
+    border-radius: abstracts.$border-radius-sm;
     
     li {
         padding: 0.25rem;
         font-size: abstracts.$font-clamp-xsm;
         flex-grow: 1;
-        background-color:#ccc;
+        background-color:hsl(0, 0%, 87%);
         border-bottom: 1px solid #fff;
         
         &:nth-child(even){
-            background-color:#bbb;
+        background-color:hsl(0, 0%, 80%);
+            // background-color:#ddd;
         }
 
     }

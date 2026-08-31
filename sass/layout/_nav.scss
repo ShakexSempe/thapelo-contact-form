@@ -17,7 +17,7 @@
     background-color: abstracts.$brand-dark;
     background-color: abstracts.$nav;
     z-index: 10;
-    box-shadow: 0 0.25rem 0.5rem hsla(240, 70%, 50%, 0.125);
+    box-shadow: 0 0.25rem 0.5rem hsla(240, 70%, 70%, 0.125);
 
     @include abstracts.md {
         padding: 1.5em 10vw;
@@ -244,8 +244,8 @@
             position: absolute;
             width: 60%;
             height: 2px;
-            background-color: abstracts.$toggle-bar;
             background-color: abstracts.$brand;
+            background-color: abstracts.$toggle-bar;
             transition: .3s;
 
             &::before,
