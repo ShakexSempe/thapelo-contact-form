@@ -175,6 +175,7 @@
             // display: flex;
             position: relative;
             background-color: #000;
+            background-color: abstracts.$brand-dark;
             right: 0;
             top: 0;
             padding: .3em 0;
@@ -195,16 +196,19 @@
                 margin: 0;
                 // margin: 0 0.5em 0 2em;
                 padding: .5em 1em;
+                display: flex;
+                align-items: center;
                 a {
                     font-size: 0.95rem;
                     color: abstracts.$text-light;
                     cursor: pointer;
-                    display: block;
+                    // display: block;
                 }
                 
-                i {
+                .icon {
+                    // border: 1px solid red;
                     // color: abstracts.$text-brand;
-                    padding-right: .3em;
+                    // padding-right: .3em;
 
                 }
                 &:hover {

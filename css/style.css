@@ -411,6 +411,7 @@ footer a {
   #nav .nav-list {
     position: relative;
     background-color: #000;
+    background-color: navy;
     right: 0;
     top: 0;
     padding: 0.3em 0;
@@ -431,17 +432,14 @@ footer a {
   #nav .nav-list ul li {
     margin: 0;
     padding: 0.5em 1em;
+    display: flex;
+    align-items: center;
   }
 
   #nav .nav-list ul li a {
     font-size: 0.95rem;
     color: #f4f4f4;
     cursor: pointer;
-    display: block;
-  }
-
-  #nav .nav-list ul li i {
-    padding-right: 0.3em;
   }
 
   #nav .nav-list ul li:hover i {
