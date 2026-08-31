@@ -2,8 +2,15 @@
 
 
 section {
-    // border: 2px solid red;
     padding: 5vh 5vw;
+    background: #fff;
+
+    @include abstracts.md {
+        background: inherit;
+        padding: 10vh 10vw;
+        // border: 2px solid red;
+    }
+
     p, li {
         line-height: 1.8;
     }
@@ -16,8 +23,16 @@ section {
     text-align: center;
 }
 
-.services {
+.about {
+    position: relative;
+    
+    img {
+        margin: 0 auto;
+    }
+}
 
+.services {
+    background: #f4f4f4;
     .service {
         margin-bottom: 5vh;
     }
@@ -30,6 +45,7 @@ section {
         li {
                 background-color: hsl(0, 0%, 87%);
                 padding: 0.25rem;
+                text-transform: capitalize;
         
                 &:nth-child(even) {
                     background-color: hsl(0, 0%, 80%);
