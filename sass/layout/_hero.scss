@@ -142,8 +142,8 @@
         
         &::before {
             background: linear-gradient(0deg, 
-                                            abstracts.$brand-dark, 
-                                            abstracts.$brand);
+                                            abstracts.$brand-dark 5%, 
+                                            abstracts.$brand 50%);
 
         
         }
@@ -151,8 +151,8 @@
         &::after {
             background: abstracts.$brand-dark;
             background: linear-gradient(0deg, 
-                                            abstracts.$brand, 
-                                            abstracts.$brand-dark);
+                                            abstracts.$brand 50%, 
+                                            abstracts.$brand-dark 95%);
         
         }
 

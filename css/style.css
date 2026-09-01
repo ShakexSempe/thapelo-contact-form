@@ -934,12 +934,12 @@ form #submit-btn:active .icon {
 }
 
 .hero-cta-btns a::before {
-  background: linear-gradient(0deg, navy, #2626d9);
+  background: linear-gradient(0deg, navy 5%, #2626d9 50%);
 }
 
 .hero-cta-btns a::after {
   background: navy;
-  background: linear-gradient(0deg, #2626d9, navy);
+  background: linear-gradient(0deg, #2626d9 50%, navy 95%);
 }
 
 .hero-meta {
