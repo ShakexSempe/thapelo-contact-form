@@ -4,6 +4,7 @@
 footer {
     width: 100%;
     background-color: abstracts.$overlay-blue-darkest;
+    background-color: abstracts.$brand-darkest;
     color: abstracts.$text-light;
     text-align: center;
     display: flex;
@@ -29,6 +30,7 @@ footer {
     }
     .copyright {
         background-color: abstracts.$overlay-blue-darker;
+        background-color: abstracts.$brand-dark-black;
     }
     
     p {

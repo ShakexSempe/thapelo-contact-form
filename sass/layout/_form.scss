@@ -23,6 +23,7 @@ form {
 
         background-color: #fff;
         border: 1px solid abstracts.$overlay-blue-dark;
+        border: 1px solid #000;
         border-radius: abstracts.$border-radius-sm;
         
         transition: 500ms;
@@ -335,12 +336,20 @@ form {
     
                 background: blue;
                 &::before {
-                    background-image: linear-gradient(0deg, abstracts.$brand-dark, abstracts.$brand);
-                }
-    
-                &::after {
-                    background: abstracts.$brand-dark;
-                }
+            background: linear-gradient(0deg, 
+                                            abstracts.$brand-darker 5%, 
+                                            abstracts.$brand-dark 40%);
+
+        
+        }
+
+        &::after {
+            background: abstracts.$brand-dark;
+            background: linear-gradient(0deg, 
+                                            abstracts.$brand-dark 50%, 
+                                            abstracts.$brand-darker 95%);
+        
+        }
     
             }
     

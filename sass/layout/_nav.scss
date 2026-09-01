@@ -33,6 +33,7 @@
 
             text-transform: uppercase;
             font-style: italic;
+            font-weight: 500;
             text-decoration: none;
             font-size: abstracts.$font-clamp-xsm;
             
@@ -73,8 +74,8 @@
 
     // nav-list mobile first**
     .nav-list {
-        background-color: abstracts.$brand-dark;
         background-color: hsl(0, 0%, 90%);
+        background-color: abstracts.$brand-dark-black;
         color: abstracts.$text-light;
         width: 100%;
         min-height: 100vh;
@@ -152,10 +153,13 @@
                     }
 
                     &:hover {
-                        background: abstracts.$brand-dark;
+                        background: abstracts.$brand-darker;
                         border-top-color: abstracts.$border-light;
                         border-bottom-color: abstracts.$border-light;
 
+                        a {
+                            color: unset;
+                        }
                         .icon {
                             translate: 0.25rem;
                         }
