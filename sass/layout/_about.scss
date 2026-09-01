@@ -41,7 +41,29 @@ section {
 }
 
 .services {
-    background: #f4f4f4;
+    background: hsl(0, 0%, 96%);
+
+    .services-intro {
+        margin-bottom: 2rem;
+        
+        h3 {
+            text-transform: capitalize;
+        }
+
+        p {
+            background: abstracts.$brand-darkest;
+            padding: 0.5rem;
+            color: abstracts.$text-light;
+            border-radius: abstracts.$border-radius-md;
+
+            a {
+                color: abstracts.$brand-light;
+                text-transform: capitalize;
+            }
+        }
+
+    }
+
     .service {
         margin-bottom: 5vh;
     }

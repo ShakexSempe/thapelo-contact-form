@@ -199,7 +199,27 @@ section h3 {
 }
 
 .services {
-  background: #f4f4f4;
+  background: whitesmoke;
+}
+
+.services .services-intro {
+  margin-bottom: 2rem;
+}
+
+.services .services-intro h3 {
+  text-transform: capitalize;
+}
+
+.services .services-intro p {
+  background: #0f0f57;
+  padding: 0.5rem;
+  color: #f4f4f4;
+  border-radius: 0.5rem;
+}
+
+.services .services-intro p a {
+  color: skyblue;
+  text-transform: capitalize;
 }
 
 .services .service {
