@@ -181,6 +181,7 @@ section p, section li {
 section h3 {
   color: navy;
   margin-bottom: 1rem;
+  font-size: clamp(1rem, 2vw, 1.025rem);
 }
 
 .about {
@@ -206,6 +207,7 @@ section h3 {
 }
 
 .services ul li {
+  font-size: clamp(.95rem, 1.5vw, 1rem);
   background-color: #dedede;
   padding: 0.25rem;
   text-transform: capitalize;
