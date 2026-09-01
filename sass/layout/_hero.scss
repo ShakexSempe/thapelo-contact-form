@@ -141,8 +141,8 @@
 
         
         &::before {
-            background: linear-gradient(0deg, abstracts.$brand,
-                                            abstracts.$brand=light, 
+            background: linear-gradient(0deg, 
+                                            abstracts.$brand-dark, 
                                             abstracts.$brand);
 
         
@@ -150,6 +150,9 @@
 
         &::after {
             background: abstracts.$brand-dark;
+            background: linear-gradient(0deg, 
+                                            abstracts.$brand, 
+                                            abstracts.$brand-dark);
         
         }
 
