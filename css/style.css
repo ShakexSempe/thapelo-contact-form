@@ -853,6 +853,7 @@ form #submit-btn:active .icon {
 @media (min-width: 820px) {
   .hero {
     padding: 10vh 5vw;
+    background-color: #fff;
   }
 }
 .hero-img {
