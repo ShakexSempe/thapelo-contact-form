@@ -163,7 +163,7 @@
   font-display: swap;
 }
 section {
-  padding: 5vh 5vw;
+  padding: 5vh 5vw 5vh;
   background: #fff;
   text-align: center;
 }
@@ -186,6 +186,12 @@ section h3 {
 
 .about {
   position: relative;
+}
+
+.about .article-img {
+  height: 200px;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
 }
 
 .about img {

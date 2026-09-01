@@ -2,7 +2,8 @@
 
 
 section {
-    padding: 5vh 5vw;
+    // border: 1px solid red;
+    padding: 5vh 5vw 5vh;
     background: #fff;
 
     @include abstracts.md {
@@ -27,6 +28,13 @@ section {
 .about {
     position: relative;
     
+    .article-img {
+        // border: 1px solid red;
+        height: 200px;
+        margin-bottom: 1rem;
+        border-radius: abstracts.$border-radius-md;
+    }
+
     img {
         margin: 0 auto;
     }
