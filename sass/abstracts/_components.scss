@@ -1,5 +1,6 @@
 @use '../abstracts/mixin';
 @use '../abstracts/colors';
+@use '../abstracts/variables';
 
 .btn-bg {
     // border: 3px solid red;
@@ -67,13 +68,14 @@
 .top-btn {
     position: fixed;
     bottom: 10vh;
-    right: 0.25rem;
+    right: 5vw;
     width: 1rem;
     height: 1rem;
     // background-color: #ffff;
-    border: 3px solid colors.$brand-darkest;
+    border: 3px solid colors.$brand-darker;
     border-right-color: #0001;
     border-bottom-color: #0001;
+    border-radius: variables.$border-radius-sm;
     // mix-blend-mode: difference;
     rotate: 45deg;
     z-index: 50;

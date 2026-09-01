@@ -59,12 +59,13 @@
 .top-btn {
   position: fixed;
   bottom: 10vh;
-  right: 0.25rem;
+  right: 5vw;
   width: 1rem;
   height: 1rem;
-  border: 3px solid #002433;
+  border: 3px solid #005980;
   border-right-color: #0001;
   border-bottom-color: #0001;
+  border-radius: 0.25rem;
   rotate: 45deg;
   z-index: 50;
   cursor: default;
@@ -140,12 +141,13 @@
 .top-btn {
   position: fixed;
   bottom: 10vh;
-  right: 0.25rem;
+  right: 5vw;
   width: 1rem;
   height: 1rem;
-  border: 3px solid #002433;
+  border: 3px solid #005980;
   border-right-color: #0001;
   border-bottom-color: #0001;
+  border-radius: 0.25rem;
   rotate: 45deg;
   z-index: 50;
   cursor: default;
@@ -1056,12 +1058,13 @@ form #submit-btn:active .icon {
 .top-btn {
   position: fixed;
   bottom: 10vh;
-  right: 0.25rem;
+  right: 5vw;
   width: 1rem;
   height: 1rem;
-  border: 3px solid #002433;
+  border: 3px solid #005980;
   border-right-color: #0001;
   border-bottom-color: #0001;
+  border-radius: 0.25rem;
   rotate: 45deg;
   z-index: 50;
   cursor: default;
