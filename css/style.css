@@ -522,7 +522,7 @@ footer a {
   }
 }
 form {
-  padding: 5vh 5vw 10vh;
+  padding: 10vh 5vw 10vh;
   background-color: #fff;
   margin-inline: auto;
   color: #000;
@@ -537,7 +537,7 @@ form {
 }
 form fieldset {
   width: 100%;
-  margin: 5vh auto 10vh;
+  margin: 0 auto 10vh;
   padding: 0.5rem;
   height: auto;
   overflow-y: auto;
@@ -1135,7 +1135,7 @@ form #submit-btn:active .icon {
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  scroll-padding-top: 10vh;
+  scroll-padding-top: 5vh;
 }
 
 h1, h2, h3, h4, h5 h6 {
