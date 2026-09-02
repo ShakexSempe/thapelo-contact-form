@@ -33,4 +33,28 @@ infoBtn.forEach(btn => {
     btn.addEventListener("click", () => {
         infoSection.classList.toggle("active");
     })
-})
+});
+
+// ********** HERO SECTION INTERSECTION OBSERVER ************
+const header = document.querySelector('header');
+const topBtn = document.querySelector('.top-btn');
+const hero = document.getElementById('hero');
+const heroOptions = {
+    rootMargin: '-95% 0px 0px 0px',
+}
+const heroObserver = new IntersectionObserver(
+    function(
+        entries, heroObserver
+    ) {
+        entries.forEach(entry => {
+            if(!entry.isIntersecting) {
+                topBtn.classList.add("active-top");
+                console.log("HERO NOT IO");
+            } else {
+                topBtn.classList.remove("active-top");
+                console.log("HERO IS IO");
+            }
+        });
+    }, heroOptions
+); 
+heroObserver.observe(hero);

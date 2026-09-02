@@ -58,16 +58,18 @@
 
 .top-btn {
   position: fixed;
-  bottom: 10vh;
+  bottom: -10vh;
   right: 5vw;
   width: 1rem;
   height: 1rem;
   border: 3px solid #005980;
-  border-right-color: #0001;
-  border-bottom-color: #0001;
+  border-right-color: #0002;
+  border-bottom-color: #0002;
   border-radius: 0.25rem;
   rotate: 45deg;
   z-index: 50;
+  transition: 500ms;
+  opacity: 0;
   cursor: default;
 }
 
@@ -76,6 +78,11 @@
     cursor: pointer;
   }
 }
+.top-btn.active-top {
+  bottom: 10vh;
+  opacity: 1;
+}
+
 @font-face {
   font-family: "Content";
   src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
@@ -140,16 +147,18 @@
 
 .top-btn {
   position: fixed;
-  bottom: 10vh;
+  bottom: -10vh;
   right: 5vw;
   width: 1rem;
   height: 1rem;
   border: 3px solid #005980;
-  border-right-color: #0001;
-  border-bottom-color: #0001;
+  border-right-color: #0002;
+  border-bottom-color: #0002;
   border-radius: 0.25rem;
   rotate: 45deg;
   z-index: 50;
+  transition: 500ms;
+  opacity: 0;
   cursor: default;
 }
 
@@ -158,6 +167,11 @@
     cursor: pointer;
   }
 }
+.top-btn.active-top {
+  bottom: 10vh;
+  opacity: 1;
+}
+
 @font-face {
   font-family: "Content";
   src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
@@ -216,7 +230,7 @@ section h3 {
 }
 
 .services .services-intro p {
-  color: #f4f4f4;
+  color: #f2f2f2;
 }
 
 .services .services-intro p a {
@@ -249,7 +263,7 @@ footer {
   width: 100%;
   background-color: #15191e;
   background-color: #002433;
-  color: #f4f4f4;
+  color: #f2f2f2;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -324,7 +338,7 @@ footer a {
   width: max-content;
   padding: 0.125rem 0.5rem;
   background-color: #00a1e6;
-  color: #f4f4f4;
+  color: #f2f2f2;
   border: 1px solid;
   border-radius: 0.5rem;
   border-radius: 50%;
@@ -354,7 +368,7 @@ footer a {
 #nav .nav-list {
   background-color: #e6e6e6;
   background-color: #00121a;
-  color: #f4f4f4;
+  color: #f2f2f2;
   width: 100%;
   min-height: 100vh;
   position: absolute;
@@ -379,7 +393,7 @@ footer a {
   display: block;
   text-decoration: none;
   text-transform: capitalize;
-  color: #f4f4f4;
+  color: #f2f2f2;
   width: 100%;
   cursor: default;
 }
@@ -471,12 +485,12 @@ footer a {
 
   #nav .nav-list ul li a {
     font-size: 0.95rem;
-    color: #f4f4f4;
+    color: #f2f2f2;
     cursor: pointer;
   }
 
   #nav .nav-list ul li:hover i {
-    color: #f4f4f4;
+    color: #f2f2f2;
   }
 }
 .nav-toggle {
@@ -642,7 +656,7 @@ form legend {
   font-size: clamp(1rem, 2vw, 1.025rem);
   text-transform: capitalize;
   background: #000;
-  color: #f4f4f4;
+  color: #f2f2f2;
   border-radius: 0.15rem;
   border: 1px solid #333a;
   cursor: help;
@@ -672,7 +686,7 @@ form .input-div {
 
 form .input-div .info-section {
   background-color: #29323d;
-  color: #f4f4f4;
+  color: #f2f2f2;
   height: 0;
   padding: 0.125rem;
   margin: 0.5rem auto 1rem;
@@ -787,7 +801,7 @@ form #submit-btn {
   gap: 1rem;
   margin: 0 auto 5vh;
   padding: 0.75rem;
-  color: #f4f4f4;
+  color: #f2f2f2;
   text-transform: uppercase;
   font-size: clamp(1rem, 2vw, 1.025rem);
   font-weight: 500;
@@ -942,7 +956,7 @@ form #submit-btn:active .icon {
   text-decoration: none;
   text-transform: capitalize;
   font-weight: 500;
-  color: #f4f4f4;
+  color: #f2f2f2;
   background: #00a1e6;
 }
 
@@ -1039,16 +1053,18 @@ form #submit-btn:active .icon {
 
 .top-btn {
   position: fixed;
-  bottom: 10vh;
+  bottom: -10vh;
   right: 5vw;
   width: 1rem;
   height: 1rem;
   border: 3px solid #005980;
-  border-right-color: #0001;
-  border-bottom-color: #0001;
+  border-right-color: #0002;
+  border-bottom-color: #0002;
   border-radius: 0.25rem;
   rotate: 45deg;
   z-index: 50;
+  transition: 500ms;
+  opacity: 0;
   cursor: default;
 }
 
@@ -1057,6 +1073,11 @@ form #submit-btn:active .icon {
     cursor: pointer;
   }
 }
+.top-btn.active-top {
+  bottom: 10vh;
+  opacity: 1;
+}
+
 @font-face {
   font-family: "Content";
   src: url("../fonts/Montserrat-VariableFont_wght.woff2") format("woff2");
