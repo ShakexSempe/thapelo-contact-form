@@ -927,6 +927,7 @@ form #submit-btn:active .icon {
   text-transform: capitalize;
   font-size: clamp(1.5rem, 5vw, 2rem);
   margin-bottom: 0.5rem;
+  color: #002433;
 }
 
 .hero-content .hero-title p {
