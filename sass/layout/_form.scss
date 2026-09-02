@@ -3,7 +3,6 @@
 
 form {
     padding: 10vh 5vw 10vh;
-    // background-color: #fff;
     background-color: abstracts.$background-main-darker;
     margin-inline: auto;
 
@@ -21,7 +20,7 @@ form {
         height: auto;
         overflow-y: auto;
 
-        background-color: #fff;
+        background-color: abstracts.$background-main;
         border: 1px solid abstracts.$overlay-blue-dark;
         border: 1px solid #000;
         border-radius: abstracts.$border-radius-sm;
@@ -38,9 +37,6 @@ form {
         @include abstracts.md {
             padding: 1rem;
             max-width: 600px;
-        }
-        @include abstracts.md {
-            // padding: 0 20vw;
         }
 
         .field-text {
