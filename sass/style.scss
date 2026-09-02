@@ -29,8 +29,7 @@ body {
     font-family: $font-sans;
     position: relative;
 
-    background-color: $background-light;
-    background-color: #fff;
+    background-color: $background-main;
     color: $text-main;
 }
 
@@ -48,9 +47,9 @@ img {
 
 #container {
 
-    @include md {
-        padding: 0 5vw;
-    }
+    // @include md {
+    //     padding: 0 5vw;
+    // }
 
     width: 100%;
     overflow-x: hidden;

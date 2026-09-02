@@ -166,13 +166,11 @@
 }
 section {
   padding: 5vh 5vw 5vh;
-  background: #fff;
   text-align: center;
 }
 
 @media (min-width: 768px) {
   section {
-    background: inherit;
     padding: 10vh 10vw;
   }
 }
@@ -197,11 +195,11 @@ section h3 {
 }
 
 .about img {
-  margin: 0 auto;
+  margin: 0.25rem auto;
 }
 
 .services {
-  background: whitesmoke;
+  background: #f4f4f4;
 }
 
 .services .services-intro {
@@ -300,9 +298,7 @@ footer a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #15191e;
-  background-color: #007db3;
-  background-color: #fafafa;
+  background-color: #fff;
   z-index: 10;
   box-shadow: 0 0.25rem 0.5rem rgba(125, 125, 232, 0.125);
 }
@@ -343,7 +339,7 @@ footer a {
 
 #nav .brand a:active {
   transform: scale(0.95);
-  color: skyblue;
+  background-color: #007db3;
 }
 
 @media (min-width: 576px) {
@@ -543,7 +539,6 @@ footer a {
 
 @media (min-width: 576px) {
   .nav-toggle:hover {
-    background-color: #29323d;
     background-color: #80d9ff;
   }
 }
@@ -554,15 +549,12 @@ footer a {
 }
 form {
   padding: 10vh 5vw 10vh;
-  background-color: #fff;
+  background-color: #e6e6e6;
   margin-inline: auto;
-  color: #000;
 }
 
 @media (min-width: 820px) {
   form {
-    margin-block: 5vh;
-    width: 80vw;
     border-radius: 0.5rem;
   }
 }
@@ -678,7 +670,6 @@ form .input-div {
   padding: 0.5em 0.1em;
   transition: 0.3s ease;
   position: relative;
-  color: #000;
 }
 
 form .input-div .info-section {
@@ -781,10 +772,7 @@ form .input-div textarea {
 }
 
 form .input-div ::placeholder {
-  color: #a3a3a3;
-  color: #000a;
   text-transform: capitalize;
-  opacity: 0.5;
 }
 
 form .input-div.services input {
@@ -855,20 +843,9 @@ form #submit-btn:active .icon {
   height: 100dvh;
   height: 95vh;
   text-align: center;
-  background-color: #f4f4f4;
+  background-color: #fafafa;
 }
 
-@media (min-width: 768px) {
-  .hero {
-    padding: 0 5vw;
-  }
-}
-@media (min-width: 820px) {
-  .hero {
-    padding: 10vh 5vw;
-    background-color: #fff;
-  }
-}
 .hero-img {
   display: block;
   margin: 0 auto 5vh;
@@ -901,7 +878,7 @@ form #submit-btn:active .icon {
 
 @media (min-width: 820px) {
   .hero-content {
-    padding: 0;
+    padding: 0 10vw 0.5rem;
   }
 }
 .hero-content .hero-title {
@@ -917,7 +894,6 @@ form #submit-btn:active .icon {
 }
 
 .hero-content .hero-title p {
-  color: #475462;
   color: #4d4d4d;
   font-size: clamp(1.15rem, 2.5vw, 1.5rem);
   font-weight: 500;
@@ -925,22 +901,6 @@ form #submit-btn:active .icon {
 
 .hero-content .hero-title p::first-letter {
   text-transform: capitalize;
-}
-
-.hero-content p {
-  margin: 1rem 0;
-  position: relative;
-  color: #000;
-}
-
-.hero-content p a {
-  color: #000;
-  transition: 0.2s;
-}
-
-.hero-content p a:hover {
-  color: skyblue;
-  text-decoration: none;
 }
 
 .hero-cta-btns {
@@ -1186,7 +1146,6 @@ body {
   overflow-x: hidden;
   font-family: "Open Sans", sans-serif;
   position: relative;
-  background-color: #f4f4f4;
   background-color: #fff;
   color: #000;
 }
@@ -1207,11 +1166,6 @@ img {
   overflow-x: hidden;
   position: relative;
   transition: 250ms;
-}
-@media (min-width: 768px) {
-  #container {
-    padding: 0 5vw;
-  }
 }
 @media (max-width: 768px) {
   #container::after {

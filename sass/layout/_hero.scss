@@ -5,18 +5,18 @@
     position: relative;
     height: 100dvh;
     height: 95vh;
-    // display: grid;
     text-align: center;
-    background-color: abstracts.$background-gray;
+    background-color: abstracts.$background-main-light;
+    // background-color: red;
 
-    @include abstracts.md {
-        padding: 0 5vw;
-    }
+    // @include abstracts.md {
+    //     padding: 0 5vw;
+    // }
 
-    @include abstracts.lg {
-        padding: 10vh 5vw;
-    background-color: #fff;
-    }
+    // @include abstracts.lg {
+    //     padding: 10vh 5vw;
+    //     background-color: #fff;
+    // }
 
 }
 
@@ -60,59 +60,34 @@
 }
 
 .hero-content {
+    // border: 2px solid red;
     padding: 0 5vw 1rem;
 
     @include abstracts.lg {
-        padding: 0;
+        padding: 0 10vw 0.5rem;
     }
-    
+
     .hero-title {
         margin-bottom: 1rem;
         max-width: 800px;
         margin-inline: auto;
-        
+
 
         h1 {
             text-transform: capitalize;
             font-size: abstracts.$font-clamp-lg;
             margin-bottom: 0.5rem;
-            // color: abstracts.$brand-dark;
-
-
-            
         }
-    
-        p {
-            
-            &::first-letter {
-                text-transform: capitalize;
-            }
 
-            color: abstracts.$overlay-blue-light;
+        p {
             color: abstracts.$text-main-light;
             font-size: abstracts.$font-clamp-md;
             font-weight: 500;
-        }
 
-    }
-
-    p {
-        margin: 1rem 0;
-        position: relative;
-        color: abstracts.$text-dark;
-        
-        a {
-            color: abstracts.$text-dark;
-            transition: .2s;
-            
-            &:hover {
-                color: abstracts.$text-brand;
-                text-decoration: none;
+            &::first-letter {
+                text-transform: capitalize;
             }
-
         }
-
-        
 
     }
 

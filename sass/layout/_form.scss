@@ -3,14 +3,14 @@
 
 form {
     padding: 10vh 5vw 10vh;
-    background-color: #fff;
-    // max-width: 800px;
+    // background-color: #fff;
+    background-color: abstracts.$background-main-darker;
     margin-inline: auto;
-    color: abstracts.$text-dark;
 
     @include abstracts.lg {
-        margin-block: 5vh;
-        width: 80vw;
+        // margin-block: 5vh;
+        // width: 80vw;
+        // display: flex;
         border-radius: abstracts.$border-radius-md;
     }
 
@@ -150,7 +150,8 @@ form {
         padding: .5em .1em;
         transition: .3s ease;
         position: relative;
-        color: abstracts.$text-dark;
+        // color: abstracts.$text-dark;
+        // color: abstracts.$text-dark;
         // scale: .97;
 
         // INFO SECTION
@@ -278,10 +279,9 @@ form {
         }
 
         ::placeholder {
-            color: hsl(0, 0%, 64%);
-            color: abstracts.$text-light-trans;
+            // color: abstracts.$text-lightest;
             text-transform: capitalize;
-            opacity: .5;
+            // opacity: .65;
         }
 
         // services div

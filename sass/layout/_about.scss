@@ -4,10 +4,10 @@
 section {
     // border: 1px solid red;
     padding: 5vh 5vw 5vh;
-    background: #fff;
+    // background: #fff;
 
     @include abstracts.md {
-        background: inherit;
+        // background: inherit;
         padding: 10vh 10vw;
         // border: 2px solid red;
     }
@@ -27,7 +27,7 @@ section {
 
 .about {
     position: relative;
-    
+    // background: abstracts.$background-main;
     .article-img {
         // border: 1px solid red;
         height: 200px;
@@ -36,12 +36,13 @@ section {
     }
 
     img {
-        margin: 0 auto;
+        margin: 0.25rem auto;
     }
 }
 
 .services {
-    background: hsl(0, 0%, 96%);
+    // background: hsl(0, 0%, 96%);
+    background: abstracts.$background-main-dark;
 
     .services-intro {
         padding: 1rem 0.5rem;

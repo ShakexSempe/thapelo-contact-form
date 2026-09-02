@@ -1,25 +1,33 @@
+// FANCA COLORS
 // BACKGROUND COLORS
-$background-light: #fff;
-$background-gray: #f4f4f4;
-$background-dark: #333;
-$background-light: #fff000;
-$background-light: #f4f4f4;
-$brand-overlay: #a6b2bf;
-$nav: #fafafa;
+$nav: #fff;
+$background-main: #fff;
+$background-main-light: #fafafa;
+$background-main-dark: #f4f4f4;
+$background-main-darker: hsl(0, 0%, 90%);
+
+
+
+// BACKGROUND COLORS
+// $background-light: #fff;
+// $background-dark: #333;
+// $background-light: #fff000;
+// $brand-overlay: #a6b2bf;
 
 // TEXT COLORS
-$text-main: hsl(240, 70%, 10%);
+// $text-main: hsl(240, 70%, 10%);
 $text-main: #000;
-$text-main-light: hsl(240, 30%, 40%);
+// $text-main-light: hsl(240, 30%, 40%);
 $text-main-light: hsl(0, 0%, 30%);
 $text-brand: skyblue;
-$text-black: #000;
-$text-dark: #000;
-$text-white: #fff;
+// $text-black: #000;
+// $text-dark: #000;
+// $text-white: #fff;
 $text-light: #f4f4f4;
-$nav-links: hsl(0, 0%, 95%);
-$text-light-trans: #000a;
-$text-dark-trans: #333;
+$text-lightest: hsl(0, 0%, 55%);
+// $nav-links: hsl(0, 0%, 95%);
+// $text-light-trans: #000a;
+// $text-dark-trans: #333;
 
 $toggle-bar: hsl(240, 70%, 5%);
 
