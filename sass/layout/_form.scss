@@ -19,10 +19,10 @@ form {
         padding: 0.5rem;
         height: auto;
         overflow-y: auto;
-
+        
         background-color: abstracts.$background-main;
-        border: 1px solid abstracts.$overlay-blue-dark;
         border: 1px solid #000;
+        border: 1px solid abstracts.$brand-darkest;
         border-radius: abstracts.$border-radius-sm;
         
         transition: 500ms;
@@ -114,11 +114,10 @@ form {
         font-size: abstracts.$font-clamp-sm;
         text-transform: capitalize;
 
-        background: #000;
+        background: abstracts.$brand-dark-black;
         color: abstracts.$text-light;
 
         border-radius: abstracts.$border-radius-xsm;
-        border: 1px solid #333a;
 
         cursor: help;
     }

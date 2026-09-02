@@ -577,8 +577,8 @@ form fieldset {
   height: auto;
   overflow-y: auto;
   background-color: #fff;
-  border: 1px solid #29323d;
   border: 1px solid #000;
+  border: 1px solid #002433;
   border-radius: 0.25rem;
   transition: 500ms;
   position: relative;
@@ -655,10 +655,9 @@ form legend {
   padding: 0.25rem;
   font-size: clamp(1rem, 2vw, 1.025rem);
   text-transform: capitalize;
-  background: #000;
+  background: #00121a;
   color: #f2f2f2;
   border-radius: 0.15rem;
-  border: 1px solid #333a;
   cursor: help;
 }
 
