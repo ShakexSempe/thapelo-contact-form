@@ -567,7 +567,14 @@ form {
 
 @media (min-width: 820px) {
   form {
+    padding: 10vh 10vw;
     border-radius: 0.5rem;
+  }
+}
+@media (min-width: 820px) {
+  form .field-container {
+    display: flex;
+    gap: 2rem;
   }
 }
 form fieldset {

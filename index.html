@@ -114,89 +114,92 @@
     
             <form id="form" action="https://formsubmit.co/binfo@fanca.co.za" method="POST">
                 
-                <!-- PERSONAL INFO -->
-                <fieldset title="Personal details" id="personal" class="field ">
-                    <legend>basic info</legend>
-                    <!-- <div class="field-btn"></div> -->
-                    <div class="input-div">
-                        <label for="first-name">Name: </label>
-                        <input type="text" name="first-name" id="first-name" title="first name and last name"
-                            placeholder="your first and last name" minlength="2" required>
-                    </div>
-                    <div class="input-div">
-                        <label for="tel">phone number </label>
-                        <input type="tel" name="tel" id="tel" title="phone number" placeholder="your phone number"
-                            minlength="10" required>
-                    </div>
-                    <div class="input-div">
-                        <label for="email">email address </label>
-                        <input type="email" name="email" title="email address" id="email" placeholder="your email address"
-                            required>
-                    </div>
-                    
-                    <!-- <div class="input-div">
-                        <label for="occupation">occupation <span>(optional if relevant to website)</span></label>
-                        <input type="text" name="occupation" title="Occupation/Profession" id="occupation"
-                            placeholder="your occupation/profession" 
-                    </div>
-                    <div class="input-div">
-                        <label for="qualifications">qualifications <span>(optional if relevant to website)</span></label>
-                        <input type="text" name="qualifications" title="Qualifications" id="qualifications"
-                            placeholder="highest qualification" 
-                    </div> -->
-                </fieldset>
-    
-                <!-- FORM INFO -->
-                <fieldset title="Appointment Info" id="appointment" class="field service-items">
-                    <legend>Appointment info</legend>
-                    
+                <div class="field-container">
 
-                    <div class="input-div">
-                        <label for="date">date <span>(pick a date)</span> </label>
-                        <input type="date" name="date" value="2026-08-21" title="appointment date" id="date"
-                            required>
-                    </div>
-
-                    <div class="radio-field">
-                        <p class="field-text">Rider level</p>
-                        <!-- <label for="level">rider level</label> -->
-                        <input type="radio" id="learner" name="level" value="learner">
-                        <label for="learner">learner's</label> <br>
-                    
-                        <input type="radio" id="a-" name="level" value="a-">
-                        <label for="a-">code A</label> <br>
-                    
-                        <input type="radio" id="a1" name="level" value="a1">
-                        <label for="a1">code a1</label>
-                    
-                    </div>
-
-                    <div title="what is value proposition?" class="input-div">
-                        <label for="value-propose">Additional Info</label>
-                        <!-- <i class="fas fa-info-circle info-btn"></i> -->
-                        <!-- <div class="info-section">
-                            <p>
-                                A value proposition is the essence of the value that your product or service provides to the
-                                customer. It is a promise of the benefits that you deliver. A strong value proposition
-                                articulates your product’s benefits as well as reasons why people should buy from you
-                                instead of from your competitors.
-                            </p>
-                            <p>
-                                Value propositions typically begin with a headline or a value statement. This is a single
-                                sentence that clearly conveys the core benefit of the product or business. </p>
+                    <!-- PERSONAL INFO -->
+                    <fieldset title="Personal details" id="personal" class="field ">
+                        <legend>basic info</legend>
+                        <!-- <div class="field-btn"></div> -->
+                        <div class="input-div">
+                            <label for="first-name">Name: </label>
+                            <input type="text" name="first-name" id="first-name" title="first name and last name"
+                                placeholder="your first and last name" minlength="2" required>
+                        </div>
+                        <div class="input-div">
+                            <label for="tel">phone number </label>
+                            <input type="tel" name="tel" id="tel" title="phone number" placeholder="your phone number"
+                                minlength="10" required>
+                        </div>
+                        <div class="input-div">
+                            <label for="email">email address </label>
+                            <input type="email" name="email" title="email address" id="email" placeholder="your email address"
+                                required>
+                        </div>
+                        
+                        <!-- <div class="input-div">
+                            <label for="occupation">occupation <span>(optional if relevant to website)</span></label>
+                            <input type="text" name="occupation" title="Occupation/Profession" id="occupation"
+                                placeholder="your occupation/profession" 
+                        </div>
+                        <div class="input-div">
+                            <label for="qualifications">qualifications <span>(optional if relevant to website)</span></label>
+                            <input type="text" name="qualifications" title="Qualifications" id="qualifications"
+                                placeholder="highest qualification" 
                         </div> -->
-                        <!-- <textarea type="text" name="value-propose" id="value-propose" title="Value Proposition"
-                            placeholder="Additional info"  minlength="2"> -->
-                        <textarea name="info" rows="3" id="info"></textarea>    
+                    </fieldset>
+        
+                    <!-- FORM INFO -->
+                    <fieldset title="Appointment Info" id="appointment" class="field service-items">
+                        <legend>Appointment info</legend>
+                        
+
+                        <div class="input-div">
+                            <label for="date">date <span>(pick a date)</span> </label>
+                            <input type="date" name="date" value="2026-08-21" title="appointment date" id="date"
+                                required>
                         </div>
 
-                </fieldset>
+                        <div class="radio-field">
+                            <p class="field-text">Rider level</p>
+                            <!-- <label for="level">rider level</label> -->
+                            <input type="radio" id="learner" name="level" value="learner">
+                            <label for="learner">learner's</label> <br>
+                        
+                            <input type="radio" id="a-" name="level" value="a-">
+                            <label for="a-">code A</label> <br>
+                        
+                            <input type="radio" id="a1" name="level" value="a1">
+                            <label for="a1">code a1</label>
+                        
+                        </div>
 
-                
-                <button id="submit-btn" class="btn-bg" type="submit">submit form 
-                    <img src="icons/solid/icons8-email-send-48-light.png" height="48" width="48" alt="email sent icon"
-                class="icon">
-                </button>
+                        <div title="what is value proposition?" class="input-div">
+                            <label for="value-propose">Additional Info</label>
+                            <!-- <i class="fas fa-info-circle info-btn"></i> -->
+                            <!-- <div class="info-section">
+                                <p>
+                                    A value proposition is the essence of the value that your product or service provides to the
+                                    customer. It is a promise of the benefits that you deliver. A strong value proposition
+                                    articulates your product’s benefits as well as reasons why people should buy from you
+                                    instead of from your competitors.
+                                </p>
+                                <p>
+                                    Value propositions typically begin with a headline or a value statement. This is a single
+                                    sentence that clearly conveys the core benefit of the product or business. </p>
+                            </div> -->
+                            <!-- <textarea type="text" name="value-propose" id="value-propose" title="Value Proposition"
+                                placeholder="Additional info"  minlength="2"> -->
+                            <textarea name="info" rows="3" id="info"></textarea>    
+                            </div>
+
+                    </fieldset>
+
+                    </div>
+
+                    <button id="submit-btn" class="btn-bg" type="submit">submit form 
+                                <img src="icons/solid/icons8-email-send-48-light.png" height="48" width="48" alt="email sent icon"
+                                class="icon">
+                    </button>
 
                 <input type="hidden" name="_autoresponse" value="Your form has been sent to Shakex Sempe">
                 <input type="hidden" name="_template" value="table">

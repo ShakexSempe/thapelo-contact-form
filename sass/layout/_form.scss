@@ -7,10 +7,19 @@ form {
     margin-inline: auto;
 
     @include abstracts.lg {
+        padding: 10vh 10vw;
         // margin-block: 5vh;
         // width: 80vw;
         // display: flex;
         border-radius: abstracts.$border-radius-md;
+    }
+
+    .field-container {
+        // border: 1px solid red;
+        @include abstracts.lg {
+            display: flex;
+            gap: 2rem;
+        }
     }
 
     fieldset {
