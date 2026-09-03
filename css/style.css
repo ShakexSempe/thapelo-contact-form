@@ -918,7 +918,6 @@ form #submit-btn:active .icon {
   }
 }
 .hero-content .hero-title {
-  margin-bottom: 1rem;
   max-width: 800px;
   margin-inline: auto;
 }
@@ -926,7 +925,7 @@ form #submit-btn:active .icon {
 .hero-content .hero-title h1 {
   text-transform: capitalize;
   font-size: clamp(1.5rem, 5vw, 2rem);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.25rem;
   color: #002433;
 }
 
@@ -942,7 +941,7 @@ form #submit-btn:active .icon {
 
 .hero-cta-btns {
   width: 100%;
-  margin: 1.5rem auto;
+  margin: 1rem auto 2rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -976,7 +975,6 @@ form #submit-btn:active .icon {
   justify-content: space-evenly;
   justify-content: center;
   flex-wrap: wrap;
-  margin-top: 2rem;
   color: #f4f4f4;
   color: #000;
   text-transform: capitalize;
