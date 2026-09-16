@@ -937,14 +937,19 @@ form #submit-btn:active .icon {
 
 .hero-content .hero-title h3 {
   color: #4d4d4d;
-  font-size: clamp(1rem, 2vw, 1.025rem);
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
   text-transform: capitalize;
   font-weight: 500;
   line-height: 1.5;
+  margin-bottom: 0.25rem;
 }
 
 .hero-content .hero-title h3::first-letter {
   text-transform: capitalize;
+}
+
+.hero-content .hero-title p {
+  font-size: clamp(1rem, 2vw, 1.025rem);
 }
 
 .hero-cta-btns {

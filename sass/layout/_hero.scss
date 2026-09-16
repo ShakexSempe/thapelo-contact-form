@@ -97,14 +97,19 @@
 
         h3 {
             color: abstracts.$text-main-light;
-            font-size: abstracts.$font-clamp-sm;
+            font-size: abstracts.$font-clamp-md;
             text-transform: capitalize;
             font-weight: 500;
             line-height: 1.5;
+            margin-bottom: 0.25rem;
 
             &::first-letter {
                 text-transform: capitalize;
             }
+        }
+
+        p {
+            font-size: abstracts.$font-clamp-sm;
         }
 
     }
