@@ -74,18 +74,16 @@
 }
 
 .hero-content {
-    // border: 1px solid red;
     grid-area: content;
     padding: 0 5vw 1rem;
     
     @include abstracts.lg {
-        // border: 2px solid abstracts.$brand-darkest;
         border-radius: abstracts.$border-radius-md;
         padding: 0;
+        margin: auto;
     }
 
     .hero-title {
-        // border: 2px solid red;
         max-width: 800px;
         margin-inline: auto;
 
@@ -93,19 +91,21 @@
         h1 {
             text-transform: capitalize;
             font-size: abstracts.$font-clamp-lg;
-            margin-bottom: 0.25rem;
+            margin-bottom: 0.5rem;
             color: abstracts.$brand-darkest;
         }
 
-        p {
+        h3 {
             color: abstracts.$text-main-light;
-            font-size: abstracts.$font-clamp-md;
+            font-size: abstracts.$font-clamp-sm;
             font-weight: 500;
 
             &::first-letter {
                 text-transform: capitalize;
             }
         }
+
+        
 
     }
 
@@ -183,6 +183,7 @@
         background-color:hsl(0, 0%, 80%);
             // background-color:#ddd;
         }
+
 
     }
 }

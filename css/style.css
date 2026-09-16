@@ -924,6 +924,7 @@ form #submit-btn:active .icon {
   .hero-content {
     border-radius: 0.5rem;
     padding: 0;
+    margin: auto;
   }
 }
 .hero-content .hero-title {
@@ -934,17 +935,17 @@ form #submit-btn:active .icon {
 .hero-content .hero-title h1 {
   text-transform: capitalize;
   font-size: clamp(1.5rem, 5vw, 2rem);
-  margin-bottom: 0.25rem;
+  margin-bottom: 0.5rem;
   color: #002433;
 }
 
-.hero-content .hero-title p {
+.hero-content .hero-title h3 {
   color: #4d4d4d;
-  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  font-size: clamp(1rem, 2vw, 1.025rem);
   font-weight: 500;
 }
 
-.hero-content .hero-title p::first-letter {
+.hero-content .hero-title h3::first-letter {
   text-transform: capitalize;
 }
 
