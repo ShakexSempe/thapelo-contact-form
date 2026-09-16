@@ -561,7 +561,7 @@ footer a {
   }
 }
 form {
-  padding: 10vh 5vw 10vh;
+  padding: 5vh 5vw 10vh;
   background-color: #e6e6e6;
   margin-inline: auto;
 }
@@ -579,9 +579,10 @@ form {
   }
 }
 form fieldset {
+  scroll-margin-top: 5vh;
   width: 100%;
-  margin: 0 auto 10vh;
-  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1rem;
   height: auto;
   overflow-y: auto;
   background-color: #fff;
@@ -670,7 +671,7 @@ form legend {
 }
 
 form .radio-field {
-  margin-bottom: 1rem;
+  margin: 1rem 0 0.5rem;
 }
 
 form .radio-field label {
@@ -679,14 +680,13 @@ form .radio-field label {
 }
 
 form .radio-field input {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 form .input-div {
   display: flex;
   flex-direction: column;
-  margin: 0 0 1rem 0;
-  padding: 0.5em 0.1em;
+  margin-bottom: 0.5rem;
   transition: 0.3s ease;
   position: relative;
 }
@@ -749,7 +749,7 @@ form .input-div i {
   }
 }
 form .input-div label {
-  transform: translateY(-0.5em);
+  transform: translateY(-0.25em);
   text-transform: capitalize;
   transition: 0.2s;
   font-weight: 600;

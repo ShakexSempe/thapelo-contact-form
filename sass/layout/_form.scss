@@ -2,7 +2,7 @@
 @use '../variables';
 
 form {
-    padding: 10vh 5vw 10vh;
+    padding: 5vh 5vw 10vh;
     background-color: abstracts.$background-main-darker;
     margin-inline: auto;
 
@@ -23,9 +23,11 @@ form {
     }
 
     fieldset {
+        scroll-margin-top: 5vh;
         width: 100%;
-        margin: 0 auto 10vh;
-        padding: 0.5rem;
+        // margin: 5rem auto 5vh;
+        margin-bottom: 1.5rem;
+        padding: 0.5rem 1rem;
         height: auto;
         overflow-y: auto;
         
@@ -133,7 +135,8 @@ form {
 
 
     .radio-field {
-        margin-bottom: 1rem;
+        // margin-bottom: 1rem;
+        margin: 1rem 0 0.5rem;
         
         label {
             text-transform: capitalize;
@@ -141,17 +144,18 @@ form {
         }
 
         input {
-            margin-bottom: 1rem;
+            margin-bottom: 0.5rem;
         }
 
     }
 
     .input-div {
+        // border: 1px solid red;
         display: flex;
         flex-direction: column;
-
-        margin: 0 0 1rem 0;
-        padding: .5em .1em;
+        margin-bottom: 0.5rem;
+        // padding: .5em .1em;
+        // padding: .25rem;
         transition: .3s ease;
         position: relative;
         // color: abstracts.$text-dark;
@@ -226,7 +230,7 @@ form {
 
         label {
             // border: 1px solid green;
-            transform: translateY(-.5em);
+            transform: translateY(-.25em);
             text-transform: capitalize;
             transition: .2s;
             font-weight: 600;
