@@ -833,7 +833,7 @@ form #submit-btn {
   }
 }
 form #submit-btn.btn-bg {
-  background: blue;
+  background: #00a1e6;
 }
 
 form #submit-btn.btn-bg::before {
@@ -843,10 +843,6 @@ form #submit-btn.btn-bg::before {
 form #submit-btn.btn-bg::after {
   background: #007db3;
   background: linear-gradient(0deg, #007db3 50%, #005980 95%);
-}
-
-form #submit-btn:hover {
-  color: skyblue;
 }
 
 form #submit-btn:hover .icon {

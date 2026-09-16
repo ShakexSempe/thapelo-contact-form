@@ -342,9 +342,9 @@ form {
     
             &.btn-bg {
     
-                background: blue;
+                background: abstracts.$brand;
                 &::before {
-            background: linear-gradient(0deg, 
+                            background: linear-gradient(0deg, 
                                             abstracts.$brand-darker 5%, 
                                             abstracts.$brand-dark 40%);
 
@@ -362,7 +362,7 @@ form {
             }
     
             &:hover {
-                color: abstracts.$text-brand;
+                // color: abstracts.$text-brand;
                 .icon {
                         rotate: 30deg;
                     }
