@@ -226,7 +226,7 @@ section h3 {
 .services .services-intro h3 {
   text-transform: capitalize;
   color: #80d9ff;
-  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
 }
 
 .services .services-intro p {
@@ -937,8 +937,10 @@ form #submit-btn:active .icon {
 
 .hero-content .hero-title h3 {
   color: #4d4d4d;
-  font-size: clamp(1rem, 2vw, 1.025rem);
+  font-size: clamp(1.125rem, 2.5vw, 1.5rem);
+  text-transform: capitalize;
   font-weight: 500;
+  line-height: 1.5;
 }
 
 .hero-content .hero-title h3::first-letter {
