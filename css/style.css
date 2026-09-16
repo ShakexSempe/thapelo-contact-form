@@ -313,6 +313,7 @@ footer a {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+  background-color: #fafafa;
   z-index: 10;
   box-shadow: 0 0.25rem 0.5rem rgba(125, 125, 232, 0.125);
 }
@@ -878,6 +879,7 @@ form #submit-btn:active .icon {
   grid-area: img;
   display: block;
   margin: 0 auto 5vh;
+  margin: 0 auto 1.5rem;
   width: 100%;
   height: 40vh;
   max-height: 450px;
@@ -920,8 +922,8 @@ form #submit-btn:active .icon {
 
 @media (min-width: 820px) {
   .hero-content {
-    border: 2px solid #00a1e6;
     border-radius: 0.5rem;
+    padding: 0;
   }
 }
 .hero-content .hero-title {
@@ -948,7 +950,7 @@ form #submit-btn:active .icon {
 
 .hero-cta-btns {
   width: 100%;
-  margin: 1rem auto 2rem;
+  margin: 1rem auto 1.5rem;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
