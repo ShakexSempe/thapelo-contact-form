@@ -259,6 +259,41 @@ section h3 {
   background-color: #cccccc;
 }
 
+.contact-section {
+  background: #00121a;
+  color: #f2f2f2;
+  min-height: 50vh;
+}
+
+.contact-section h3 {
+  text-transform: capitalize;
+  margin-bottom: 0.5rem;
+}
+
+.contact-section h2 {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
+.contact-section .sub-section {
+  margin-bottom: 5vh;
+}
+
+.contact-section .contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.contact-section .contact-item a {
+  color: #f2f2f2;
+}
+
+.contact-section .contact-item:hover .icon {
+  translate: 0.5rem 0;
+}
+
 footer {
   width: 100%;
   background-color: #15191e;

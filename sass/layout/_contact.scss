@@ -1,0 +1,45 @@
+@use '../abstracts';
+
+.contact-section {
+    // border: 3px solid red;
+    background: abstracts.$brand-dark-black;
+    color: abstracts.$text-light;
+    // text-align: left;
+    min-height: 50vh;
+
+    h3 {
+        text-transform: capitalize;
+        margin-bottom: 0.5rem;
+    }
+
+    h2 {
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+    }
+
+    .sub-section {
+        margin-bottom: 5vh;
+    }
+
+    .contact-item {
+        // border: 2px solid blue;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+
+        
+        a {
+            color: abstracts.$text-light;
+            
+        }
+
+
+        &:hover {
+            .icon {
+                translate: 0.5rem 0;
+            }
+        }
+
+    }
+}
