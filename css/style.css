@@ -367,17 +367,43 @@ footer a {
   }
 }
 #nav .nav-list {
-  background-color: #e6e6e6;
-  background-color: #00121a;
-  color: #f2f2f2;
+  position: absolute;
   width: 100%;
   min-height: 100vh;
-  position: absolute;
   right: -110%;
   top: 7vh;
+  background-color: #00121a;
+  color: #f2f2f2;
   transition: 500ms;
-  padding: 15vh 5vw 0;
+  padding: 10vh 5vw 0;
   z-index: -2;
+}
+
+#nav .nav-list .contact-items {
+  background-color: #002433;
+  width: 95%;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+#nav .nav-list .contact-items ul {
+  padding: 0;
+  width: 100%;
+  border: none;
+}
+
+#nav .nav-list .contact-items ul li {
+  background-color: #00121a;
+}
+
+#nav .nav-list .contact-items ul li a {
+  text-transform: none;
+}
+
+#nav .nav-list .contact-items h3 {
+  margin-bottom: 0.5rem;
+  text-transform: capitalize;
+  font-size: clamp(1rem, 2vw, 1.025rem);
 }
 
 #nav .nav-list ul {
@@ -405,15 +431,15 @@ footer a {
 
 @media (max-width: 768px) {
   #nav .nav-list ul {
-    border: 1px solid #fff7;
-    border: 1px solid #007db3;
     width: 95%;
-    padding: 1em;
+    padding: 1rem;
+    margin-bottom: 2rem;
     display: flex;
     flex-direction: column;
     align-items: right;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.5rem;
+    border: 1px solid #007db3;
     border-right-color: transparent;
     border-left-color: transparent;
     border-radius: 0.5rem;
@@ -423,20 +449,14 @@ footer a {
     align-items: center;
     background: #002433;
     border-radius: 0.5rem;
-    padding-inline: 0.25rem;
+    padding-inline: 0.5rem;
     margin: 0;
     border: 1px solid transparent;
     transition: 150ms;
   }
 
   #nav .nav-list ul li a {
-    padding: 0.5rem 0.25rem;
-  }
-
-  #nav .nav-list ul li i {
-    margin: 0;
-    flex-basis: 15%;
-    transition: 250ms;
+    padding: 0.25rem 0.25rem;
   }
 
   #nav .nav-list ul li:hover {
@@ -468,6 +488,10 @@ footer a {
     min-height: auto;
     height: 5vh;
     z-index: 5;
+  }
+
+  #nav .nav-list .contact-items {
+    display: none;
   }
 
   #nav .nav-list ul {

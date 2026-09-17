@@ -75,24 +75,55 @@
 
     // nav-list mobile first**
     .nav-list {
-        background-color: hsl(0, 0%, 90%);
-        background-color: abstracts.$brand-dark-black;
-        color: abstracts.$text-light;
+        // border: 3px solid green;
+        position: absolute;
         width: 100%;
         min-height: 100vh;
-        position: absolute;
         right: -110%;
         top: abstracts.$nav-height;
+        
+        background-color: abstracts.$brand-dark-black;
+        color: abstracts.$text-light;
+
         transition: 500ms;
-        padding: 15vh 5vw 0;
+        padding: 10vh 5vw 0;
         z-index: -2;
+
+        .contact-items {
+            // border: 1px solid red;
+            background-color: abstracts.$brand-darkest;
+            width: 95%;
+            border-radius: abstracts.$border-radius-md;
+            padding: 0.5rem 1rem;
+            
+            ul {
+                padding: 0;
+                width: 100%;
+                border: none;
+                
+                li {
+                    background-color: abstracts.$brand-dark-black;
+                    a {
+                        text-transform: none;
+                    }
+
+                }
+                
+            }
+
+            h3 {
+                margin-bottom: 0.5rem;
+                text-transform: capitalize;
+                font-size: abstracts.$font-clamp-sm;
+            }
+        }
 
         ul {
             list-style: none;
             
             li {
-                margin-bottom: 2em;
                 // border: 1px solid red;
+                margin-bottom: 2em;
                 display: flex;
                 gap: 0.5rem;
 
@@ -106,7 +137,6 @@
 
                     &:hover {
                         color: abstracts.$text-brand;
-                        // color: red;
                     }
 
                 }
@@ -114,20 +144,21 @@
             }
         }
         
-        // active menu
+        // MOBILE NAV MENU
         @media (max-width: 768px){
+            
             ul {
-                border: 1px solid #fff7;
-                border: 1px solid abstracts.$brand-dark;
                 width: 95%;
-                padding: 1em;
+                padding: 1rem;
+                margin-bottom: 2rem;
                 
                 display: flex;
                 flex-direction: column;
                 align-items: right;
                 justify-content: center;
-                gap: 1rem;
-
+                gap: 0.5rem;
+                
+                border: 1px solid abstracts.$brand-dark;
                 border-right-color: transparent;
                 border-left-color: transparent;
                 border-radius: abstracts.$border-radius-md;
@@ -137,22 +168,15 @@
 
                     background: abstracts.$brand-darkest;
                     border-radius: abstracts.$border-radius-md;
-                    padding-inline: 0.25rem;
+                    padding-inline: 0.5rem;
                     margin: 0;
                     border: 1px solid transparent;
                     transition: 150ms;
 
                     a {
-                        padding: 0.5rem 0.25rem;
+                        padding: 0.25rem 0.25rem;
                     }
 
-
-                    i {
-                        margin: 0 ;
-                        flex-basis: 15%;
-                        transition: 250ms;
-                        // border: 1px solid red;
-                    }
 
                     &:hover {
                         background: abstracts.$brand-darker;
@@ -176,8 +200,13 @@
             }
     }
 
-        // desktop nav-list
+        // DESKTOP NAV MENU
         @include abstracts.md {
+
+            .contact-items {
+                display: none;
+            }
+
             // display: flex;
             position: relative;
             background-color: abstracts.$brand-darkest;
@@ -220,10 +249,7 @@
         }
         }
 
-        // end of desktop nav-list
     }
-
-    // end of nav-list mobile first**
 }
 
 
