@@ -106,6 +106,13 @@
             &::first-letter {
                 text-transform: capitalize;
             }
+
+            span {
+                // color: red;
+                // padding-top: 0.125rem;
+                border-bottom: 1px solid abstracts.$brand-dark-black;
+                border-bottom: 1px solid #0005;
+            }
         }
 
         p {
