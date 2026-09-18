@@ -262,6 +262,7 @@ section h3 {
 .contact-section {
   background: #00121a;
   color: #f2f2f2;
+  text-align: left;
 }
 
 .contact-section h2 {
@@ -285,8 +286,7 @@ section h3 {
 .contact-section .contact-item {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 1rem;
+  gap: 0.5rem;
   margin-bottom: 0.75rem;
 }
 
@@ -301,9 +301,13 @@ section h3 {
   color: #80d9ff;
 }
 
-.contact-section .contact-item:hover .icon {
-  translate: 0.5rem 0;
+.contact-section .contact-item .icon {
   opacity: 0.75;
+}
+
+.contact-section .contact-item:hover .icon {
+  translate: 0.25rem 0;
+  opacity: 1;
 }
 
 .contact-section .contact-item:hover a {
