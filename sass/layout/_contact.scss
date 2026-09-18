@@ -9,6 +9,7 @@
 
     h2 {
         margin-bottom: 2rem;
+        font-size: abstracts.$font-clamp-lg;
         text-transform: capitalize;
         border-bottom: 1px solid #fff5;
         width: fit-content;
@@ -16,9 +17,9 @@
     }
 
     h3 {
-        text-transform: capitalize;
         text-transform: uppercase;
         color: abstracts.$brand-light;
+
     }
 
     .sub-section {

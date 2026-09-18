@@ -45,7 +45,7 @@ section {
     background: abstracts.$background-main-dark;
 
     .services-intro {
-        padding: 1rem 0.5rem;
+        padding: 1rem;
         margin-bottom: 2rem;
         background: abstracts.$brand-darkest;
         border-radius: abstracts.$border-radius-sm;
@@ -60,6 +60,7 @@ section {
 
         p {
             color: abstracts.$text-light;
+            text-align: left;
 
             a {
                 color: abstracts.$brand-light;
