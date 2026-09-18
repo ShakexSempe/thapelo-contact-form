@@ -454,6 +454,7 @@ footer a {
 }
 
 #nav .nav-list .contact-items ul {
+  margin-bottom: 0.5rem;
   padding: 0;
   width: 100%;
   border: none;
