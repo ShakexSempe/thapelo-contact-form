@@ -4,17 +4,22 @@
     // border: 3px solid red;
     background: abstracts.$brand-dark-black;
     color: abstracts.$text-light;
-    // text-align: left;
-    min-height: 50vh;
+    text-align: left;
+    // min-height: 50vh;
+
+    h2 {
+        margin-bottom: 2rem;
+        text-transform: capitalize;
+        border-bottom: 1px solid #fff5;
+        width: fit-content;
+    }
 
     h3 {
         text-transform: capitalize;
-        margin-bottom: 0.5rem;
-    }
+        text-transform: uppercase;
+        width: fit-content;
 
-    h2 {
-        text-transform: capitalize;
-        margin-bottom: 1rem;
+            color: abstracts.$brand-light;
     }
 
     .sub-section {
@@ -25,19 +30,32 @@
         // border: 2px solid blue;
         display: flex;
         align-items: center;
-        justify-content: center;
+        // justify-content: center;
         gap: 1rem;
+        margin-bottom: 0.75rem;
 
         
         a {
             color: abstracts.$text-light;
-            
+            text-decoration-color: transparent;
+            text-underline-offset: 10px;
+            transition: 250ms;
+
+            &:hover {
+                color: abstracts.$brand-light;
+            }
         }
 
 
         &:hover {
             .icon {
                 translate: 0.5rem 0;
+                opacity: 0.75;
+            }
+
+            a {
+                text-decoration-color: abstracts.$brand;
+            text-underline-offset: 5px;
             }
         }
 
