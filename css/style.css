@@ -198,6 +198,11 @@ section h3 {
   font-size: clamp(1rem, 2vw, 1.025rem);
 }
 
+section .section-title {
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+}
+
 .about {
   position: relative;
 }
@@ -295,6 +300,7 @@ section h3 {
 .contact-section h3 {
   text-transform: uppercase;
   color: #80d9ff;
+  font-size: clamp(1rem, 2vw, 1.025rem);
 }
 
 .contact-section .sub-section {

@@ -22,6 +22,11 @@ section {
         font-size: abstracts.$font-clamp-sm;
     }
 
+    .section-title {
+        text-transform: capitalize;
+        margin-bottom: 1rem;
+    }
+
     text-align: center;
 }
 
