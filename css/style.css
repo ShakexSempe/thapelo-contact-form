@@ -200,6 +200,7 @@ section h3 {
 
 section .section-title {
   text-transform: capitalize;
+  font-size: clamp(1.5rem, 5vw, 2rem);
   margin-bottom: 1rem;
 }
 
@@ -223,10 +224,11 @@ section .section-title {
 
 .services .services-intro {
   padding: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 5vh;
   background: #002433;
   background: linear-gradient(0deg, #00121a, #002433);
   border-radius: 0.25rem;
+  color: #002433;
 }
 
 .services .services-intro h3 {
@@ -259,6 +261,7 @@ section .section-title {
   font-size: clamp(.95rem, 1.5vw, 1rem);
   background-color: #dedede;
   padding: 0.25rem;
+  padding: 0.25rem 0.5rem;
   text-transform: capitalize;
 }
 
@@ -282,7 +285,7 @@ section .section-title {
 }
 
 .contact-section h3 {
-  text-transform: uppercase;
+  text-transform: capitalize;
   color: #80d9ff;
   font-size: clamp(1rem, 2vw, 1.025rem);
 }

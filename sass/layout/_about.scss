@@ -24,6 +24,7 @@ section {
 
     .section-title {
         text-transform: capitalize;
+        font-size: abstracts.$font-clamp-lg;
         margin-bottom: 1rem;
     }
 
@@ -46,32 +47,16 @@ section {
 }
 
 .services {
-    // background: hsl(0, 0%, 96%);
     background: abstracts.$background-main-dark;
 
     .services-intro {
         padding: 1rem;
-        margin-bottom: 2rem;
+        margin-bottom: 5vh;
         background: abstracts.$brand-darkest;
         background: linear-gradient(0deg, abstracts.$brand-dark-black, abstracts.$brand-darkest);
         border-radius: abstracts.$border-radius-sm;
-        // position: relative;
-        // isolation: isolate;
-
-        // &::after {
-        //     content: '';
-        //     position: absolute;
-        //     inset: 0;
-        //     border: 2px solid red;
-        //     width: 100%;
-        //     height: 100%;
-        //     background: url('../../img/fanca.png');
-        //     background-position: center;
-        //     background-size: cover;
-        //     background-repeat: no-repeat;
-        //     z-index: -1;
-        //     opacity: .045;
-        // }
+            color: abstracts.$brand-darkest;
+        
         
         h3 {
             text-transform: capitalize;
@@ -101,11 +86,13 @@ section {
         list-style: none;
         overflow: hidden;
         border-radius: abstracts.$border-radius-sm;
+        // text-align: left;
         
         li {
                 font-size: abstracts.$font-clamp-xsm;
                 background-color: hsl(0, 0%, 87%);
                 padding: 0.25rem;
+                padding: 0.25rem 0.5rem;
                 text-transform: capitalize;
         
                 &:nth-child(even) {
