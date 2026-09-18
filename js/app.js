@@ -1,7 +1,7 @@
 // VARIABLES
 const navList = document.querySelector('.nav-list');
 const body = document.getElementById("container");
-const date = document.getElementById("date");
+const date = document.querySelector(".footer-date");
 const toggle = document.getElementById("toggle");
 const navItem = document.querySelectorAll(".nav-link");
 const infoBtn = document.querySelectorAll(".info-btn");
@@ -9,6 +9,7 @@ const infoSection = document.querySelector('.info-section');
 console.log(navItem);
 // date
 date.innerHTML = new Date().getFullYear();
+console.log(date)
 
 // hamburger
 toggle.addEventListener("click", () => {
