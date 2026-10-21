@@ -91,5 +91,6 @@
     &.active-top {
         bottom: 10vh;
         opacity: 1;
+        transition-timing-function: ease-out;
     }
 } 

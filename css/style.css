@@ -81,6 +81,7 @@
 .top-btn.active-top {
   bottom: 10vh;
   opacity: 1;
+  transition-timing-function: ease-out;
 }
 
 @font-face {
@@ -170,6 +171,7 @@
 .top-btn.active-top {
   bottom: 10vh;
   opacity: 1;
+  transition-timing-function: ease-out;
 }
 
 @font-face {
@@ -1186,6 +1188,7 @@ form #submit-btn:active .icon {
 .top-btn.active-top {
   bottom: 10vh;
   opacity: 1;
+  transition-timing-function: ease-out;
 }
 
 @font-face {
