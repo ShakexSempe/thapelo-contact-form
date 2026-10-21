@@ -197,7 +197,7 @@
 
             &.active {
                 right: -5vw;
-                
+                transition-timing-function: ease-out;
             }
     }
 
